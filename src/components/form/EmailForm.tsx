@@ -138,7 +138,7 @@ const EmailForm = (props: IEmailFormProps) => {
         <div className="mb-6">
           <ReCAPTCHA
             // sitekey="6LdBFFUUAAAAALvBqeGewkqZ1m1WEssi2lu9z9Vk"
-            sitekey="6LfMjI8fAAAAAByR4hBE5Xf3OL8vrgYPrAmbCQDX"
+            sitekey="6Lf-IGcgAAAAAEh9ONfDHOCozNK0ej9CXAMow70N"
             onChange={handleChange}
           />
           {errors.recaptcha && (
