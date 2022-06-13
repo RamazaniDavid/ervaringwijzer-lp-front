@@ -1,0 +1,51 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@font-face {
+  font-family: "Avenir";
+  src: url("/assets/fonts/avenir/Linotype - AvenirLTPro-Roman.otf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url("/assets/fonts/avenir/Linotype - AvenirLTPro-Medium.otf");
+  font-style: medium;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url("/assets/fonts/avenir/Linotype - AvenirLTPro-Heavy.otf");
+  font-style: heavy;
+  font-weight: 800;
+  font-display: swap;
+}
+
+body {
+  font-family: "Avenir";
+}
+
+.content p {
+  @apply my-6;
+}
+
+.content ul {
+  @apply my-6;
+}
+
+hr {
+  border-top: 1px solid gray;
+}
+
+.Typewriter {
+  display: inline-block;
+}
+
+* {
+  transition: all 0.3s ease-in-out;
+}
