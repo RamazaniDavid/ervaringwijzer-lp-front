@@ -6,21 +6,28 @@
 
 @font-face {
   font-family: "Avenir";
-  src: url("/assets/fonts/avenir/Linotype - AvenirLTPro-Roman.otf");
+  src: url("/assets/fonts/avenir/39FEED_0_0.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url("/assets/fonts/avenir/39FEED_0_0.woff2");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
 }
 @font-face {
   font-family: "Avenir";
-  src: url("/assets/fonts/avenir/Linotype - AvenirLTPro-Medium.otf");
+  src: url("/assets/fonts/avenir/39FEED_1_0.woff2");
   font-style: medium;
   font-weight: 500;
   font-display: swap;
 }
 @font-face {
   font-family: "Avenir";
-  src: url("/assets/fonts/avenir/Linotype - AvenirLTPro-Heavy.otf");
+  src: url("/assets/fonts/avenir/39FEED_2_0.woff2");
   font-style: heavy;
   font-weight: 800;
   font-display: swap;
