@@ -10,6 +10,11 @@ function Hero() {
     'Gemeenten',
     'Bibliotheken',
     'Zorgaanbieders',
+    'Taalhuizen',
+    'Huisartsen',
+    'Fysiotherapeuten',
+    'Welzijnsorganisaties',
+    'Sociaal Teams',
   ];
 
   return (
