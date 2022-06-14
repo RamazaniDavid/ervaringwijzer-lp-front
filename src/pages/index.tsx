@@ -1,6 +1,7 @@
 import Businesses from '@/components/indexComponents/Businesses';
 import Hero from '@/components/indexComponents/Hero';
 import Intro from '@/components/indexComponents/Intro';
+import NetherlandsMap from '@/components/indexComponents/NetherlandsMap';
 
 import { Layout } from '../layout/MainLayout';
 import { Meta } from '../layout/Meta';
@@ -18,6 +19,7 @@ const Index = () => {
       <Hero />
       <Businesses />
       <Intro />
+      <NetherlandsMap />
     </Layout>
   );
 };
