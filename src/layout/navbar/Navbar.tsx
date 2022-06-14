@@ -8,16 +8,16 @@ import NavbarLogo from './NavbarLogo';
 
 function Navbar() {
   const [isScrolled, setIsScrolled] = React.useState(false);
-  // const [isScrolledTryBtn, setIsScrolledTryBtn] = React.useState(false);
+  const [isScrolledTryBtn, setIsScrolledTryBtn] = React.useState(false);
   const [showMobileMenu, setShowMobileMenu] = React.useState(false);
   const [hideLogoText, setHideLogoText] = React.useState(false);
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
-      // setIsScrolledTryBtn(
-      //   (window.innerWidth < 640 && window.scrollY > 350) ||
-      //     (window.innerWidth >= 640 && window.scrollY > 500)
-      // );
+      setIsScrolledTryBtn(
+        (window.innerWidth < 640 && window.scrollY > 350) ||
+          (window.innerWidth >= 640 && window.scrollY > 400)
+      );
       setIsScrolled(window.scrollY > 30);
     });
 
@@ -69,12 +69,12 @@ function Navbar() {
   return (
     <>
       <header
-        className={`fixed top-0 rounded z-30 w-full  transition-all ${
+        className={`fixed top-0 rounded z-30 w-full min-h-[66px] transition-all ${
           isScrolled ? ' pt-0' : '  pt-4 '
         }`}
       >
         <nav
-          className={`relative px-4  flex justify-between items-center${
+          className={`relative px-4  flex justify-between min-h-[66px] items-center${
             isScrolled ? ' backdrop-blur-sm bg-white  ' : 'bg-transparent'
           }`}
         >
@@ -114,11 +114,13 @@ function Navbar() {
               ))}
             </ul>
           </div>
-          <div
-            className={`hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 `}
-          >
-            <TryButton />
-          </div>
+          {isScrolledTryBtn && (
+            <div
+              className={`hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 `}
+            >
+              <TryButton />
+            </div>
+          )}
         </nav>
       </header>
       <div
