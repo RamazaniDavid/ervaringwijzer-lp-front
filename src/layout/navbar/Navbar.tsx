@@ -179,12 +179,7 @@ function Navbar() {
           </div>
           <div className="mt-auto">
             <div className="pt-6">
-              <a
-                className="mb-2 block rounded-xl bg-[#0085ff] px-4 py-3 text-center text-xs font-semibold leading-loose text-white  hover:bg-blue-700"
-                href="#"
-              >
-                Sign Up
-              </a>
+              <TryButton />
             </div>
             <p className="my-4 text-center text-xs text-gray-400">
               <span>Copyright © 2021</span>
