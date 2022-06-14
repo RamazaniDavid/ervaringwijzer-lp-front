@@ -54,7 +54,7 @@ function Hero() {
             <div className="h-[200px]  md:h-[250px] lg:h-[300px] xl:h-[345px] 2xl:h-[500px]">
               <button
                 style={{ filter: 'drop-shadow(0 0 100px rgba(8,36,70,.4))' }}
-                className="absolute inset-0 z-[2] box-border inline-block max-w-full cursor-pointer overflow-hidden text-ellipsis whitespace-nowrap border-0 bg-gray-50/40 bg-[url('https://www.ervaringwijzer.nl/wp-content/themes/ervaringwijzer/dist/images/play-110.svg')] bg-[length:64px_64px] bg-center bg-no-repeat text-center outline-none lg:bg-auto"
+                className="absolute inset-0 z-[2] box-border inline-block max-w-full cursor-pointer overflow-hidden text-ellipsis whitespace-nowrap rounded-2xl border-0 bg-gray-50/40 bg-[url('https://www.ervaringwijzer.nl/wp-content/themes/ervaringwijzer/dist/images/play-110.svg')] bg-[length:64px_64px] bg-center bg-no-repeat text-center outline-none lg:bg-auto"
               ></button>
               <video
                 playsInline={true}
