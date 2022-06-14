@@ -3,7 +3,9 @@ import 'aos/dist/aos.css';
 
 import AOS from 'aos';
 import { AppProps } from 'next/app';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import { QueryClient, QueryClientProvider } from 'react-query';
+import { ReactQueryDevtools } from 'react-query/devtools';
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   useEffect(() => {
@@ -13,7 +15,15 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
       delay: 500,
     });
   }, []);
-  return <Component {...pageProps} />;
+
+  const [queryClient] = useState(() => new QueryClient());
+
+  return (
+    <QueryClientProvider client={queryClient}>
+      <Component {...pageProps} />
+      <ReactQueryDevtools initialIsOpen={false} />
+    </QueryClientProvider>
+  );
 };
 
 export default MyApp;
