@@ -2889,7 +2889,13 @@ function NetherlandsMap() {
                 id={item.name}
                 key={ix}
                 className={`${
-                  item.isImportant ? 'fill-[#9dd0ff] cursor-pointer' : ''
+                  item.isImportant
+                    ? `${
+                        selected !== item.name
+                          ? 'fill-[#9dd0ff]'
+                          : 'fill-white animate-pulse'
+                      } cursor-pointer`
+                    : ''
                 }`}
                 onClick={() => {
                   if (item.isImportant) {
