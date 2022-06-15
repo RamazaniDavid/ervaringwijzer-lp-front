@@ -46,16 +46,18 @@ function MapHelper({ mapPathes }: MapHelperProps) {
                       </p>
                     </div>
                     <div className="basis-1/5">
-                      <img
-                        src={`/assets/images/logos/${selected?.clientInfo?.logo}`}
-                        alt={selected?.clientInfo?.name}
-                        className="ml-auto h-12 w-12"
-                      />
+                      {selected?.clientInfo?.logo && (
+                        <img
+                          src={`/assets/images/logos/${selected?.clientInfo?.logo}`}
+                          alt={selected?.clientInfo?.name}
+                          className="ml-auto h-12 w-12"
+                        />
+                      )}
                     </div>
                   </div>
                   <hr className="my-8" />
                   <div className="flex flex-col space-y-8 text-lg font-normal text-[#082446]">
-                    <div className="flex flex-row space-x-4">
+                    <div className="flex flex-row items-center space-x-4">
                       <img
                         src={`/assets/images/icons/users.svg`}
                         alt={selected?.clientInfo?.name}
@@ -63,7 +65,7 @@ function MapHelper({ mapPathes }: MapHelperProps) {
                       />
                       <span>{selected?.clientInfo?.usersCount} gebruikers</span>
                     </div>
-                    <div className="flex flex-row space-x-4">
+                    <div className="flex flex-row items-center space-x-4">
                       <img
                         src={`/assets/images/icons/response.svg`}
                         alt={selected?.clientInfo?.name}
@@ -73,7 +75,7 @@ function MapHelper({ mapPathes }: MapHelperProps) {
                         {selected?.clientInfo?.highestResponse}% hoogste respons
                       </span>
                     </div>
-                    <div className="flex flex-row space-x-4">
+                    <div className="flex flex-row items-center space-x-4">
                       <img
                         src={`/assets/images/icons/send.svg`}
                         alt={selected?.clientInfo?.name}

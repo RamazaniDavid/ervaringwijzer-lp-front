@@ -398,8 +398,16 @@
   {
     "name": "gemeente-59",
     "value": "M59.3148 539.043L58.8407 540.255L59.1793 538.975L59.3148 539.043ZM60.7371 540.053H60.6693L60.6016 539.986L60.6693 540.053H60.7371ZM60.4661 539.919L60.3984 539.851V539.716L60.4661 539.919ZM60.8725 540.053L63.7171 543.152L57.2829 545.78L56.1993 548.408L57.012 551.035L49.9005 554.741L44.8887 551.507L43.6695 552.922L37.9804 551.978L36.084 544.904L38.3867 538.369L42.1795 537.426L42.7891 539.986L49.6296 541.536L53.0838 537.493L56.1315 542.614L60.8725 540.053ZM59.5179 539.177L59.4502 539.649L59.5179 539.177Z",
-    "isImportant": false,
-    "cityName": ""
+    "isImportant": true,
+    "cityName": "",
+    "clientInfo": {
+      "name": "Gemeente Veere",
+      "startYear": "2022",
+      "usersCount": "5",
+      "highestResponse": "-",
+      "studiesCount": "1",
+      "logo": ""
+    }
   },
   {
     "name": "gemeente-60",
@@ -952,8 +960,16 @@
   {
     "name": "gemeente-150",
     "value": "M415.768 387.52L416.716 388.126L417.393 388.665L414.616 395.2L415.7 404.767L417.461 407.799L419.086 410.629L423.963 414.065L420.034 414.94L417.732 417.501L418.612 420.937L414.752 418.309L409.537 425.046L404.728 423.227L398.429 422.688L399.039 415.277L402.967 416.153L404.728 414.671L403.373 409.281L393.553 407.597L394.975 402.342L400.596 394.931L408.588 395.065L408.182 391.562L410.078 391.831L415.768 387.52Z",
-    "isImportant": false,
-    "cityName": ""
+    "isImportant": true,
+    "cityName": "",
+    "clientInfo": {
+      "name": "Stichting Welzijn Ouderen Arnhem",
+      "startYear": "2022",
+      "usersCount": "14",
+      "highestResponse": "-",
+      "studiesCount": "14",
+      "logo": ""
+    }
   },
   {
     "name": "gemeente-151",
@@ -1106,8 +1122,16 @@
   {
     "name": "gemeente-169",
     "value": "M353.662 397.425L354.204 389.744L351.969 382.805L353.526 378.897L365.785 375.731L372.423 375.259L373.777 373.777L379.128 373.305L378.857 371.217L385.494 370.61L387.526 369.33H393.148L401.139 369.667L402.223 375.663L405.406 380.514L410.012 381.929L416.378 381.794L415.769 387.521L410.08 391.833L408.183 391.563L408.59 395.067L400.598 394.932L394.976 402.343L384.072 403.825L380.889 408.946L374.319 410.899L361.925 411.304L359.419 409.08L359.148 407.463L359.013 400.996L353.662 397.425Z",
-    "isImportant": false,
-    "cityName": ""
+    "isImportant": true,
+    "cityName": "",
+    "clientInfo": {
+      "name": "Stichting Malkander",
+      "startYear": "2022",
+      "usersCount": "1",
+      "highestResponse": "-",
+      "studiesCount": "1",
+      "logo": ""
+    }
   },
   {
     "name": "gemeente-170",
@@ -1166,8 +1190,16 @@
   {
     "name": "gemeente-175",
     "value": "M263.786 395.741L266.766 396.684L266.631 396.953L262.364 399.379L260.603 402.68L263.447 407.262L256.946 408.542L251.392 410.63L248.886 406.386L252.34 405.442L248.954 399.379L247.193 400.794L242.723 396.953L242.926 396.549L243.468 395.606L248.276 395L253.491 392.439L256.946 395.943L263.786 395.741Z",
-    "isImportant": false,
-    "cityName": ""
+    "isImportant": true,
+    "cityName": "",
+    "clientInfo": {
+      "name": "Bibliotheek Lek & IJssel",
+      "startYear": "2022",
+      "usersCount": "11",
+      "highestResponse": "-",
+      "studiesCount": "13",
+      "logo": ""
+    }
   },
   {
     "name": "gemeente-176",
@@ -1175,11 +1207,11 @@
     "isImportant": true,
     "cityName": "ijsselstein",
     "clientInfo": {
-      "name": "Stichting Parousie",
-      "startYear": "20",
-      "usersCount": "6",
+      "name": "Stichting Pulse",
+      "startYear": "2020",
+      "usersCount": "50",
       "highestResponse": "93",
-      "studiesCount": "5",
+      "studiesCount": "37",
       "logo": "Logo-Stichting-Parousie-176.webp"
     }
   },
@@ -1475,12 +1507,12 @@
     "isImportant": true,
     "cityName": "lopik",
     "clientInfo": {
-      "name": "Regio Zuidoost Utrecht",
+      "name": "Gemeente Lopik",
       "startYear": "2021",
-      "usersCount": "86",
+      "usersCount": "3",
       "highestResponse": "31.81",
-      "studiesCount": "7",
-      "logo": "Regio-Zuidoost-Utrecht.webp"
+      "studiesCount": "2",
+      "logo": ""
     }
   },
   {
@@ -1956,8 +1988,16 @@
   {
     "name": "gemeente-296",
     "value": "M203.574 394.526L205.742 397.491L209.264 397.626L212.176 402.746L216.781 403.689L210.618 407.732L212.989 409.146L210.618 410.831L209.941 408.001L205.809 411.302L198.359 405.373L201.475 401.803L200.798 397.423L200.662 394.459L203.574 394.526Z",
-    "isImportant": false,
-    "cityName": ""
+    "isImportant": true,
+    "cityName": "",
+    "clientInfo": {
+      "name": "Gemeente Waddinxveen",
+      "startYear": "2022",
+      "usersCount": "2",
+      "highestResponse": "-",
+      "studiesCount": "3",
+      "logo": ""
+    }
   },
   {
     "name": "gemeente-297",
