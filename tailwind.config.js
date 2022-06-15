@@ -38,6 +38,25 @@ module.exports = {
           900: '#2a4365',
         },
       },
+      keyframes: {
+        wiggle: {
+          '0%, 100%': { transform: 'rotate(-3deg)' },
+          '50%': { transform: 'rotate(3deg)' },
+        },
+      },
+      waves: {
+        '0%': {
+          transform: 'scale(1)',
+          opacity: '1',
+        },
+        '100%': {
+          transform: 'scale(4)',
+          opacity: '0',
+        },
+      },
+      animation: {
+        wiggle: 'wiggle 1s ease-in-out infinite',
+      },
     },
   },
   plugins: [],

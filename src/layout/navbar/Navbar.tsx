@@ -70,7 +70,7 @@ function Navbar() {
     <>
       <header
         className={`fixed top-0 rounded z-30 w-full min-h-[66px] transition-all ${
-          isScrolled ? ' pt-0' : '  pt-4 '
+          isScrolled ? ' pt-0 shadow-2xl' : '  pt-4 '
         }`}
       >
         <nav
