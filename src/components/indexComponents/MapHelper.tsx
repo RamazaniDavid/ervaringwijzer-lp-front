@@ -93,7 +93,7 @@ function MapHelper({ mapPathes }: MapHelperProps) {
               )}
 
               {selectedCity?.clientInfo?.length > 1 && (
-                <div className="m-auto mt-4 flex flex-row justify-center space-x-4 bg-transparent">
+                <div className="mx-auto -mt-6 flex h-12 w-fit flex-row justify-center space-x-4 rounded-3xl bg-gray-200/30 p-2 backdrop-blur-[2px]">
                   {selectedCity.clientInfo.map((client: any, ix: number) => (
                     <button
                       key={ix}
@@ -104,8 +104,8 @@ function MapHelper({ mapPathes }: MapHelperProps) {
                       <img
                         src={`/assets/images/logos/${client.logo}`}
                         alt={client.name}
-                        className={` rounded-full ${
-                          selectedClient === client ? 'h-12 w-12' : 'h-8 w-8'
+                        className={` rounded-full shadow-lg  ${
+                          selectedClient === client ? 'h-8 w-8' : 'h-4 w-4'
                         }`}
                       />
                     </button>

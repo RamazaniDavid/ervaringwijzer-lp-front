@@ -60,22 +60,6 @@
         "highestResponse": "60.07",
         "studiesCount": "19",
         "logo": "Logo-Leger-des-Heils.webp"
-      },
-      {
-        "name": "Gemeente Amersfoort",
-        "startYear": "2020",
-        "usersCount": "19",
-        "highestResponse": "31.87",
-        "studiesCount": "7",
-        "logo": "Logo-Gemeente-Amersfoort.webp"
-      },
-      {
-        "name": "Gemeente Eemnes",
-        "startYear": "2021",
-        "usersCount": "13",
-        "highestResponse": "15.00",
-        "studiesCount": "6",
-        "logo": "Logo-gemeente-Eemnes.webp"
       }
     ]
   },
