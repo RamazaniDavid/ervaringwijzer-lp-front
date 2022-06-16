@@ -52,14 +52,32 @@
     "value": "M309.639 312.399L322.71 329.58L318.714 330.927L315.396 329.782L312.89 332.611L301.782 326.817L293.519 324.729L284.105 327.761V327.693L282.683 324.661L282.75 317.924L281.125 314.286L286.476 310.243L287.221 308.424L302.392 298.723L305.778 302.024L317.427 307.414L309.639 312.399Z",
     "isImportant": true,
     "cityName": "almere",
-    "clientInfo": {
-      "name": "Leger des Heils",
-      "startYear": "2021",
-      "usersCount": "24",
-      "highestResponse": "60.07",
-      "studiesCount": "19",
-      "logo": "Logo-Leger-des-Heils.webp"
-    }
+    "clientInfo": [
+      {
+        "name": "Leger des Heils",
+        "startYear": "2021",
+        "usersCount": "24",
+        "highestResponse": "60.07",
+        "studiesCount": "19",
+        "logo": "Logo-Leger-des-Heils.webp"
+      },
+      {
+        "name": "Gemeente Amersfoort",
+        "startYear": "2020",
+        "usersCount": "19",
+        "highestResponse": "31.87",
+        "studiesCount": "7",
+        "logo": "Logo-Gemeente-Amersfoort.webp"
+      },
+      {
+        "name": "Gemeente Eemnes",
+        "startYear": "2021",
+        "usersCount": "13",
+        "highestResponse": "15.00",
+        "studiesCount": "6",
+        "logo": "Logo-gemeente-Eemnes.webp"
+      }
+    ]
   },
   {
     "name": "gemeente-10",
@@ -72,14 +90,16 @@
     "value": "M328.399 354.171L333.343 358.483L333.275 358.685L333.41 359.83L333.614 366.298L334.155 366.837L334.765 367.107L335.104 367.174L339.438 367.511H340.116L340.861 369.465L340.454 371.486L334.088 368.791L331.108 369.936L327.383 376.202L323.522 377.078L320.407 375.663L313.498 383.276H313.431L312.753 382.805L316.614 378.425L317.494 369.734L319.188 365.624L312.482 360.976L313.227 358.752L315.733 358.618V355.586L320.271 356.731L320.339 356.596L321.219 356.664L321.287 356.798L321.355 356.866L321.964 357.068L323.454 357.337H323.793H323.929L325.757 357.674L326.096 354.104L328.399 354.171Z",
     "isImportant": true,
     "cityName": "amersfoort",
-    "clientInfo": {
-      "name": "Gemeente Amersfoort",
-      "startYear": "2020",
-      "usersCount": "19",
-      "highestResponse": "31.87",
-      "studiesCount": "7",
-      "logo": "Logo-Gemeente-Amersfoort.webp"
-    }
+    "clientInfo": [
+      {
+        "name": "Gemeente Amersfoort",
+        "startYear": "2020",
+        "usersCount": "19",
+        "highestResponse": "31.87",
+        "studiesCount": "7",
+        "logo": "Logo-Gemeente-Amersfoort.webp"
+      }
+    ]
   },
   {
     "name": "gemeente-12",
@@ -134,14 +154,16 @@
     "value": "M243.467 395.605L236.491 396.279L235.543 385.836L230.125 381.996L233.376 377.279L236.559 376.067L240.149 377.886L243.197 377.414L242.926 372.9L245.906 371.351L247.734 371.283H248.683L249.157 375.865L251.053 374.989L254.439 380.042L257.149 378.425L258.639 381.254L264.531 389.878L263.786 395.74L256.945 395.942L253.491 392.438L248.276 394.999L243.467 395.605Z",
     "isImportant": true,
     "cityName": "woerden",
-    "clientInfo": {
-      "name": "Gemeente Woerden",
-      "startYear": "2019",
-      "usersCount": "65",
-      "highestResponse": "30.88",
-      "studiesCount": "16",
-      "logo": "Logo-Gemeente-Woerden.webp"
-    }
+    "clientInfo": [
+      {
+        "name": "Gemeente Woerden",
+        "startYear": "2019",
+        "usersCount": "65",
+        "highestResponse": "30.88",
+        "studiesCount": "16",
+        "logo": "Logo-Gemeente-Woerden.webp"
+      }
+    ]
   },
   {
     "name": "gemeente-21",
@@ -154,14 +176,16 @@
     "value": "M165.917 456.107L161.244 454.557L158.061 450.515L149.73 450.649L145.599 450.245L142.483 448.561L139.368 442.767L129.344 434.48L126.974 433.604L121.013 432.526L120.133 435.76L116.34 433.469L115.866 433.2H115.663L114.173 433.537L112.209 434.278L108.077 435.895L102.998 437.848L102.591 437.512L102.998 437.916H102.862L102.659 437.781L102.795 437.983L102.659 438.051L101.711 436.703L106.113 427.608L104.623 423.633L106.384 420.533L110.177 419.725L110.99 417.569L119.049 420.062L123.994 415.75L127.719 419.051L127.177 420.668L128.396 421.342L129.683 422.083L133.746 424.306L134.559 427.406L138.961 430.842L137.946 432.863L142.822 437.781L146.886 440.072L150.882 441.958L157.654 442.767L163.547 441.284L170.455 440.813L170.929 435.827L169.575 431.785L166.256 429.292L164.63 424.643L166.933 424.845L168.423 423.835L168.83 423.633L169.236 423.363L172.216 421.275L172.419 421.14L175.467 424.643L178.989 419.927L187.049 425.048L191.722 421.679L195.582 421.881L196.666 417.165L199.104 415.952V420.668L197.614 423.498L194.025 425.856L195.921 429.225L193.957 429.898L194.973 433.806L190.367 435.49L192.399 438.859L193.279 439.061L196.734 439.668L195.65 446.203L192.534 447.281L189.758 448.763L183.594 448.83L181.427 450.582H178.515L171.336 448.157L166.256 449.841L165.917 456.107Z",
     "isImportant": true,
     "cityName": "rotterdam",
-    "clientInfo": {
-      "name": "Singelzicht/Maaszicht",
-      "startYear": "2020",
-      "usersCount": "22",
-      "highestResponse": "34.78",
-      "studiesCount": "17",
-      "logo": "Logo-Maaszicht.webp"
-    }
+    "clientInfo": [
+      {
+        "name": "Singelzicht/Maaszicht",
+        "startYear": "2020",
+        "usersCount": "22",
+        "highestResponse": "34.78",
+        "studiesCount": "17",
+        "logo": "Logo-Maaszicht.webp"
+      }
+    ]
   },
   {
     "name": "gemeente-23",
@@ -324,14 +348,16 @@
     "value": "M311.331 339.416L313.701 340.763L315.327 340.359L314.311 342.65L314.04 343.324L312.753 346.086L312.685 349.859V351.004L313.159 353.227L298.733 353.43H298.395L301.578 345.682L303.948 340.561L304.829 338.473L311.331 339.416Z",
     "isImportant": true,
     "cityName": "eemnes",
-    "clientInfo": {
-      "name": "Gemeente Eemnes",
-      "startYear": "2021",
-      "usersCount": "13",
-      "highestResponse": "15.00",
-      "studiesCount": "6",
-      "logo": "Logo-gemeente-Eemnes.webp"
-    }
+    "clientInfo": [
+      {
+        "name": "Gemeente Eemnes",
+        "startYear": "2021",
+        "usersCount": "13",
+        "highestResponse": "15.00",
+        "studiesCount": "6",
+        "logo": "Logo-gemeente-Eemnes.webp"
+      }
+    ]
   },
   {
     "name": "gemeente-50",
@@ -344,14 +370,16 @@
     "value": "M273.944 236.403L278.211 243.747L275.841 244.488L275.773 247.789L273.809 245.835L268.594 248.193L266.968 246.24L262.837 249.406L262.498 247.385L265.546 244.757L265.072 239.839L269.542 238.02L272.522 235.056L272.59 235.325L272.657 235.258L273.131 234.988L273.267 235.46L273.402 235.595L273.944 236.403Z",
     "isImportant": true,
     "cityName": "hoorn",
-    "clientInfo": {
-      "name": "Stichting Netwerk Hoorn",
-      "startYear": "2021",
-      "usersCount": "22",
-      "highestResponse": "84.37",
-      "studiesCount": "16",
-      "logo": "Logo-Stichting-Netwerk-Hoorn.webp"
-    }
+    "clientInfo": [
+      {
+        "name": "Stichting Netwerk Hoorn",
+        "startYear": "2021",
+        "usersCount": "22",
+        "highestResponse": "84.37",
+        "studiesCount": "16",
+        "logo": "Logo-Stichting-Netwerk-Hoorn.webp"
+      }
+    ]
   },
   {
     "name": "gemeente-52",
@@ -400,14 +428,16 @@
     "value": "M59.3148 539.043L58.8407 540.255L59.1793 538.975L59.3148 539.043ZM60.7371 540.053H60.6693L60.6016 539.986L60.6693 540.053H60.7371ZM60.4661 539.919L60.3984 539.851V539.716L60.4661 539.919ZM60.8725 540.053L63.7171 543.152L57.2829 545.78L56.1993 548.408L57.012 551.035L49.9005 554.741L44.8887 551.507L43.6695 552.922L37.9804 551.978L36.084 544.904L38.3867 538.369L42.1795 537.426L42.7891 539.986L49.6296 541.536L53.0838 537.493L56.1315 542.614L60.8725 540.053ZM59.5179 539.177L59.4502 539.649L59.5179 539.177Z",
     "isImportant": true,
     "cityName": "",
-    "clientInfo": {
-      "name": "Gemeente Veere",
-      "startYear": "2022",
-      "usersCount": "5",
-      "highestResponse": "-",
-      "studiesCount": "1",
-      "logo": ""
-    }
+    "clientInfo": [
+      {
+        "name": "Gemeente Veere",
+        "startYear": "2022",
+        "usersCount": "5",
+        "highestResponse": "-",
+        "studiesCount": "1",
+        "logo": "Logo-Gemeente-Veere.png"
+      }
+    ]
   },
   {
     "name": "gemeente-60",
@@ -942,14 +972,16 @@
     "value": "M436.966 233.37L437.034 233.303L442.046 228.789L442.994 226.768L443.739 229.934L446.99 231.079L452.679 228.048L460.129 232.292L464.938 233.572L469.137 231.282L470.086 234.246L469.882 234.65L466.902 250.416L459.859 252.033L451.054 254.323L447.397 253.65L442.385 254.795L439.879 255.738L438.592 253.178L438.727 253.043L438.795 252.841L438.321 252.504L435.273 250.011L435.341 248.327L435.409 245.834L435.476 245.497H435.273H435.205V245.363V245.16L435.07 245.026L433.783 241.859L434.596 239.299L434.799 238.895V238.558L434.731 237.21L434.664 236.267L436.966 233.37Z",
     "isImportant": true,
     "cityName": "staphorst",
-    "clientInfo": {
-      "name": "Gemeente Staphorst",
-      "startYear": "2020",
-      "usersCount": "26",
-      "highestResponse": "57.89",
-      "studiesCount": "21",
-      "logo": "Logo-gemeente-Staphorst.webp"
-    }
+    "clientInfo": [
+      {
+        "name": "Gemeente Staphorst",
+        "startYear": "2020",
+        "usersCount": "26",
+        "highestResponse": "57.89",
+        "studiesCount": "21",
+        "logo": "Logo-gemeente-Staphorst.webp"
+      }
+    ]
   },
   {
     "name": "gemeente-149",
@@ -962,14 +994,16 @@
     "value": "M415.768 387.52L416.716 388.126L417.393 388.665L414.616 395.2L415.7 404.767L417.461 407.799L419.086 410.629L423.963 414.065L420.034 414.94L417.732 417.501L418.612 420.937L414.752 418.309L409.537 425.046L404.728 423.227L398.429 422.688L399.039 415.277L402.967 416.153L404.728 414.671L403.373 409.281L393.553 407.597L394.975 402.342L400.596 394.931L408.588 395.065L408.182 391.562L410.078 391.831L415.768 387.52Z",
     "isImportant": true,
     "cityName": "",
-    "clientInfo": {
-      "name": "Stichting Welzijn Ouderen Arnhem",
-      "startYear": "2022",
-      "usersCount": "14",
-      "highestResponse": "-",
-      "studiesCount": "14",
-      "logo": ""
-    }
+    "clientInfo": [
+      {
+        "name": "Stichting Welzijn Ouderen Arnhem",
+        "startYear": "2022",
+        "usersCount": "14",
+        "highestResponse": "-",
+        "studiesCount": "14",
+        "logo": "Logo-Stichting-Welzijn-Ouderen-Arnhem.png"
+      }
+    ]
   },
   {
     "name": "gemeente-151",
@@ -982,14 +1016,16 @@
     "value": "M412.313 452.199L415.226 455.096L418.883 456.646L424.03 459.947L423.488 463.248L426.062 463.653L426.265 468.032L420.441 473.018L420.305 473.893L418.07 474.769L414.21 472.142L410.417 465.674L409.265 461.16L407.775 457.522L407.843 454.625L412.313 452.199Z",
     "isImportant": true,
     "cityName": "berg-en-dal",
-    "clientInfo": {
-      "name": "Forte Welzijn",
-      "startYear": "2021",
-      "usersCount": "31",
-      "highestResponse": "-",
-      "studiesCount": "6",
-      "logo": "Logo-Forte-Welzijn.webp"
-    }
+    "clientInfo": [
+      {
+        "name": "Forte Welzijn",
+        "startYear": "2021",
+        "usersCount": "31",
+        "highestResponse": "-",
+        "studiesCount": "6",
+        "logo": "Logo-Forte-Welzijn.webp"
+      }
+    ]
   },
   {
     "name": "gemeente-153",
@@ -1020,14 +1056,24 @@
     "value": "M305.845 419.185L308.216 416.49L305.371 415.278L303.475 412.044L309.028 411.572L309.299 408.743L311.128 409.349L314.785 404.363L319.594 405.98L325.757 410.494L331.175 411.707L328.737 414.065L325.351 414.671L327.518 418.579L322.845 418.646L318.307 422.352L308.148 420.6L306.996 419.994L305.845 419.185Z",
     "isImportant": true,
     "cityName": "wijk-bij-duurstede",
-    "clientInfo": {
-      "name": "Gemeente Wijk bij Duurstede",
-      "startYear": "2019",
-      "usersCount": "1",
-      "highestResponse": "23.93",
-      "studiesCount": "1",
-      "logo": "Logo-Gemeente-Wijk-bij-Duurstede.webp"
-    }
+    "clientInfo": [
+      {
+        "name": "Gemeente Wijk bij Duurstede",
+        "startYear": "2019",
+        "usersCount": "1",
+        "highestResponse": "23.93",
+        "studiesCount": "1",
+        "logo": "Logo-Gemeente-Wijk-bij-Duurstede.webp"
+      },
+      {
+        "name": "Youké",
+        "startYear": "2019",
+        "usersCount": "1",
+        "highestResponse": "23.93",
+        "studiesCount": "1",
+        "logo": "Logo-Youke.png"
+      }
+    ]
   },
   {
     "name": "gemeente-158",
@@ -1040,28 +1086,32 @@
     "value": "M319.933 443.912L318.239 446.405L318.307 447.82L315.192 449.908L311.467 448.695L302.526 449.032L296.16 451.525L290.335 451.727L287.558 445.192L285.053 445.866L283.562 441.082L284.308 438.724L287.829 431.717L290.606 432.997L298.327 431.044L299.072 432.728L302.459 431.583L305.913 428.416L309.841 428.888L309.028 432.324L312.618 437.377L317.291 440.139L316.478 442.43L319.933 443.912Z",
     "isImportant": true,
     "cityName": "west-betuwe",
-    "clientInfo": {
-      "name": "Gemeente West Betuwe",
-      "startYear": "2020",
-      "usersCount": "53",
-      "highestResponse": "56.00",
-      "studiesCount": "44",
-      "logo": "Logo-Gemeente-West-Betuwe.webp"
-    }
+    "clientInfo": [
+      {
+        "name": "Gemeente West Betuwe",
+        "startYear": "2020",
+        "usersCount": "53",
+        "highestResponse": "56.00",
+        "studiesCount": "44",
+        "logo": "Logo-Gemeente-West-Betuwe.webp"
+      }
+    ]
   },
   {
     "name": "gemeente-160",
     "value": "M318.306 447.82L318.238 446.405L319.931 443.912L329.549 437.242L331.31 433.671L338.015 430.707L339.844 431.718L338.489 435.423L339.979 439.398L335.17 442.632L332.461 449.302L329.21 449.1L326.433 446.472L323.521 447.887L318.306 447.82Z",
     "isImportant": true,
     "cityName": "tiel",
-    "clientInfo": {
-      "name": "Stichting Mozaïek",
-      "startYear": "2021",
-      "usersCount": "38",
-      "highestResponse": "70.59",
-      "studiesCount": "29",
-      "logo": "Logo-Mozaïek.webp"
-    }
+    "clientInfo": [
+      {
+        "name": "Stichting Mozaïek",
+        "startYear": "2021",
+        "usersCount": "38",
+        "highestResponse": "70.59",
+        "studiesCount": "29",
+        "logo": "Logo-Mozaïek.webp"
+      }
+    ]
   },
   {
     "name": "gemeente-161",
@@ -1110,28 +1160,32 @@
     "value": "M348.987 383.68L350.206 384.826L347.768 390.148L343.569 391.833L341.605 392.439L337.541 389.811L341.74 386.173L342.824 381.592L347.023 384.219L348.987 383.68Z",
     "isImportant": true,
     "cityName": "scherpenzeel",
-    "clientInfo": {
-      "name": "Stichting Parousie",
-      "startYear": "2021",
-      "usersCount": "3",
-      "highestResponse": "93",
-      "studiesCount": "5",
-      "logo": "Logo-Stichting-Parousie.webp"
-    }
+    "clientInfo": [
+      {
+        "name": "Stichting Parousie",
+        "startYear": "2021",
+        "usersCount": "3",
+        "highestResponse": "93",
+        "studiesCount": "5",
+        "logo": "Logo-Stichting-Parousie.webp"
+      }
+    ]
   },
   {
     "name": "gemeente-169",
     "value": "M353.662 397.425L354.204 389.744L351.969 382.805L353.526 378.897L365.785 375.731L372.423 375.259L373.777 373.777L379.128 373.305L378.857 371.217L385.494 370.61L387.526 369.33H393.148L401.139 369.667L402.223 375.663L405.406 380.514L410.012 381.929L416.378 381.794L415.769 387.521L410.08 391.833L408.183 391.563L408.59 395.067L400.598 394.932L394.976 402.343L384.072 403.825L380.889 408.946L374.319 410.899L361.925 411.304L359.419 409.08L359.148 407.463L359.013 400.996L353.662 397.425Z",
     "isImportant": true,
     "cityName": "",
-    "clientInfo": {
-      "name": "Stichting Malkander",
-      "startYear": "2022",
-      "usersCount": "1",
-      "highestResponse": "-",
-      "studiesCount": "1",
-      "logo": ""
-    }
+    "clientInfo": [
+      {
+        "name": "Stichting Malkander",
+        "startYear": "2022",
+        "usersCount": "1",
+        "highestResponse": "-",
+        "studiesCount": "1",
+        "logo": "Logo-Stichting-Malkander.png"
+      }
+    ]
   },
   {
     "name": "gemeente-170",
@@ -1150,70 +1204,96 @@
     "value": "M295.144 391.899H289.59L288.507 397.424L287.288 398.569L284.308 398.03L275.232 396.481L274.284 405.643L272.049 404.565L266.631 396.952L266.766 396.683L263.786 395.739L264.531 389.878L258.639 381.254L259.248 379.368L263.651 376.066L268.73 382.467L271.033 378.963L273.268 380.783L277.332 377.279L280.583 377.818L287.423 381.389L289.59 384.353L289.455 387.587L293.586 387.924L294.67 389.676L294.738 389.811L295.144 391.899Z",
     "isImportant": true,
     "cityName": "utrecht",
-    "clientInfo": {
-      "name": "Gemeente Utrecht",
-      "startYear": "2018",
-      "usersCount": "1295",
-      "highestResponse": "71.28",
-      "studiesCount": "100",
-      "logo": "Logo-Gemeente-Utrecht.png"
-    }
+    "clientInfo": [
+      {
+        "name": "Gemeente Utrecht",
+        "startYear": "2018",
+        "usersCount": "1295",
+        "highestResponse": "71.28",
+        "studiesCount": "100",
+        "logo": "Logo-Gemeente-Utrecht.png"
+      },
+      {
+        "name": "Zuilen Ondiep Gezond",
+        "startYear": "2022",
+        "usersCount": "4",
+        "highestResponse": "-",
+        "studiesCount": "3",
+        "logo": "Logo-Zuilen-Ondiep-Gezond.png"
+      }
+    ]
   },
   {
     "name": "gemeente-173",
     "value": "M288.506 397.425L289.59 391.9H295.143L300.02 395L303.677 396.482L303.88 399.446L306.522 405.308L309.298 408.744L309.028 411.573L303.474 412.045L299.546 407.935L296.701 407.396L294.805 400.861L289.86 400.322L288.506 397.425Z",
     "isImportant": true,
     "cityName": "bunnik",
-    "clientInfo": {
-      "name": "Regio Zuidoost Utrecht",
-      "startYear": "2021",
-      "usersCount": "86",
-      "highestResponse": "31.81",
-      "studiesCount": "7",
-      "logo": "Regio-Zuidoost-Utrecht.webp"
-    }
+    "clientInfo": [
+      {
+        "name": "Regio Zuidoost Utrecht",
+        "startYear": "2021",
+        "usersCount": "86",
+        "highestResponse": "31.81",
+        "studiesCount": "7",
+        "logo": "Regio-Zuidoost-Utrecht.webp"
+      },
+      {
+        "name": "Gemeente Bunnik",
+        "startYear": "2022",
+        "usersCount": "3",
+        "highestResponse": "-",
+        "studiesCount": "7",
+        "logo": "Logo-Gemeente-Bunnik.png"
+      }
+    ]
   },
   {
     "name": "gemeente-174",
     "value": "M303.475 412.044L305.371 415.278L308.216 416.49L305.845 419.185L303.136 417.232L297.785 422.419L293.586 420.466L289.523 419.522L286.407 413.391L283.562 412.381L284.849 405.846L283.698 404.431L284.308 398.03L287.288 398.569L288.507 397.424L289.861 400.321L294.805 400.86L296.702 407.395L299.546 407.934L303.475 412.044Z",
     "isImportant": true,
     "cityName": "houten",
-    "clientInfo": {
-      "name": "Gemeente Houten",
-      "startYear": "2019",
-      "usersCount": "83",
-      "highestResponse": "55.17",
-      "studiesCount": "38",
-      "logo": "Logo-Gemeente-Houten.webp"
-    }
+    "clientInfo": [
+      {
+        "name": "Gemeente Houten",
+        "startYear": "2019",
+        "usersCount": "83",
+        "highestResponse": "55.17",
+        "studiesCount": "38",
+        "logo": "Logo-Gemeente-Houten.webp"
+      }
+    ]
   },
   {
     "name": "gemeente-175",
     "value": "M263.786 395.741L266.766 396.684L266.631 396.953L262.364 399.379L260.603 402.68L263.447 407.262L256.946 408.542L251.392 410.63L248.886 406.386L252.34 405.442L248.954 399.379L247.193 400.794L242.723 396.953L242.926 396.549L243.468 395.606L248.276 395L253.491 392.439L256.946 395.943L263.786 395.741Z",
     "isImportant": true,
     "cityName": "",
-    "clientInfo": {
-      "name": "Bibliotheek Lek & IJssel",
-      "startYear": "2022",
-      "usersCount": "11",
-      "highestResponse": "-",
-      "studiesCount": "13",
-      "logo": ""
-    }
+    "clientInfo": [
+      {
+        "name": "Bibliotheek Lek & IJssel",
+        "startYear": "2022",
+        "usersCount": "11",
+        "highestResponse": "-",
+        "studiesCount": "13",
+        "logo": "Logo-Bibliotheek-Lek-IJssel.png"
+      }
+    ]
   },
   {
     "name": "gemeente-176",
     "value": "M260.602 402.68L262.363 399.379L266.629 396.953L272.048 404.566L274.283 405.644L274.35 406.385L276.856 413.19L275.028 414.133L274.486 414.874L271.099 411.236L269.813 411.708L267.442 406.116L263.446 407.261L260.602 402.68Z",
     "isImportant": true,
     "cityName": "ijsselstein",
-    "clientInfo": {
-      "name": "Stichting Pulse",
-      "startYear": "2020",
-      "usersCount": "50",
-      "highestResponse": "93",
-      "studiesCount": "37",
-      "logo": "Logo-Stichting-Parousie-176.webp"
-    }
+    "clientInfo": [
+      {
+        "name": "Stichting Pulse",
+        "startYear": "2020",
+        "usersCount": "50",
+        "highestResponse": "93",
+        "studiesCount": "37",
+        "logo": "Logo-Stichting-Pulse.png"
+      }
+    ]
   },
   {
     "name": "gemeente-177",
@@ -1226,14 +1306,16 @@
     "value": "M312.753 382.804L313.431 383.275H313.498L313.905 383.612L315.395 384.892L311.534 386.442L317.088 389.473L315.327 393.112L310.451 389.069L303.678 396.48L300.02 394.998L295.144 391.899L294.738 389.81L294.67 389.676L296.769 389.878L298.53 382.399L300.562 381.523L299.208 368.857L301.443 368.251L302.12 367.645L305.845 379.165L308.825 382.467L312.753 382.804Z",
     "isImportant": true,
     "cityName": "zeist",
-    "clientInfo": {
-      "name": "Gemeente Zeist",
-      "startYear": "2019",
-      "usersCount": "60",
-      "highestResponse": "37.50",
-      "studiesCount": "11",
-      "logo": "Logo-gemeente-Zeist.webp"
-    }
+    "clientInfo": [
+      {
+        "name": "Gemeente Zeist",
+        "startYear": "2019",
+        "usersCount": "60",
+        "highestResponse": "37.50",
+        "studiesCount": "11",
+        "logo": "Logo-gemeente-Zeist.webp"
+      }
+    ]
   },
   {
     "name": "gemeente-179",
@@ -1450,14 +1532,16 @@
     "value": "M160.838 408.272L163.344 406.723L164.36 408.272L166.866 412.247L165.511 413.932L167.408 420.602L169.236 423.364L168.83 423.633L168.424 423.835L166.866 421.006L161.38 422.96L157.926 422.016L155.623 417.974L158.264 414.605L155.826 412.045L156.978 411.169L160.838 408.272Z",
     "isImportant": true,
     "cityName": "delft",
-    "clientInfo": {
-      "name": "Delft Support",
-      "startYear": "2021",
-      "usersCount": "185",
-      "highestResponse": "38.46",
-      "studiesCount": "34",
-      "logo": "Logo-Delft-Support.webp"
-    }
+    "clientInfo": [
+      {
+        "name": "Delft Support",
+        "startYear": "2021",
+        "usersCount": "185",
+        "highestResponse": "38.46",
+        "studiesCount": "34",
+        "logo": "Logo-Delft-Support.webp"
+      }
+    ]
   },
   {
     "name": "gemeente-215",
@@ -1506,14 +1590,16 @@
     "value": "M245.093 429.494L243.942 425.182L242.994 423.7L242.723 422.824L238.591 418.242L237.711 417.299L237.914 417.164L249.428 410.562L251.392 410.629L256.946 408.541L263.448 407.261L267.444 406.115L269.814 411.707L271.101 411.236L274.487 414.874L271.372 417.771L271.033 418.512L268.189 420.6L265.005 418.512L259.587 423.498L255.185 422.487L252.814 425.923L250.918 428.146L245.093 429.494Z",
     "isImportant": true,
     "cityName": "lopik",
-    "clientInfo": {
-      "name": "Gemeente Lopik",
-      "startYear": "2021",
-      "usersCount": "3",
-      "highestResponse": "31.81",
-      "studiesCount": "2",
-      "logo": ""
-    }
+    "clientInfo": [
+      {
+        "name": "Gemeente Lopik",
+        "startYear": "2021",
+        "usersCount": "3",
+        "highestResponse": "31.81",
+        "studiesCount": "2",
+        "logo": "Logo-Gemeente-Lopik.png"
+      }
+    ]
   },
   {
     "name": "gemeente-223",
@@ -1526,14 +1612,16 @@
     "value": "M283.562 412.381L281.53 411.639L276.857 413.189L274.351 406.384L274.283 405.643L275.231 396.48L284.307 398.03L283.697 404.431L284.849 405.845L283.562 412.381Z",
     "isImportant": true,
     "cityName": "nieuwegein",
-    "clientInfo": {
-      "name": "Gemeente Nieuwegein",
-      "startYear": "2022",
-      "usersCount": "1",
-      "highestResponse": "-",
-      "studiesCount": "1",
-      "logo": "Logo-gemeente-Nieuwegein.webp"
-    }
+    "clientInfo": [
+      {
+        "name": "Gemeente Nieuwegein",
+        "startYear": "2022",
+        "usersCount": "1",
+        "highestResponse": "-",
+        "studiesCount": "1",
+        "logo": "Logo-gemeente-Nieuwegein.webp"
+      }
+    ]
   },
   {
     "name": "gemeente-225",
@@ -1630,14 +1718,16 @@
     "value": "M258.638 381.256L257.148 378.426L254.439 380.043L251.052 374.99L249.156 375.866L248.682 371.284L251.729 369.802L254.777 364.884L255.048 361.583L257.554 361.111L259.586 354.104L263.853 352.757L265.817 339.484L271.777 337.598L272.657 339.754L272.048 338.608L266.02 342.112L268.052 347.097L271.912 351.544L268.594 354.508L268.255 364.951L269.745 365.153L270.626 369.6L281.53 365.692L282.139 367.646L278.414 372.16L282.613 374.586L280.582 377.819L277.331 377.28L273.267 380.784L271.032 378.965L268.729 382.468L263.65 376.068L259.247 379.369L258.638 381.256Z",
     "isImportant": true,
     "cityName": "stichtse-vecht",
-    "clientInfo": {
-      "name": "Gemeente Stichtse Vecht",
-      "startYear": "2021",
-      "usersCount": "8",
-      "highestResponse": "37.50",
-      "studiesCount": "10",
-      "logo": "Logo-gemeente-Stichtse-Vecht.webp"
-    }
+    "clientInfo": [
+      {
+        "name": "Gemeente Stichtse Vecht",
+        "startYear": "2021",
+        "usersCount": "8",
+        "highestResponse": "37.50",
+        "studiesCount": "10",
+        "logo": "Logo-gemeente-Stichtse-Vecht.webp"
+      }
+    ]
   },
   {
     "name": "gemeente-241",
@@ -1878,14 +1968,16 @@
     "value": "M401.613 681.336V681.404L400.936 682.01L399.92 685.783L398.972 686.861L395.247 684.907L394.705 682.953L396.669 680.999L394.57 678.237L392.673 679.921L390.303 678.17L394.976 672.78L397.753 668.198L398.498 663.213L400.801 663.078L398.904 667.053L401.275 667.727L400.259 671.567L401.613 681.336Z",
     "isImportant": true,
     "cityName": "stein",
-    "clientInfo": {
-      "name": "Gemeente Stein",
-      "startYear": "2020",
-      "usersCount": "2",
-      "highestResponse": "14.25",
-      "studiesCount": "3",
-      "logo": "Logo-gemeente-Stein.webp"
-    }
+    "clientInfo": [
+      {
+        "name": "Gemeente Stein",
+        "startYear": "2020",
+        "usersCount": "2",
+        "highestResponse": "14.25",
+        "studiesCount": "3",
+        "logo": "Logo-gemeente-Stein.webp"
+      }
+    ]
   },
   {
     "name": "gemeente-281",
@@ -1940,14 +2032,16 @@
     "value": "M349.191 399.783L348.107 402.275L346.685 405.509L343.908 411.775L341.335 414.807L334.223 414.74L327.518 418.58L325.351 414.672L328.737 414.066L331.175 411.708L325.757 410.495L319.594 405.981L314.785 404.364L311.128 409.35L309.299 408.743L306.522 405.307L303.881 399.446L303.678 396.481L310.451 389.07L315.327 393.113L317.088 389.475L329.008 391.428L328.466 394.258L331.717 391.9L334.155 392.102L332.801 395.942L336.12 399.513L343.976 395.606L346.821 396.279L349.191 399.783Z",
     "isImportant": true,
     "cityName": "utrechtse-heuvelrug",
-    "clientInfo": {
-      "name": "Utrechtse Heuvelrug",
-      "startYear": "2019",
-      "usersCount": "10",
-      "highestResponse": "36.96",
-      "studiesCount": "9",
-      "logo": "Logo-Utrechtse-Heuvelrug.webp"
-    }
+    "clientInfo": [
+      {
+        "name": "Utrechtse Heuvelrug",
+        "startYear": "2019",
+        "usersCount": "10",
+        "highestResponse": "36.96",
+        "studiesCount": "9",
+        "logo": "Logo-Utrechtse-Heuvelrug.webp"
+      }
+    ]
   },
   {
     "name": "gemeente-290",
@@ -1990,14 +2084,16 @@
     "value": "M203.574 394.526L205.742 397.491L209.264 397.626L212.176 402.746L216.781 403.689L210.618 407.732L212.989 409.146L210.618 410.831L209.941 408.001L205.809 411.302L198.359 405.373L201.475 401.803L200.798 397.423L200.662 394.459L203.574 394.526Z",
     "isImportant": true,
     "cityName": "",
-    "clientInfo": {
-      "name": "Gemeente Waddinxveen",
-      "startYear": "2022",
-      "usersCount": "2",
-      "highestResponse": "-",
-      "studiesCount": "3",
-      "logo": ""
-    }
+    "clientInfo": [
+      {
+        "name": "Gemeente Waddinxveen",
+        "startYear": "2022",
+        "usersCount": "2",
+        "highestResponse": "-",
+        "studiesCount": "3",
+        "logo": "Logo-gemeente-Waddinxveen.png"
+      }
+    ]
   },
   {
     "name": "gemeente-297",
@@ -2058,14 +2154,16 @@
     "value": "M281.53 365.691L282.478 365.422H282.952L293.924 365.894L297.378 358.887L297.039 366.163L299.207 368.858L300.561 381.524L298.529 382.4L296.768 389.878L294.669 389.676L293.585 387.925L289.454 387.588L289.589 384.354L287.422 381.389L280.581 377.819L282.613 374.585L278.414 372.159L282.139 367.645L281.53 365.691Z",
     "isImportant": true,
     "cityName": "de-bilt",
-    "clientInfo": {
-      "name": "Gemeente de Bilt",
-      "startYear": "2021",
-      "usersCount": "12",
-      "highestResponse": "77.83",
-      "studiesCount": "9",
-      "logo": "Logo-gemeente-de-Bilt.webp"
-    }
+    "clientInfo": [
+      {
+        "name": "Gemeente de Bilt",
+        "startYear": "2021",
+        "usersCount": "12",
+        "highestResponse": "77.83",
+        "studiesCount": "9",
+        "logo": "Logo-gemeente-de-Bilt.webp"
+      }
+    ]
   },
   {
     "name": "gemeente-307",
@@ -2384,14 +2482,16 @@
     "value": "M408.452 443.036L407.64 448.359L412.313 452.199L407.843 454.624L407.775 457.521L401.612 458.397L396.871 462.911L395.313 461.766L390.233 454.692L389.082 452.334L390.64 449.167L392.604 449.976L397.413 447.55L398.564 443.171L397.142 442.16L400.325 438.657L399.038 435.962L403.373 435.625L405.743 437.04L408.452 443.036Z",
     "isImportant": true,
     "cityName": "nijmegen",
-    "clientInfo": {
-      "name": "Sterker Sociaal Werk",
-      "startYear": "2020",
-      "usersCount": "28",
-      "highestResponse": "29.50",
-      "studiesCount": "15",
-      "logo": "Logo-zorgaanbieder-Sterker.webp"
-    }
+    "clientInfo": [
+      {
+        "name": "Sterker Sociaal Werk",
+        "startYear": "2020",
+        "usersCount": "28",
+        "highestResponse": "29.50",
+        "studiesCount": "15",
+        "logo": "Logo-zorgaanbieder-Sterker.webp"
+      }
+    ]
   },
   {
     "name": "gemeente-360",
@@ -2422,14 +2522,16 @@
     "value": "M302.119 367.645L306.318 362.727L313.227 358.752L312.482 360.975L319.187 365.624L317.493 369.734L316.613 378.425L312.752 382.804L308.824 382.467L305.844 379.166L302.119 367.645Z",
     "isImportant": true,
     "cityName": "soest",
-    "clientInfo": {
-      "name": "Gemeente Soest",
-      "startYear": "2020",
-      "usersCount": "73",
-      "highestResponse": "90.92",
-      "studiesCount": "47",
-      "logo": "Logo-Gemeente-Soest.webp"
-    }
+    "clientInfo": [
+      {
+        "name": "Gemeente Soest",
+        "startYear": "2020",
+        "usersCount": "73",
+        "highestResponse": "90.92",
+        "studiesCount": "47",
+        "logo": "Logo-Gemeente-Soest.webp"
+      }
+    ]
   },
   {
     "name": "gemeente-365",
@@ -2460,14 +2562,16 @@
     "value": "M251.392 410.63L249.428 410.563L237.914 417.165L235.002 413.729L241.3 411.91L239.607 408.811L232.631 410.091L231.818 407.935L236.559 400.659L242.723 396.953L247.193 400.793L248.954 399.379L252.34 405.442L248.886 406.385L251.392 410.63Z",
     "isImportant": true,
     "cityName": "oudewater",
-    "clientInfo": {
-      "name": "Gemeente Oudewater",
-      "startYear": "2019",
-      "usersCount": "12",
-      "highestResponse": "90.20",
-      "studiesCount": "6",
-      "logo": "Logo-Gemeente-Oudewater.webp"
-    }
+    "clientInfo": [
+      {
+        "name": "Gemeente Oudewater",
+        "startYear": "2019",
+        "usersCount": "12",
+        "highestResponse": "90.20",
+        "studiesCount": "6",
+        "logo": "Logo-Gemeente-Oudewater.webp"
+      }
+    ]
   },
   {
     "name": "gemeente-370",
@@ -2480,14 +2584,16 @@
     "value": "M271.033 418.512L273.268 418.714L275.029 421.746L273.472 424.373L281.057 426.394L278.89 431.38L277.535 430.706L274.217 435.625L275.3 440.61L269.543 443.372L264.667 445.798L264.261 438.252L260.806 439.667V436.972L257.894 434.951L256.404 430.302L255.049 431.582L253.898 427.001L252.814 425.923L255.185 422.487L259.587 423.497L265.006 418.512L268.189 420.6L271.033 418.512Z",
     "isImportant": true,
     "cityName": "vijfheerenlanden",
-    "clientInfo": {
-      "name": "Gemeente Vijfheerenlanden",
-      "startYear": "2022",
-      "usersCount": "1",
-      "highestResponse": "-",
-      "studiesCount": "1",
-      "logo": "Logo-gemeente-Vijfheerenlanden.webp"
-    }
+    "clientInfo": [
+      {
+        "name": "Gemeente Vijfheerenlanden",
+        "startYear": "2022",
+        "usersCount": "1",
+        "highestResponse": "-",
+        "studiesCount": "1",
+        "logo": "Logo-gemeente-Vijfheerenlanden.webp"
+      }
+    ]
   },
   {
     "name": "gemeente-372",
@@ -2668,14 +2774,16 @@
     "value": "M160.094 427.877L162.667 426.866L164.632 424.643L166.257 429.291L169.576 431.784L170.93 435.827L170.456 440.812L163.548 441.284L161.922 431.717L160.094 427.877Z",
     "isImportant": true,
     "cityName": "schiedam",
-    "clientInfo": {
-      "name": "Praktijk Vivitas",
-      "startYear": "2020",
-      "usersCount": "2",
-      "highestResponse": "32.66",
-      "studiesCount": "4",
-      "logo": "Logo-Huisartsenpraktijk-Vivitas.webp"
-    }
+    "clientInfo": [
+      {
+        "name": "Praktijk Vivitas",
+        "startYear": "2020",
+        "usersCount": "2",
+        "highestResponse": "32.66",
+        "studiesCount": "4",
+        "logo": "Logo-Huisartsenpraktijk-Vivitas.webp"
+      }
+    ]
   },
   {
     "name": "gemeente-402",

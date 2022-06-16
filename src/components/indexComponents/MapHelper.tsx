@@ -5,19 +5,22 @@ interface MapHelperProps {
 }
 
 function MapHelper({ mapPathes }: MapHelperProps) {
-  const [selected, setSelected] = React.useState<any>();
+  const [selectedCity, setSelectedCity] = React.useState<any>();
+  const [selectedClient, setSelectedClient] = React.useState<any>();
 
   useEffect(() => {
     if (mapPathes?.length > 0) {
       const importantCities = mapPathes.filter((path: any) => path.isImportant);
       if (importantCities.length > 0) {
         const rnd = Math.floor(Math.random() * importantCities.length);
-        setSelected(importantCities[rnd]);
+        setSelectedCity(importantCities[rnd]);
+        setSelectedClient(importantCities[rnd].clientInfo[0]);
       }
     }
 
     return () => {
-      setSelected(undefined);
+      setSelectedCity(undefined);
+      setSelectedClient(undefined);
     };
   }, [mapPathes]);
 
@@ -36,20 +39,20 @@ function MapHelper({ mapPathes }: MapHelperProps) {
                 <span className="font-bold text-white">organisaties</span> wordt
                 Ervaringwijzer ingezet
               </h4>
-              {selected && (
+              {selectedCity && (
                 <div className="flex min-h-[370px] w-full flex-col rounded-xl bg-white p-8 text-black">
                   <div className="flex flex-row">
                     <div className="flex basis-4/5 flex-col">
-                      <h4>{selected?.clientInfo?.name}</h4>
+                      <h4>{selectedClient?.name}</h4>
                       <p className="text-sm text-gray-500">
-                        Gebruiker sinds {selected?.clientInfo?.startYear}
+                        Gebruiker sinds {selectedClient?.startYear}
                       </p>
                     </div>
                     <div className="basis-1/5">
-                      {selected?.clientInfo?.logo && (
+                      {selectedClient?.logo && (
                         <img
-                          src={`/assets/images/logos/${selected?.clientInfo?.logo}`}
-                          alt={selected?.clientInfo?.name}
+                          src={`/assets/images/logos/${selectedClient?.logo}`}
+                          alt={selectedClient?.name}
                           className="ml-auto h-12 w-12"
                         />
                       )}
@@ -60,33 +63,53 @@ function MapHelper({ mapPathes }: MapHelperProps) {
                     <div className="flex flex-row items-center space-x-4">
                       <img
                         src={`/assets/images/icons/users.svg`}
-                        alt={selected?.clientInfo?.name}
+                        alt={selectedClient?.name}
                         className=" h-10 w-10"
                       />
-                      <span>{selected?.clientInfo?.usersCount} gebruikers</span>
+                      <span>{selectedClient?.usersCount} gebruikers</span>
                     </div>
                     <div className="flex flex-row items-center space-x-4">
                       <img
                         src={`/assets/images/icons/response.svg`}
-                        alt={selected?.clientInfo?.name}
+                        alt={selectedClient?.name}
                         className=" h-10 w-10"
                       />
                       <span>
-                        {selected?.clientInfo?.highestResponse}% hoogste respons
+                        {selectedClient?.highestResponse}% hoogste respons
                       </span>
                     </div>
                     <div className="flex flex-row items-center space-x-4">
                       <img
                         src={`/assets/images/icons/send.svg`}
-                        alt={selected?.clientInfo?.name}
+                        alt={selectedClient?.name}
                         className=" h-10 w-10"
                       />
                       <span>
-                        {selected?.clientInfo?.studiesCount} onderzoeken
-                        aangemaakt
+                        {selectedClient?.studiesCount} onderzoeken aangemaakt
                       </span>
                     </div>
                   </div>
+                </div>
+              )}
+
+              {selectedCity?.clientInfo?.length > 1 && (
+                <div className="m-auto mt-4 flex flex-row justify-center space-x-4 bg-transparent">
+                  {selectedCity.clientInfo.map((client: any, ix: number) => (
+                    <button
+                      key={ix}
+                      onClick={() => {
+                        setSelectedClient(client);
+                      }}
+                    >
+                      <img
+                        src={`/assets/images/logos/${client.logo}`}
+                        alt={client.name}
+                        className={` rounded-full ${
+                          selectedClient === client ? 'h-12 w-12' : 'h-8 w-8'
+                        }`}
+                      />
+                    </button>
+                  ))}
                 </div>
               )}
             </div>
@@ -110,7 +133,7 @@ function MapHelper({ mapPathes }: MapHelperProps) {
                     className={`${
                       item.isImportant
                         ? `${
-                            selected?.name !== item.name
+                            selectedCity?.name !== item.name
                               ? 'fill-[#9dd0ff]'
                               : 'fill-white animate-[pulse_1s_ease-in-out_infinite] '
                           } cursor-pointer`
@@ -118,7 +141,15 @@ function MapHelper({ mapPathes }: MapHelperProps) {
                     }`}
                     onClick={() => {
                       if (item.isImportant) {
-                        setSelected(item.name === selected?.name ? '' : item);
+                        setSelectedCity(
+                          item.name === selectedCity?.name ? undefined : item
+                        );
+
+                        setSelectedClient(
+                          selectedCity && item.clientInfo?.length
+                            ? item.clientInfo[0]
+                            : undefined
+                        );
                       }
                     }}
                   >
