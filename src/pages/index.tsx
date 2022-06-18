@@ -4,6 +4,7 @@ import Businesses from '@/components/indexComponents/Businesses';
 import Hero from '@/components/indexComponents/Hero';
 import Intro from '@/components/indexComponents/Intro';
 import MapHelper from '@/components/indexComponents/MapHelper';
+import Quotes from '@/components/indexComponents/Quotes';
 
 import { Layout } from '../layout/MainLayout';
 import { Meta } from '../layout/Meta';
@@ -29,6 +30,7 @@ const Index = () => {
       <Businesses />
       <Intro />
       <MapHelper mapPathes={res.data} />
+      <Quotes />
     </Layout>
   );
 };

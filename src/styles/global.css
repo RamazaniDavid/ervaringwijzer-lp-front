@@ -4,6 +4,7 @@
 
 @tailwind utilities;
 
+
 @font-face {
   font-family: "Avenir";
   src: url("/assets/fonts/avenir/39FEED_0_0.woff2") format("woff2");
@@ -66,4 +67,14 @@ hr {
   56% { border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%; } 
   70% { border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%; } 
   84% { border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; } 
+}
+
+.slick-track{
+}
+
+.slick-slide{
+}
+
+
+.slick-slide > div {
 }
