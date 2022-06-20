@@ -1,47 +1,7 @@
-import React, { useRef } from 'react';
-import Slider from 'react-slick';
+import React from 'react';
 
 import Rating from '../misc/Rating';
-
-function navigatorGen(
-  nextSlide: Function,
-  prevSlide: Function
-): React.ReactNode {
-  return (
-    <>
-      <button
-        onClick={() => {
-          prevSlide();
-        }}
-      >
-        <svg
-          width="24"
-          height="24"
-          xmlns="http://www.w3.org/2000/svg"
-          fillRule="evenodd"
-          clipRule="evenodd"
-        >
-          <path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm3 5.753l-6.44 5.247 6.44 5.263-.678.737-7.322-6 7.335-6 .665.753z" />
-        </svg>
-      </button>
-      <button
-        onClick={() => {
-          nextSlide();
-        }}
-      >
-        <svg
-          width="24"
-          height="24"
-          xmlns="http://www.w3.org/2000/svg"
-          fillRule="evenodd"
-          clipRule="evenodd"
-        >
-          <path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm-3 5.753l6.44 5.247-6.44 5.263.678.737 7.322-6-7.335-6-.665.753z" />
-        </svg>
-      </button>
-    </>
-  );
-}
+import SlickSlider from '../misc/SlickSlider';
 
 function Quotes() {
   const quotes = [
@@ -364,77 +324,48 @@ function Quotes() {
     ],
   };
 
-  const sliderRef = useRef<Slider>(null);
-
-  const nextSlide = () => {
-    sliderRef?.current?.slickNext();
-  };
-
-  const prevSlide = () => {
-    sliderRef?.current?.slickPrev();
-  };
-
   return (
     <section id="quotes">
-      <div className="mt-12 flex w-full flex-col">
-        <div className="mx-auto flex flex-row justify-between p-4 xl:w-full ">
-          <span className=" text-left  text-4xl text-[#082446]">
-            Wat klanten zeggen
-          </span>
-          <div className="hidden flex-row space-x-4 xl:flex">
-            {navigatorGen(nextSlide, prevSlide)}
-          </div>
-        </div>
-        <div>
-          <Slider {...settings} ref={sliderRef}>
-            {quotes.map((item) => (
-              <a
-                href={item.link}
-                target="_blank"
-                key={item.id}
-                className={`flex  w-full flex-col justify-between p-4`}
-                rel="noreferrer"
-              >
-                <div
-                  className={`flex flex-col ${item.quote.containerClassName} md:min-h-[300px]  lg:min-h-[380px]  xl:min-h-[350px] 2xl:min-h-[300px] rounded-t-lg text-white  px-0 lg:px-4`}
-                >
-                  <div className="flex flex-col space-y-8 p-4">
-                    <Rating rating={item.quote.rate} />
-                    <div className="my-4 text-left text-lg">
-                      {item.quote.text}
-                    </div>
-                  </div>
+      <SlickSlider title="Wat klanten zeggen" sliderSettings={settings}>
+        {quotes.map((item) => (
+          <a
+            href={item.link}
+            target="_blank"
+            key={item.id}
+            className={`flex  w-full flex-col justify-between p-4`}
+            rel="noreferrer"
+          >
+            <div
+              className={`flex flex-col ${item.quote.containerClassName} md:min-h-[300px]  lg:min-h-[380px]  xl:min-h-[350px] 2xl:min-h-[300px] rounded-t-lg text-white  px-0 lg:px-4`}
+            >
+              <div className="flex flex-col space-y-8 p-4">
+                <Rating rating={item.quote.rate} />
+                <div className="my-4 text-left text-lg">{item.quote.text}</div>
+              </div>
+            </div>
+            <div className="mb-4 flex flex-row items-center rounded-b-lg bg-white p-4 shadow-lg md:mb-2">
+              <div className="relative px-4 lg:inline-block">
+                <img
+                  src={`/assets/images/quotes/${item.author.Logo}`}
+                  className="h-8 w-8 transform-gpu rounded-full hover:scale-150  lg:h-12 lg:w-12  xl:h-14 xl:w-14"
+                  alt={item.author.name}
+                />
+                <div className="absolute -bottom-2 right-2 rounded-full bg-white p-1 shadow-lg">
+                  <img
+                    src={`/assets/images/quotes/${item.company.Logo}`}
+                    className="h-4 w-4 rounded-full hover:scale-150 lg:h-6 lg:w-6"
+                    alt={item.company.name}
+                  />
                 </div>
-                <div className="mb-4 flex flex-row items-center rounded-b-lg bg-white p-4 shadow-lg md:mb-2">
-                  <div className="relative px-4 lg:inline-block">
-                    <img
-                      src={`/assets/images/quotes/${item.author.Logo}`}
-                      className="h-8 w-8 transform-gpu rounded-full hover:scale-150  lg:h-12 lg:w-12  xl:h-14 xl:w-14"
-                      alt={item.author.name}
-                    />
-                    <div className="absolute -bottom-2 right-2 rounded-full bg-white p-1 shadow-lg">
-                      <img
-                        src={`/assets/images/quotes/${item.company.Logo}`}
-                        className="h-4 w-4 rounded-full hover:scale-150 lg:h-6 lg:w-6"
-                        alt={item.company.name}
-                      />
-                    </div>
-                  </div>
-                  <div className="flex flex-col text-xs  xl:text-sm 2xl:text-lg">
-                    <span className="font-bold">Door {item.author.name}</span>
-                    <span>{item.company.name}</span>
-                  </div>
-                </div>
-              </a>
-            ))}
-          </Slider>
-        </div>
-        <div className="flex flex-row justify-center">
-          <div className="mt-8 flex-row space-x-4 xl:hidden">
-            {navigatorGen(nextSlide, prevSlide)}
-          </div>
-        </div>
-      </div>
+              </div>
+              <div className="flex flex-col text-xs  xl:text-sm 2xl:text-lg">
+                <span className="font-bold">Door {item.author.name}</span>
+                <span>{item.company.name}</span>
+              </div>
+            </div>
+          </a>
+        ))}
+      </SlickSlider>
     </section>
   );
 }

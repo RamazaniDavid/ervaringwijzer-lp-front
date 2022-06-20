@@ -20,7 +20,7 @@ interface HeroProps {
 
 function Hero(props: HeroProps) {
   return (
-    <section id="hero" className="min-h-[calc(100vh-12rem)]">
+    <section id="hero" className="min-h-[calc(100vh-12rem)]  items-center">
       <div className={`flex  flex-wrap  justify-between ${props.className}`}>
         <div className="flex w-full items-center px-8  text-left md:px-12 lg:w-1/2">
           <div>
