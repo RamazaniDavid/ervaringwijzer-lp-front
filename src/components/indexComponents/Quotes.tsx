@@ -9,7 +9,7 @@ function Quotes() {
       id: 1,
       author: {
         name: 'Jochem Janssen',
-        Logo: 'Jochem-Janssen.png',
+        Logo: 'Jochem-Janssen.webp',
         nameClassName: '',
         logoClassName: '',
       },
@@ -191,8 +191,8 @@ function Quotes() {
       },
       company: {
         name: 'Gemeente Utrecht',
-        nameClassName: 'Gemeente-Utrecht.svg',
-        Logo: '',
+        nameClassName: '',
+        Logo: 'Gemeente-Utrecht.svg',
         logoClassName: '',
       },
       quote: {
@@ -236,7 +236,7 @@ function Quotes() {
       company: {
         name: 'Movisie',
         nameClassName: '',
-        Logo: 'Logo-Movisie.sv',
+        Logo: 'Logo-Movisie.svg',
         logoClassName: '',
       },
       quote: {
@@ -339,9 +339,12 @@ function Quotes() {
         <div>
           <Slider {...settings}>
             {quotes.map((item) => (
-              <div
+              <a
+                href={item.link}
+                target="_blank"
                 key={item.id}
                 className={`flex  w-full flex-col justify-between p-4`}
+                rel="noreferrer"
               >
                 <div
                   className={`flex flex-col ${item.quote.containerClassName} md:min-h-[300px]  lg:min-h-[380px]  xl:min-h-[350px] 2xl:min-h-[300px] rounded-t-lg text-white  px-0 lg:px-4`}
@@ -373,7 +376,7 @@ function Quotes() {
                     <span>{item.company.name}</span>
                   </div>
                 </div>
-              </div>
+              </a>
             ))}
           </Slider>
         </div>
