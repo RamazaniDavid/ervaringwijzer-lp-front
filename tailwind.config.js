@@ -60,6 +60,14 @@ module.exports = {
       flex: {
         2: '2 2 0%',
       },
+      width: {
+        128: '32rem',
+        144: '36rem',
+      },
+      height: {
+        128: '32rem',
+        144: '36rem',
+      },
     },
   },
 };

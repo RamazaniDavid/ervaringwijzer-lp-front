@@ -23,7 +23,7 @@ function Hire() {
       <Hero
         title={
           <>
-            <h1 className="text-5xl">
+            <h1 className="text-3xl xl:text-5xl">
               <span className="text-[#0085ff]">
                 Continu klantervaringen meten?
               </span>{' '}
@@ -32,18 +32,22 @@ function Hire() {
           </>
         }
         media={
-          <div className="mt-12  flex  flex-row items-center space-x-6 self-center">
+          <div className="-mt-16  flex  flex-row items-center space-x-6 self-center lg:mt-12">
             <div className="  flex flex-col space-y-6">
               <div className="self-end">
                 <img
-                  className={'h-44 w-44 rounded-2xl'}
+                  className={
+                    'h-24 w-24 rounded-2xl md:h-44 md:w-44 lg:h-36 lg:w-36 xl:h-44 xl:w-44 2xl:h-64 2xl:w-64'
+                  }
                   src="/assets/images/people/daan.webp"
                   alt="daan"
                 />
               </div>
               <div className="self-end">
                 <img
-                  className={'h-36 w-36 rounded-2xl'}
+                  className={
+                    'h-16 w-16 rounded-2xl md:h-36 md:w-36 lg:h-28 lg:w-28 xl:h-36 xl:w-36 2xl:h-48 2xl:w-48'
+                  }
                   src="/assets/images/people/ward.webp"
                   alt="ward"
                 />
@@ -51,14 +55,16 @@ function Hire() {
             </div>
             <div className="">
               <img
-                className={'h-96 w-96 rounded-2xl'}
+                className={
+                  'h-48 w-48 rounded-2xl md:h-96 md:w-96 lg:h-72 lg:w-72 xl:h-96 xl:w-96 2xl:h-144 2xl:w-144'
+                }
                 src="/assets/images/people/quint.webp"
                 alt="quint"
               />
             </div>
           </div>
         }
-        className="mx-auto h-[600px] w-full lg:w-10/12 xl:w-8/12"
+        className="mx-auto h-[600px] w-full lg:w-11/12 xl:h-auto xl:w-10/12"
       />
       <Businesses
         businesses={[
