@@ -32,16 +32,16 @@ function Hire() {
           </>
         }
         media={
-          <div className="flex  flex-row items-center space-x-6">
+          <div className="mt-12  flex  flex-row items-center space-x-6 self-center">
             <div className="  flex flex-col space-y-6">
-              <div className="text-right">
+              <div className="self-end">
                 <img
                   className={'h-44 w-44 rounded-2xl'}
                   src="/assets/images/people/daan.webp"
                   alt="daan"
                 />
               </div>
-              <div className="text-right">
+              <div className="self-end">
                 <img
                   className={'h-36 w-36 rounded-2xl'}
                   src="/assets/images/people/ward.webp"
