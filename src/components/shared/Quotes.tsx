@@ -1,7 +1,47 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Slider from 'react-slick';
 
 import Rating from '../misc/Rating';
+
+function navigatorGen(
+  nextSlide: Function,
+  prevSlide: Function
+): React.ReactNode {
+  return (
+    <>
+      <button
+        onClick={() => {
+          prevSlide();
+        }}
+      >
+        <svg
+          width="24"
+          height="24"
+          xmlns="http://www.w3.org/2000/svg"
+          fillRule="evenodd"
+          clipRule="evenodd"
+        >
+          <path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm3 5.753l-6.44 5.247 6.44 5.263-.678.737-7.322-6 7.335-6 .665.753z" />
+        </svg>
+      </button>
+      <button
+        onClick={() => {
+          nextSlide();
+        }}
+      >
+        <svg
+          width="24"
+          height="24"
+          xmlns="http://www.w3.org/2000/svg"
+          fillRule="evenodd"
+          clipRule="evenodd"
+        >
+          <path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm-3 5.753l6.44 5.247-6.44 5.263.678.737 7.322-6-7.335-6-.665.753z" />
+        </svg>
+      </button>
+    </>
+  );
+}
 
 function Quotes() {
   const quotes = [
@@ -324,6 +364,16 @@ function Quotes() {
     ],
   };
 
+  const sliderRef = useRef<Slider>(null);
+
+  const nextSlide = () => {
+    sliderRef?.current?.slickNext();
+  };
+
+  const prevSlide = () => {
+    sliderRef?.current?.slickPrev();
+  };
+
   return (
     <section id="quotes">
       <div className="mt-12 flex w-full flex-col">
@@ -331,13 +381,12 @@ function Quotes() {
           <span className=" text-left  text-4xl text-[#082446]">
             Wat klanten zeggen
           </span>
-          <div className="hidden flex-row lg:flex">
-            <button>1</button>
-            <button>2</button>
+          <div className="hidden flex-row space-x-4 xl:flex">
+            {navigatorGen(nextSlide, prevSlide)}
           </div>
         </div>
         <div>
-          <Slider {...settings}>
+          <Slider {...settings} ref={sliderRef}>
             {quotes.map((item) => (
               <a
                 href={item.link}
@@ -379,6 +428,11 @@ function Quotes() {
               </a>
             ))}
           </Slider>
+        </div>
+        <div className="flex flex-row justify-center">
+          <div className="mt-8 flex-row space-x-4 xl:hidden">
+            {navigatorGen(nextSlide, prevSlide)}
+          </div>
         </div>
       </div>
     </section>

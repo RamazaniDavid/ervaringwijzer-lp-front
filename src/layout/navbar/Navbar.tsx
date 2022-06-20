@@ -165,13 +165,12 @@ function Navbar() {
             <ul>
               {menu.map((item, index) => (
                 <React.Fragment key={index}>
-                  <li className="mb-1">
-                    <a
-                      className="block rounded p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600"
-                      href={item.path}
-                    >
-                      {item.text}
-                    </a>
+                  <li className="relative">
+                    {item.subMenu ? (
+                      <NavbarDropDown {...item} />
+                    ) : (
+                      <NavbarItem {...item} />
+                    )}
                   </li>
                 </React.Fragment>
               ))}

@@ -55,7 +55,7 @@ function NavbarDropDown(props: INavbarDropDownProps) {
           {props.subMenu?.map((item) => (
             <li
               key={item.path}
-              className="max-w-fit rounded-3xl bg-gray-800 px-4 py-2 text-center text-white shadow"
+              className="max-w-fit px-4 py-2 text-center lg:rounded-3xl lg:bg-gray-800 lg:text-white lg:shadow"
             >
               <a href={item.path}>{item.text}</a>
             </li>

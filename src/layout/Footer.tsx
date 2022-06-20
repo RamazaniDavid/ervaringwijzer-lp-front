@@ -79,8 +79,8 @@ const Footer = () => {
     <footer className="">
       <div className="my-14 mx-auto w-full px-4 lg:w-11/12 xl:w-10/12 2xl:w-9/12">
         <div className="mx-auto flex flex-col space-y-4 px-4 text-lg font-normal">
-          <div className="flex flex-col lg:flex-row">
-            <div className="flex flex-1 flex-col">
+          <div className="flex flex-col lg:flex-row ">
+            <div className="mx-auto mb-4 flex flex-1 flex-col items-center">
               <Link href="/">
                 <a className="">
                   <SiteLogo textInVisible={false} />
@@ -91,7 +91,10 @@ const Footer = () => {
               Array.from(
                 Array(footerLinks.links.length / footerLinks.wrapCount).keys()
               ).map((i) => (
-                <div className="flex flex-1 flex-col space-y-4" key={i}>
+                <div
+                  className="mb-4 flex flex-1 flex-col items-center space-y-4 lg:items-start"
+                  key={i}
+                >
                   {footerLinks.links
                     .slice(
                       i * footerLinks.wrapCount,
@@ -105,8 +108,8 @@ const Footer = () => {
                 </div>
               ))}
           </div>
-          <div className="flex flex-col lg:flex-row lg:justify-between">
-            <span>© 2022 - Ervaringwijzer</span>
+          <div className="flex w-full flex-col-reverse items-center space-y-4 lg:flex-row lg:justify-between">
+            <span className="mt-4">© 2022 - Ervaringwijzer</span>
             <div className="space-x-1 text-xs">
               <span className="rounded-2xl bg-gray-300 p-2">ISO27001</span>
               <span className="rounded-2xl bg-gray-300 p-2">NEN7510</span>
