@@ -57,7 +57,9 @@ module.exports = {
       animation: {
         wiggle: 'wiggle 1s ease-in-out infinite',
       },
+      flex: {
+        2: '2 2 0%',
+      },
     },
   },
-  plugins: [],
 };

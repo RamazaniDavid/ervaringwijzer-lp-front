@@ -1,6 +1,7 @@
 import { useQuery } from 'react-query';
 
 import Businesses from '@/components/indexComponents/Businesses';
+import CtaSpecial from '@/components/indexComponents/CtaSpecial';
 import Hero from '@/components/indexComponents/Hero';
 import Intro from '@/components/indexComponents/Intro';
 import MapHelper from '@/components/indexComponents/MapHelper';
@@ -31,6 +32,7 @@ const Index = () => {
       <Intro />
       <MapHelper mapPathes={res.data} />
       <Quotes />
+      <CtaSpecial />
     </Layout>
   );
 };

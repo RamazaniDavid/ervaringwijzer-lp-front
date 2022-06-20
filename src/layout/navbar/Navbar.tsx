@@ -2,9 +2,9 @@ import React, { useEffect } from 'react';
 
 import TryButton from '@/components/misc/TryButton';
 
+import SiteLogo from '../../components/misc/SiteLogo';
 import NavbarDropDown from './NavbarDropDown';
 import NavbarItem from './NavbarItem';
-import NavbarLogo from './NavbarLogo';
 
 function Navbar() {
   const [isScrolled, setIsScrolled] = React.useState(false);
@@ -34,11 +34,11 @@ function Navbar() {
         },
         {
           text: 'Inhuren',
-          path: '/hire',
+          path: '/inhuren',
         },
         {
           text: 'Servicezuilen',
-          path: '/service-charges',
+          path: '/servicezuilen',
         },
       ],
     },
@@ -47,11 +47,11 @@ function Navbar() {
       subMenu: [
         {
           text: 'Cliëntervaringsonderzoek',
-          path: '/client-interview',
+          path: '/clientervaringsonderzoek',
         },
         {
           text: 'Patiënttevredenheidsonderzoek',
-          path: '/patient-satisfaction',
+          path: '/patienttevredenheidsonderzoek',
         },
       ],
     },
@@ -79,7 +79,7 @@ function Navbar() {
           }`}
         >
           <div className="text-3xl font-bold leading-none">
-            <NavbarLogo textInVisible={hideLogoText} />
+            <SiteLogo textInVisible={hideLogoText} />
           </div>
           <div className="lg:hidden">
             <button
@@ -137,7 +137,7 @@ function Navbar() {
         <nav className="fixed inset-y-0 left-0 flex w-5/6 max-w-sm flex-col overflow-y-auto border-r bg-white p-6">
           <div className="mb-8 flex items-center">
             <a className="mr-auto text-3xl font-bold leading-none" href="#">
-              <NavbarLogo textInVisible={hideLogoText} />
+              <SiteLogo textInVisible={hideLogoText} />
             </a>
             <button
               className=""

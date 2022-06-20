@@ -4,8 +4,6 @@ import Slider from 'react-slick';
 import Rating from '../misc/Rating';
 
 function Quotes() {
-  const slickRef = React.useRef<Slider>(null);
-
   const quotes = [
     {
       id: 1,
@@ -278,12 +276,22 @@ function Quotes() {
     arrows: false,
     infinite: false,
     speed: 500,
-    slidesToShow: 6,
+    slidesToShow: 5,
     slidesToScroll: 3,
     initialSlide: 0,
+    adaptiveHeight: true,
+    // lazyLoad: 'progressive',
     responsive: [
       {
-        breakpoint: 1440,
+        breakpoint: 1921,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 2,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 1441,
         settings: {
           slidesToShow: 4,
           slidesToScroll: 2,
@@ -316,29 +324,27 @@ function Quotes() {
     ],
   };
 
-  React.useEffect(() => {
-    console.log(slickRef);
-
-    return () => {};
-  }, [slickRef]);
-
   return (
     <section id="quotes">
       <div className="mt-12 flex w-full flex-col">
-        <div className="mx-auto flex flex-row p-4 xl:w-10/12 2xl:w-8/12">
+        <div className="mx-auto flex flex-row justify-between p-4 xl:w-full ">
           <span className=" text-left  text-4xl text-[#082446]">
             Wat klanten zeggen
           </span>
+          <div className="hidden flex-row lg:flex">
+            <button>1</button>
+            <button>2</button>
+          </div>
         </div>
         <div>
-          <Slider {...settings} ref={slickRef}>
+          <Slider {...settings}>
             {quotes.map((item) => (
               <div
                 key={item.id}
-                className="flex  w-full flex-col justify-between  p-4"
+                className={`flex  w-full flex-col justify-between p-4`}
               >
                 <div
-                  className={`flex flex-col ${item.quote.containerClassName} h-[inherit] rounded-t-lg text-white  px-0 lg:px-12`}
+                  className={`flex flex-col ${item.quote.containerClassName} md:min-h-[300px]  lg:min-h-[380px]  xl:min-h-[350px] 2xl:min-h-[300px] rounded-t-lg text-white  px-0 lg:px-4`}
                 >
                   <div className="flex flex-col space-y-8 p-4">
                     <Rating rating={item.quote.rate} />
@@ -347,10 +353,23 @@ function Quotes() {
                     </div>
                   </div>
                 </div>
-                <div className="mb-4 flex flex-row rounded-b-lg bg-white p-4 shadow-lg md:mb-2">
-                  <div className="hidden lg:flex"></div>
-                  <div className="flex flex-col">
-                    <span>Door {item.author.name}</span>
+                <div className="mb-4 flex flex-row items-center rounded-b-lg bg-white p-4 shadow-lg md:mb-2">
+                  <div className="relative px-4 lg:inline-block">
+                    <img
+                      src={`/assets/images/quotes/${item.author.Logo}`}
+                      className="h-8 w-8 transform-gpu rounded-full hover:scale-150  lg:h-12 lg:w-12  xl:h-14 xl:w-14"
+                      alt={item.author.name}
+                    />
+                    <div className="absolute -bottom-2 right-2 rounded-full bg-white p-1 shadow-lg">
+                      <img
+                        src={`/assets/images/quotes/${item.company.Logo}`}
+                        className="h-4 w-4 rounded-full hover:scale-150 lg:h-6 lg:w-6"
+                        alt={item.company.name}
+                      />
+                    </div>
+                  </div>
+                  <div className="flex flex-col text-xs  xl:text-sm 2xl:text-lg">
+                    <span className="font-bold">Door {item.author.name}</span>
                     <span>{item.company.name}</span>
                   </div>
                 </div>
