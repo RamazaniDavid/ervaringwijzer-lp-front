@@ -1,4 +1,5 @@
 import Hero from '@/components/indexComponents/Hero';
+import Advantages from '@/components/shared/Advantages';
 import Businesses from '@/components/shared/Businesses';
 import CtaSpecial from '@/components/shared/CtaSpecial';
 import Intro from '@/components/shared/Intro';
@@ -35,7 +36,7 @@ const Index = () => {
           },
         ]}
       />
-      <Intro title={'Wat is Ervaringwijzer'}>
+      <Intro title={'Wat is Ervaringwijzer'} details={<Advantages />}>
         <>
           <p className="">
             Wij zijn een jonge organisatie die sinds 2017 bezig is om het beste

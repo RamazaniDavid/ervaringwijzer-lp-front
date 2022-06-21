@@ -1,12 +1,12 @@
 import Link from 'next/link';
 import React from 'react';
 
+import TextBlock from '@/components/misc/TextBlock';
 import Businesses from '@/components/shared/Businesses';
 import CtaSpecial from '@/components/shared/CtaSpecial';
 import Hero from '@/components/shared/Hero';
 import NetherlandsMap from '@/components/shared/NetherlandsMap';
 import Quotes from '@/components/shared/Quotes';
-import TextBlock from '@/components/shared/TextBlock';
 import { Layout } from '@/layout/MainLayout';
 import { Meta } from '@/layout/Meta';
 

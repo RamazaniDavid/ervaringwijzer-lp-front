@@ -1,7 +1,6 @@
 import React from 'react';
 
-import Advantages from './Advantages';
-import TextBlock from './TextBlock';
+import TextBlock from '../misc/TextBlock';
 
 interface IntroProps {
   title: string | JSX.Element;
@@ -11,6 +10,7 @@ interface IntroProps {
   style?: React.CSSProperties;
   typewriter?: boolean;
   textBlockClassName?: string;
+  details?: JSX.Element;
 }
 
 function Intro(props: IntroProps) {
@@ -24,9 +24,7 @@ function Intro(props: IntroProps) {
         >
           {props.children}
         </TextBlock>
-        <div className="mx-auto w-full lg:w-8/12">
-          <Advantages />
-        </div>
+        <div className="mx-auto w-full lg:w-8/12">{props.details}</div>
       </div>
     </section>
   );

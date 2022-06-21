@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Advantages from '@/components/shared/Advantages';
 import Businesses from '@/components/shared/Businesses';
 import CtaSpecial from '@/components/shared/CtaSpecial';
 import Hero from '@/components/shared/Hero';
@@ -31,7 +32,7 @@ function Software() {
           { title: 'onderzoeken ontworpen', value: '257' },
         ]}
       />
-      <Intro title={'Hoe werkt het platform?'}>
+      <Intro title={'Hoe werkt het platform?'} details={<Advantages />}>
         <>
           <p className="">
             Met onze software is het mogelijk om snel en eenvoudig alle facetten
