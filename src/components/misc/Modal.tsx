@@ -120,7 +120,7 @@ const Modal = React.forwardRef<IModalHandler, IModalProps>((props, ref) => {
             <div className="relative my-6 mx-auto w-full max-w-3xl">
               {/* content */}
               <div
-                className={`relative  flex w-full flex-col rounded-lg border-0 ${
+                className={`relative  flex w-full flex-col rounded-lg border-0 outline-none focus:outline-none ${
                   props.childrenContainer?.className
                     ? ''
                     : 'bg-white p-8 rounded-xl'
@@ -130,11 +130,7 @@ const Modal = React.forwardRef<IModalHandler, IModalProps>((props, ref) => {
                 {renderHeader()}
                 {/* body */}
                 <div
-                  className={`relative mt-4 ${
-                    props.childrenContainer?.className
-                      ? ''
-                      : 'bg-white rounded-xl'
-                  } ${props.childrenContainer?.className}`}
+                  className={`relative mt-4 flex-auto p-6 ${props.childrenContainer?.className}`}
                   style={{ ...props.childrenContainer?.style }}
                 >
                   {props.children}
