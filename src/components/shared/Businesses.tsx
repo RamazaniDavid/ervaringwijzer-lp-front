@@ -15,7 +15,7 @@ function Businesses({ businesses }: BusinessesProps) {
   return (
     <section id="businesses">
       <div className="w-full bg-[#0085ff] text-xl text-white">
-        <div className="mx-auto grid h-36 w-11/12 grid-cols-3 place-items-center text-center lg:w-10/12  xl:w-9/12 xl:grid-cols-4 2xl:w-7/12">
+        <div className="mx-auto grid min-h-[7rem] w-11/12 grid-cols-3 place-items-center text-center  lg:min-h-[6rem] lg:w-10/12  xl:w-9/12 xl:grid-cols-4 2xl:w-7/12">
           {businesses.map((business, ix) => (
             <div
               className="lf:text-left flex flex-col items-center  space-x-3 text-center lg:flex-row"

@@ -7,6 +7,7 @@ import Hero from '@/components/shared/Hero';
 import Intro from '@/components/shared/Intro';
 import NetherlandsMap from '@/components/shared/NetherlandsMap';
 import Quotes from '@/components/shared/Quotes';
+import CaseSlide from '@/components/softwareComponents/CaseSlide';
 import { Layout } from '@/layout/MainLayout';
 import { Meta } from '@/layout/Meta';
 
@@ -48,6 +49,7 @@ function Software() {
           </p>
         </>
       </Intro>
+      <CaseSlide />
       <NetherlandsMap />
       <Quotes />
       <CtaSpecial />

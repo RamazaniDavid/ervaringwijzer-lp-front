@@ -40,22 +40,24 @@ module.exports = {
       },
       keyframes: {
         wiggle: {
-          '0%, 100%': { transform: 'rotate(-3deg)' },
-          '50%': { transform: 'rotate(3deg)' },
+          '0%, 100%': { transform: 'rotate(-8deg)' },
+          '50%': { transform: 'rotate(8deg)' },
+        },
+        waves: {
+          '0%': {
+            transform: 'scale(1)',
+            opacity: '1',
+          },
+          '100%': {
+            transform: 'scale(4)',
+            opacity: '0',
+          },
         },
       },
-      waves: {
-        '0%': {
-          transform: 'scale(1)',
-          opacity: '1',
-        },
-        '100%': {
-          transform: 'scale(4)',
-          opacity: '0',
-        },
-      },
+
       animation: {
         wiggle: 'wiggle 1s ease-in-out infinite',
+        waves: 'waves 1s ease-in-out infinite',
       },
       flex: {
         2: '2 2 0%',
@@ -67,6 +69,12 @@ module.exports = {
       height: {
         128: '32rem',
         144: '36rem',
+      },
+      borderRadius: {
+        '3xl': '2rem',
+        '4xl': '3rem',
+        '5xl': '5rem',
+        '6xl': '10rem',
       },
     },
   },

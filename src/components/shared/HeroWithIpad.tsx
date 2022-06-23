@@ -3,7 +3,7 @@ import Typewriter from 'typewriter-effect';
 
 import TryButton from '../misc/TryButton';
 
-interface HeroProps {
+interface HeroWithIpadProps {
   title: string | JSX.Element;
   subtitle?: string | JSX.Element;
   children?: JSX.Element;
@@ -16,15 +16,21 @@ interface HeroProps {
   media?: JSX.Element;
   mediaClassName?: string;
   mediaStyle?: React.CSSProperties;
+  hoverMedia?: {
+    media: JSX.Element;
+    className?: string;
+  };
 }
 
-function Hero(props: HeroProps) {
+function HeroWithIpad(props: HeroWithIpadProps) {
   return (
     <section
       id="hero"
-      className={`min-h-[calc(100vh-12rem)] items-center self-center  `}
+      className={`min-h-[calc(100vh-2rem)] sm:min-h-[calc(100vh-12rem)] items-center self-center  `}
     >
-      <div className={`flex  flex-wrap  justify-between ${props.className}`}>
+      <div
+        className={`flex  flex-wrap  justify-between lg:pt-6 xl:h-[600px] 2xl:mt-16 ${props.className} `}
+      >
         <div className="flex w-full items-center px-8  text-left md:px-12 lg:w-1/2">
           <div>
             <div className="text-3xl font-semibold text-gray-800 md:text-4xl">
@@ -61,13 +67,28 @@ function Hero(props: HeroProps) {
             </div>
           </div>
         </div>
-        <div className={` m-auto w-10/12 items-center lg:w-1/2`}>
+        <div
+          className={` w-10/12 items-center lg:w-1/2 relative mt-12 mx-auto`}
+        >
+          <div className="absolute inset-0 z-[2] box-border inline-block ">
+            <img
+              src="/assets/images/shared/ipad-mockup.png"
+              alt=""
+              className=" -ml-[1.5vw] -mt-[1vw]  h-[46vw] w-[79vw]   lg:h-[25vw] lg:w-[44vw] "
+            />
+          </div>
           <div
-            className={`z-[22] h-[200px] w-full rounded-2xl  p-4 md:h-[280px] lg:float-right lg:h-[330px] 
-            lg:rounded-r-none lg:pr-0 xl:h-[375px] 2xl:h-[530px] ${props.mediaClassName}`}
-            style={{ ...props.mediaStyle }}
+            className={`absolute z-[1]   ${props.mediaClassName}`}
+            style={{
+              ...props.mediaStyle,
+            }}
           >
             {props.media}
+          </div>
+          <div
+            className={`absolute z-[3] inset-0 ${props.hoverMedia?.className}`}
+          >
+            {props.hoverMedia?.media}
           </div>
         </div>
       </div>
@@ -75,4 +96,4 @@ function Hero(props: HeroProps) {
   );
 }
 
-export default Hero;
+export default HeroWithIpad;

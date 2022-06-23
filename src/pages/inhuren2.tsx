@@ -1,17 +1,19 @@
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import React from 'react';
 
-import PhotoWall from '@/components/misc/PhotoWall';
+import PhotoWall from '@/components/misc/PhotoWall3';
+import TextBlock from '@/components/misc/TextBlock';
 import Businesses from '@/components/shared/Businesses';
 import CtaSpecial from '@/components/shared/CtaSpecial';
 import Hero from '@/components/shared/Hero';
 import NetherlandsMap from '@/components/shared/NetherlandsMap';
 import Quotes from '@/components/shared/Quotes';
-import TextBlockSection from '@/components/shared/TextBlockSection';
 import { Layout } from '@/layout/MainLayout';
 import { Meta } from '@/layout/Meta';
 
 function Hire() {
+  const router = useRouter();
   return (
     <Layout
       meta={
@@ -35,23 +37,24 @@ function Hire() {
         media={
           <>
             <PhotoWall
-              photos={{
-                mostImportant: {
-                  src: '/assets/images/people/daan.webp',
+              photos={[
+                {
+                  src: `${router.basePath}/assets/images/people/daan.webp`,
                   alt: 'daan',
-                  className: '',
                 },
-                lessImportant: {
-                  src: '/assets/images/people/quint.webp',
-                  alt: 'quint',
-                  className: '',
-                },
-                leastImportant: {
-                  src: '/assets/images/people/ward.webp',
+                {
+                  src: `${router.basePath}/assets/images/people/ward.webp`,
                   alt: 'ward',
-                  className: '',
                 },
-              }}
+                {
+                  src: `${router.basePath}/assets/images/people/quint.webp`,
+                  alt: 'quint',
+                },
+                {
+                  src: `${router.basePath}/assets/images/people/daan.webp`,
+                  alt: 'daan',
+                },
+              ]}
             />
           </>
         }
@@ -64,7 +67,7 @@ function Hire() {
           { title: 'collega’s begeleidt', value: '244' },
         ]}
       />
-      <TextBlockSection
+      <TextBlock
         title={'Volledige projecten van begin tot eind'}
         className="rounded-2xl bg-gray-200 p-4 pb-12"
       >
@@ -84,8 +87,8 @@ function Hire() {
             die bij je past.
           </p>
         </>
-      </TextBlockSection>
-      <TextBlockSection
+      </TextBlock>
+      <TextBlock
         title={'Hoe we dit doen?'}
         className="rounded-2xl bg-gray-200 p-4 pb-12"
       >
@@ -124,7 +127,7 @@ function Hire() {
             die zelfs in de inkoop Ervaringwijzer hebben opgenomen.
           </p>
         </>
-      </TextBlockSection>
+      </TextBlock>
       <NetherlandsMap />
       <Quotes />
       <CtaSpecial />

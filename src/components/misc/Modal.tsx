@@ -4,6 +4,10 @@ import { IModalHandler } from '@/utils/handlers/IModalHandler';
 
 type IModalProps = {
   children: React.ReactNode;
+  childrenContainer?: {
+    className?: string;
+    style?: React.CSSProperties;
+  };
   title?: string;
   header?: React.ReactNode;
   footer?: React.ReactNode;
@@ -78,7 +82,7 @@ const Modal = React.forwardRef<IModalHandler, IModalProps>((props, ref) => {
         className="float-right ml-auto border-0 bg-transparent p-1 text-3xl outline-none focus:outline-none"
         onClick={() => closeModal()}
       >
-        <span className="block h-6 w-6 bg-transparent text-3xl text-black  outline-none focus:outline-none">
+        <span className="block h-6 w-6 origin-center bg-transparent text-3xl  text-black outline-none hover:animate-wiggle focus:outline-none">
           ×
         </span>
       </button>
@@ -115,11 +119,26 @@ const Modal = React.forwardRef<IModalHandler, IModalProps>((props, ref) => {
           <div className=" fixed inset-0 z-50 mx-auto  flex h-screen w-screen  items-center justify-center overflow-y-auto overflow-x-hidden outline-none focus:outline-none ">
             <div className="relative my-6 mx-auto w-full max-w-3xl">
               {/* content */}
-              <div className="relative flex w-full flex-col rounded-lg border-0 bg-white shadow-lg outline-none focus:outline-none">
+              <div
+                className={`relative  flex w-full flex-col rounded-lg border-0 ${
+                  props.childrenContainer?.className
+                    ? ''
+                    : 'bg-white p-8 rounded-xl'
+                }`}
+              >
                 {/* header */}
                 {renderHeader()}
                 {/* body */}
-                <div className="relative flex-auto p-6">{props.children}</div>
+                <div
+                  className={`relative mt-4 ${
+                    props.childrenContainer?.className
+                      ? ''
+                      : 'bg-white rounded-xl'
+                  } ${props.childrenContainer?.className}`}
+                  style={{ ...props.childrenContainer?.style }}
+                >
+                  {props.children}
+                </div>
                 {/* footer */}
                 {renderFooter()}
               </div>

@@ -69,13 +69,23 @@ hr {
   84% { border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; } 
 }
 
-.slick-track{
+
+::-webkit-scrollbar-track
+{
+	border: 0px solid rgb(249 250 251 / 0); 
+	background-color: rgb(249 250 251 / 0);
 }
 
-.slick-slide{
+::-webkit-scrollbar
+{
+	width: 15px;
+	background-color: #dfe6e9;
+}
 
+::-webkit-scrollbar-thumb
+{
+	background-color: #74b9ff;
+	border-radius: 2px;
 }
 
 
-.slick-slide > div {
-}
