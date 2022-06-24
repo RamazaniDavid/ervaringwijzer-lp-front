@@ -7,6 +7,7 @@ import CtaSpecial from '@/components/shared/CtaSpecial';
 import Hero from '@/components/shared/Hero';
 import NetherlandsMap from '@/components/shared/NetherlandsMap';
 import Quotes from '@/components/shared/Quotes';
+import SmartInfo from '@/components/shared/SmartInfo';
 import TextBlockSection from '@/components/shared/TextBlockSection';
 import { Layout } from '@/layout/MainLayout';
 import { Meta } from '@/layout/Meta';
@@ -85,6 +86,56 @@ function Hire() {
           </p>
         </>
       </TextBlockSection>
+      <SmartInfo
+        title={'Voordelen inhuren'}
+        infoBoxies={[
+          {
+            title: 'Intrinsieke motivatie',
+            description:
+              'Wij hebben baat bij actieve en enthousiaste gebruikers op het platform. Dit maakt dat wij intrinsiek gemotiveerd zijn en veel tijd investeren in het activeren van gebruikers, ontwikkeling van onderzoeken en intensiveren van klantrelaties. Wij dragen dezelfde visie uit welke wij essentieel achten willen we dit project tot een succes maken.',
+            logo: {
+              data: '/assets/images/icons/motivatie.svg',
+            },
+            media: { data: '/assets/images/inhuren/Ervaringwijzer-01.jpg' },
+          },
+          {
+            title: 'Technische kennis',
+            description:
+              'Als leverancier zijn we op de hoogte van alle mogelijkheden van het platform. Wij passen de nieuwste functionaliteiten direct toe en dat geeft een voorsprong bij het begeleiden, proactief ondersteunen en enthousiasmeren van gebruikers.',
+            logo: {
+              data: '/assets/images/icons/Tandwieltjes-EW.svg',
+            },
+            media: { data: '/assets/images/inhuren/Ervaringwijzer-02.webp' },
+          },
+          {
+            title: 'Organisatorische kennis',
+            description:
+              'Onze expertise op het gebied van organisaties en organiseren is groot en divers dankzij de intensieve samenwerking met al onze gebruikers. Dit geldt voor zowel kleine als zeer grote organisaties. steeds weer brengen wij de belangrijke en vaak dure geleerde lessen ten tafel om tijd, energie en kosten te besparen voor het project!',
+            logo: {
+              data: '/assets/images/icons/organisatie.svg',
+            },
+            media: { data: '/assets/images/inhuren/Ervaringwijzer-03.webp' },
+          },
+          {
+            title: 'Promotieacties',
+            description:
+              'Wij doen er alles aan om het project onder de aandacht te brengen bij alle betrokkenen. Van activerende berichtjes op het intranet tot ludieke acties. Onze ervaring is dat een continu meting meer vergt dan een enkele instructie!',
+            logo: {
+              data: '/assets/images/icons/Promotieacties.svg',
+            },
+            media: { data: '/assets/images/inhuren/Ervaringwijzer-04.webp' },
+          },
+          {
+            title: 'Volledig transparant',
+            description:
+              'Wij maken onze werkwijze volledig transparant en brengen jou, indien gewenst, op de hoogte van iedere stap van het onderzoek. Wij zijn betrokken, altijd bereikbaar en vinden dat duidelijke communicatie essentieel is wanneer partijen ons inhuren.',
+            logo: {
+              data: '/assets/images/icons/transparant-1.svg',
+            },
+            media: { data: '/assets/images/inhuren/Ervaringwijzer-05.webp' },
+          },
+        ]}
+      />
       <TextBlockSection
         title={'Hoe we dit doen?'}
         className="rounded-2xl bg-gray-200 p-4 pb-12"

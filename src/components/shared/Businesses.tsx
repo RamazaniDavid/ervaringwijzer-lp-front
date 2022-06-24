@@ -5,15 +5,16 @@ interface BusinessesProps {
     title: string | JSX.Element;
     value: string | JSX.Element;
   }[];
+  sectionId?: string;
 }
 
-function Businesses({ businesses }: BusinessesProps) {
+function Businesses({ businesses, sectionId }: BusinessesProps) {
   if (!businesses || businesses.length === 0) {
     return null;
   }
 
   return (
-    <section id="businesses">
+    <section id={sectionId ?? 'businesses'}>
       <div className="w-full bg-[#0085ff] text-xl text-white">
         <div className="mx-auto grid min-h-[7rem] w-11/12 grid-cols-3 place-items-center text-center  lg:min-h-[6rem] lg:w-10/12  xl:w-9/12 xl:grid-cols-4 2xl:w-7/12">
           {businesses.map((business, ix) => (

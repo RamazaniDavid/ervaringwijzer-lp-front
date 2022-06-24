@@ -19,7 +19,13 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "cSpell.words": ["Ervaringwijzer", "Roadmap"],
+  "cSpell.words": [
+    "Ervaringwijzer",
+    "orienteren",
+    "Roadmap",
+    "Samen",
+    "vragen"
+  ],
   "[postcss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
