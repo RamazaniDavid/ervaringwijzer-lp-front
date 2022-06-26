@@ -89,7 +89,7 @@ function Hire() {
       </TextBlockSection>
       <SmartInfo
         title={'Voordelen inhuren'}
-        infoBoxies={[
+        infoBoxes={[
           {
             title: 'Intrinsieke motivatie',
             description:

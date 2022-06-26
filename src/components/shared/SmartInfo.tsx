@@ -13,7 +13,7 @@ interface IProps {
   className?: string;
   style?: React.CSSProperties;
   childrenPosition?: 'before' | 'after';
-  infoBoxies: {
+  infoBoxes: {
     title: string | JSX.Element;
     description: string | JSX.Element;
     logo?: MediaType;
@@ -112,7 +112,7 @@ function SmartInfo(props: IProps) {
         )}
         {props.childrenPosition === 'before' ? props.children : null}
         <div>
-          {props.infoBoxies.map((item, index) => (
+          {props.infoBoxes.map((item, index) => (
             <InfoBoxWithMedia
               title={item.title}
               description={item.description}
