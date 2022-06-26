@@ -2,7 +2,6 @@ import React from 'react';
 
 import GridCard from '@/components/misc/GridCard';
 import PhotoWall from '@/components/misc/PhotoWall';
-import Advantages from '@/components/shared/Advantages';
 import Businesses from '@/components/shared/Businesses';
 import CtaSpecial from '@/components/shared/CtaSpecial';
 import Hero from '@/components/shared/Hero';
@@ -148,7 +147,55 @@ function clientInterview() {
           },
         ]}
       >
-        <Advantages />
+        <GridCard
+          title="Voordelen"
+          className="mb-16  text-[#082446]"
+          data={[
+            {
+              text: 'Eigen beheer vs. uitbesteden',
+              icon: 'assets/images/icons/eigen-beheer.svg',
+            },
+            {
+              text: 'De vrijheid om te onderzoeken wat jij wilt',
+              icon: 'assets/images/icons/vrijheid.svg',
+            },
+            {
+              text: 'Eenmalig vs. continu ',
+              icon: 'assets/images/icons/eenmalig.svg',
+            },
+            {
+              text: 'Integreer alle betrokken partijen of opereer alleen',
+              icon: 'assets/images/icons/integreer.svg',
+            },
+            {
+              text: (
+                <>
+                  <span className="relative before:absolute before:-inset-1 before:block before:-skew-y-2 before:bg-green-500">
+                    <span className="relative text-white">hoogste respons</span>
+                  </span>
+                  <span> door unieke aanpak</span>
+                </>
+              ),
+              icon: 'assets/images/icons/hoogste-respons.svg',
+            },
+            {
+              text: 'Pas aan jouw doelgroep of standaardiseer',
+              icon: 'assets/images/icons/pas-aan.svg',
+            },
+            {
+              text: 'Gemakkelijk voor gebruiker en respondent',
+              icon: 'assets/images/icons/gemakkelijk.svg',
+            },
+            {
+              text: 'Zowel digitaal als fysiek',
+              icon: 'assets/images/icons/digitaal-als-fysiek.svg',
+            },
+            {
+              text: 'Visueel aantrekkelijk',
+              icon: 'assets/images/icons/visueel.svg',
+            },
+          ]}
+        />
       </SmartInfo>
       <NetherlandsMap />
       <Quotes />

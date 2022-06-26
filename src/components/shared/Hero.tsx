@@ -41,7 +41,7 @@ function Hero(props: HeroProps) {
                 props.title
               )}
             </div>
-            <p className="mt-2 text-sm text-gray-500 md:text-base">
+            <p className="mt-2 text-sm text-[#5e7187] md:text-base">
               {props.typewriter && typeof props.subtitle === 'string' ? (
                 <Typewriter
                   options={{

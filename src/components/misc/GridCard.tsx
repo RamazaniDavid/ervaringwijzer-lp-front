@@ -6,7 +6,7 @@ interface GridCardProps {
   icon?: string;
   className?: string;
   data: {
-    text: string;
+    text: string | JSX.Element;
     icon?: string;
     className?: string;
     action?: () => void;
@@ -34,7 +34,7 @@ function GridCard(props: GridCardProps) {
               <span className="basis-1/4">
                 <img
                   src={`${router.basePath}/${item.icon}`}
-                  alt={item.text}
+                  alt={item.text.toString()}
                   className="mx-auto h-12 w-12"
                 />
               </span>

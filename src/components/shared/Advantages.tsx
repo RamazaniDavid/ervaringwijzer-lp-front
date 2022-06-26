@@ -21,7 +21,14 @@ function Advantages() {
       icon: 'assets/images/icons/integreer.svg',
     },
     {
-      text: ' door unieke aanpak',
+      text: (
+        <>
+          <span className="relative before:absolute before:-inset-1 before:block before:-skew-y-2 before:bg-green-500">
+            <span className="relative text-white">hoogste respons</span>
+          </span>
+          <span> door unieke aanpak</span>
+        </>
+      ),
       icon: 'assets/images/icons/hoogste-respons.svg',
     },
     {

@@ -95,7 +95,7 @@ function SmartInfo(props: IProps) {
   return (
     <section id={props.sectionId ?? 'smart-info'}>
       <div
-        className={`flex flex-col items-center text-center my-24 lg:my-36 ${
+        className={`flex flex-col items-center text-center my-24 lg:my-36 overflow-x-hidden ${
           props.className ?? ''
         } `}
         style={props.style}
@@ -111,7 +111,7 @@ function SmartInfo(props: IProps) {
           <>{props.description}</>
         )}
         {props.childrenPosition === 'before' ? props.children : null}
-        <div>
+        <div className="">
           {props.infoBoxes.map((item, index) => (
             <InfoBoxWithMedia
               title={item.title}
@@ -120,9 +120,7 @@ function SmartInfo(props: IProps) {
               media={<>{renderMedia(item.media)}</>}
               key={index}
               mediaPosition={index % 2 === 0 ? 'left' : 'right'}
-              className={
-                'relative z-10 mx-auto p-8 before:absolute before:-inset-1 before:z-0 before:block before:-skew-y-3 before:rounded-2xl before:bg-gray-100/10 before:shadow-lg lg:p-20'
-              }
+              className={'relative z-10 mx-auto p-8  lg:p-20'}
             />
           ))}
         </div>
