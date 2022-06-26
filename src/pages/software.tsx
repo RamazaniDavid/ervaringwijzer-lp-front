@@ -16,8 +16,8 @@ function Software() {
     <Layout
       meta={
         <Meta
-          title="Ervaringwijzer"
-          description="Het platform om onderzoeken mee te realiseren!"
+          title="Beste Software voor Vragenlijsten & Onderzoeken - Ervaringwijzer"
+          description="Ervaringwijzer is een laagdrempelig software om kwantitatieve vragenlijsten mee op te stellen en te realiseren. Lees de mogelijkheden!"
         />
       }
     >
@@ -32,6 +32,7 @@ function Software() {
           { title: 'tevreden klanten', value: '30+' },
           { title: 'onderzoeken ontworpen', value: '257' },
         ]}
+        goToRefElement="#intro"
       />
       <Intro title={'Hoe werkt het platform?'} details={<Advantages />}>
         <>

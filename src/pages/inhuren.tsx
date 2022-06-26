@@ -17,8 +17,8 @@ function Hire() {
     <Layout
       meta={
         <Meta
-          title="Ervaringwijzer"
-          description="Het platform om onderzoeken mee te realiseren!"
+          title="Volledige projecten van begin tot eind - Ervaringwijzer"
+          description="Wij bieden een compleet inhuurtraject om van begin tot eind elk facet te realiseren. Hiervoor stellen wij een compleet projectplan op waar iedere stap duidelijk en concreet in staat beschreven."
         />
       }
     >
@@ -64,6 +64,7 @@ function Hire() {
           { title: 'tevreden klanten', value: '10+' },
           { title: 'collega’s begeleidt', value: '244' },
         ]}
+        goToRefElement="#text-block"
       />
       <TextBlockSection
         title={'Volledige projecten van begin tot eind'}

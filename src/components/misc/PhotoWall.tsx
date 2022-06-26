@@ -33,7 +33,7 @@ function PhotoWall(props: PhotoWallProps) {
         <div className="  flex w-4/12 flex-col space-y-6">
           <div className="self-end">
             <img
-              className={`h-auto w-full rounded-2xl ${
+              className={`aspect-square w-full rounded-2xl object-cover ${
                 props.photos.lessImportant.className
                   ? ` ${props.photos.lessImportant.className}`
                   : ''
@@ -44,7 +44,7 @@ function PhotoWall(props: PhotoWallProps) {
           </div>
           <div className="w-6/12 self-end">
             <img
-              className={`h-auto w-full rounded-2xl ${
+              className={`aspect-square w-full rounded-2xl object-cover ${
                 props.photos.leastImportant.className
                   ? ` ${props.photos.leastImportant.className}`
                   : ''
@@ -56,7 +56,7 @@ function PhotoWall(props: PhotoWallProps) {
         </div>
         <div className="w-8/12">
           <img
-            className={`h-auto w-full rounded-2xl ${
+            className={`aspect-square w-full rounded-2xl object-cover ${
               props.photos.mostImportant.className
                 ? ` ${props.photos.mostImportant.className}`
                 : ''

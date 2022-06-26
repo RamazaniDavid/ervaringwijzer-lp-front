@@ -8,11 +8,12 @@ interface TextBlockSectionProps {
   children: JSX.Element;
   className?: string;
   style?: React.CSSProperties;
+  sectionId?: string;
 }
 
 function TextBlockSection(props: TextBlockSectionProps) {
   return (
-    <section id="text-block">
+    <section id={props.sectionId ?? 'text-block'}>
       <TextBlock title={props.title} className={props.className}>
         {props.children}
       </TextBlock>
