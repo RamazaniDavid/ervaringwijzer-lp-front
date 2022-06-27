@@ -1,12 +1,22 @@
 import React from 'react';
 
+import renderTitle from '@/utils/common/RenderTitle';
+import { MediaType } from '@/utils/types/MediaType';
+
 interface IProps {
   sectionId?: string;
   title: string | JSX.Element;
   subtitle?: string | JSX.Element;
-  children?: JSX.Element;
   className?: string;
   style?: React.CSSProperties;
+  questions?: {
+    title: string | JSX.Element;
+    subtitle?: string | JSX.Element;
+    className?: string;
+    style?: React.CSSProperties;
+    icon?: MediaType;
+    onClick?: () => void;
+  }[];
 }
 
 function QuestionBox(props: IProps) {
@@ -21,7 +31,28 @@ function QuestionBox(props: IProps) {
           className="mx-auto flex min-h-[6rem] w-11/12 flex-row place-items-center 
         lg:min-h-[6rem] lg:w-10/12  xl:w-9/12 xl:grid-cols-4 2xl:w-7/12"
         >
-          {props.title}
+          <div className="flex flex-1"> {renderTitle(props.title)}</div>
+          <div className="flex flex-1">
+            {props.questions && (
+              <div className="flex space-x-4">
+                {props.questions.map((question, index) => (
+                  <React.Fragment key={index}>
+                    <button
+                      className={`rounded-full p-3 bg-gray-400/80 ${question.className}`}
+                    >
+                      {renderTitle(
+                        question.title,
+
+                        ({ children }) => (
+                          <span>{children}</span>
+                        )
+                      )}
+                    </button>
+                  </React.Fragment>
+                ))}
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </section>

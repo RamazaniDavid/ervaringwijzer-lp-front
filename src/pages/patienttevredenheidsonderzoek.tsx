@@ -24,7 +24,7 @@ function patienttevredenheidsonderzoek() {
           </>
         }
         subtitle={
-          <p className="mt-6">
+          <p className="mt-12 w-10/12 text-lg">
             Fysiotherapeuten, huisartsen en apothekers willen sturende
             informatie om de dagelijkse gang van zaken in de praktijk te
             verbeteren. Om dit te realiseren wordt een
@@ -32,8 +32,10 @@ function patienttevredenheidsonderzoek() {
             zoals de <span className="font-bold">PREM</span>, andere keren met
             een vragenlijst die aansluit bij de patiënten van de professionals.
             Met Ervaringwijzer zijn alle denkbare vormen van
-            patiënttevreden­heidsonderzoeken mogelijk van eenmalig uitbesteden,
-            continu zelf uitvoeren of samenwerken in een netwerk van
+            patiënttevreden­heidsonderzoeken mogelijk van eenmalig{' '}
+            <span className="font-bold">uitbesteden </span>, continu{' '}
+            <span className="font-bold">zelf uitvoeren</span> of{' '}
+            <span className="font-bold">samenwerken</span> in een netwerk van
             professionals.
           </p>
         }
@@ -45,7 +47,20 @@ function patienttevredenheidsonderzoek() {
         }
         className="mx-auto h-[600px] w-full lg:w-10/12"
       />
-      <QuestionBox title="Hoe wil jij het onderzoek realiseren?" />
+      <QuestionBox
+        title="Hoe wil jij het onderzoek realiseren?"
+        questions={[
+          {
+            title: 'Uitbesteden',
+          },
+          {
+            title: 'Zelf doen',
+          },
+          {
+            title: 'Samenwerken',
+          },
+        ]}
+      />
     </Layout>
   );
 }
