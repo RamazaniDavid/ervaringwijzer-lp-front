@@ -13,7 +13,9 @@ interface IProps {
 function InfoBoxWithMedia(props: IProps) {
   return (
     <div
-      className={`${props.className ?? ''} text-justify flex flex-col ${
+      className={`${
+        props.className ?? ''
+      } text-left lg:text-justify flex flex-col ${
         props.mediaPosition === 'left'
           ? 'lg:flex-row '
           : 'lg:flex-row-reverse  '
@@ -24,7 +26,7 @@ function InfoBoxWithMedia(props: IProps) {
       <div className="relative flex flex-col space-y-4 lg:basis-7/12">
         {props.logo}
         {typeof props.title === 'string' ? (
-          <h2 className="text-3xl font-bold">{props.title}</h2>
+          <h2 className="text-3xl  font-bold">{props.title}</h2>
         ) : (
           <>{props.title}</>
         )}
