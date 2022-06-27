@@ -27,7 +27,9 @@ function clientInterview() {
           <>
             <h1 className="text-3xl xl:text-5xl">
               Realiseer eenvoudig het{' '}
-              <span className="text-[#0085ff]">clientervaringsonderzoek</span>{' '}
+              <span className="text-cLightBlue-500">
+                clientervaringsonderzoek
+              </span>{' '}
               met Ervaringwijzer
             </h1>
           </>
@@ -70,7 +72,7 @@ function clientInterview() {
           <>
             <GridCard
               title="Welke oplossingen biedt Ervaringwijzer"
-              className="mb-16  text-[#082446]"
+              className="mb-16  text-cBlue-500"
               data={[
                 {
                   text: 'Inhuren professional voor een eenmalig onderzoek',
@@ -149,7 +151,7 @@ function clientInterview() {
       >
         <GridCard
           title="Voordelen"
-          className="mb-16  text-[#082446]"
+          className="mb-16  text-cBlue-500"
           data={[
             {
               text: 'Eigen beheer vs. uitbesteden',

@@ -21,7 +21,7 @@ function GridCard(props: GridCardProps) {
     <>
       <div className="mx-auto mt-36 text-center">
         <h3
-          className={`mb-16 text-3xl font-medium leading-10 text-[#082446] ${props.className}`}
+          className={`mb-16 text-3xl font-medium leading-10 text-cBlue-500 ${props.className}`}
         >
           {props.title}
         </h3>

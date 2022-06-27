@@ -26,7 +26,7 @@ function Hire() {
         title={
           <>
             <h1 className="text-3xl xl:text-5xl">
-              <span className="text-[#0085ff]">
+              <span className="text-cLightBlue-500">
                 Continu klantervaringen meten?
               </span>{' '}
               Huur ons in!

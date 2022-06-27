@@ -53,7 +53,7 @@ function Advantages() {
     <>
       <GridCard
         title="Voordelen"
-        className="mb-16  text-[#082446]"
+        className="mb-16  text-cBlue-500"
         data={advantages}
       />
     </>

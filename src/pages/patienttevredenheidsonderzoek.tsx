@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Hero from '@/components/shared/Hero';
+import QuestionBox from '@/components/shared/QuestionBox';
 import { Layout } from '@/layout/MainLayout';
 import { Meta } from '@/layout/Meta';
 
@@ -15,7 +16,13 @@ function patienttevredenheidsonderzoek() {
       }
     >
       <Hero
-        title="Patiënttevredenheidsonderzoek"
+        title={
+          <>
+            <span className="text-base md:text-xl lg:text-2xl xl:text-4xl">
+              Patiënttevredenheidsonderzoek
+            </span>
+          </>
+        }
         subtitle={
           <p className="mt-6">
             Fysiotherapeuten, huisartsen en apothekers willen sturende
@@ -38,6 +45,7 @@ function patienttevredenheidsonderzoek() {
         }
         className="mx-auto h-[600px] w-full lg:w-10/12"
       />
+      <QuestionBox title="Hoe wil jij het onderzoek realiseren?" />
     </Layout>
   );
 }

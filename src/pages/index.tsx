@@ -46,7 +46,7 @@ const Index = () => {
             <div className="text-3xl font-semibold text-gray-800 md:text-4xl">
               Software en professionals om onderzoeken te verrichten voor
               <br className="" />
-              <span className="text-[#0085ff]">
+              <span className="text-cLightBlue-500">
                 <Typewriter
                   options={{
                     strings,

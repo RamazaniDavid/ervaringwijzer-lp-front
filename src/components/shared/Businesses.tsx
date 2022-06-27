@@ -30,7 +30,7 @@ function Businesses(props: BusinessesProps) {
 
   return (
     <section id={props.sectionId ?? 'businesses'}>
-      <div className="w-full bg-[#0085ff] text-xl text-white">
+      <div className="w-full bg-cLightBlue-500 text-xl text-white">
         <div className="mx-auto flex min-h-[7rem] w-11/12 flex-row place-items-center justify-between text-center  lg:min-h-[6rem] lg:w-10/12  xl:w-9/12 xl:grid-cols-4 2xl:w-7/12">
           {props.businesses.map((business, ix) => (
             <div
@@ -40,7 +40,9 @@ function Businesses(props: BusinessesProps) {
               <span className="text-2xl font-bold  text-white lg:text-3xl">
                 {business.value}
               </span>
-              <span className="text-left text-[#bfe0ff]">{business.title}</span>
+              <span className="text-left text-cLightGreenBlue-400">
+                {business.title}
+              </span>
             </div>
           ))}
           <div className="hidden  md:flex md:basis-1/4">

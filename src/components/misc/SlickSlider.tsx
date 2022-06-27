@@ -62,7 +62,7 @@ function SlickSlider(props: SlickSliderProps) {
     <div className="mt-12 flex w-full flex-col">
       {props.title && (
         <div className="mx-auto flex flex-row justify-between p-4 xl:w-full ">
-          <span className=" text-left  text-4xl text-[#082446]">
+          <span className=" text-left  text-4xl text-cBlue-500">
             {props.title}
           </span>
           <div className="hidden flex-row space-x-4 xl:flex">

@@ -50,7 +50,7 @@ function CtaSpecial(props: CtaSpecialProps) {
 
   return (
     <section id={props.sectionId ?? 'cta-special'}>
-      <div className="mt-12 flex w-full flex-col bg-[#082446] py-24">
+      <div className="mt-12 flex w-full flex-col bg-cBlue-500 py-24">
         <div className="mx-auto flex w-11/12 flex-col lg:w-10/12 xl:w-9/12 2xl:w-8/12">
           <div className="mb-8 text-center text-3xl text-white">
             <h1>Samen wijzer worden?</h1>

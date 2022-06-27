@@ -50,10 +50,10 @@ const EmailForm = (props: IEmailFormProps) => {
 
   return (
     <div className="flex flex-col text-left">
-      <h3 className="mb-4 -mt-9 text-center text-2xl font-bold text-[#082446] md:text-left lg:text-[22px]">
+      <h3 className="mb-4 -mt-9 text-center text-2xl font-bold text-cBlue-500 md:text-left lg:text-[22px]">
         Gratis account aanmaken
       </h3>
-      <form onSubmit={handleSubmit(onSubmit)} className="w-full text-[#082446]">
+      <form onSubmit={handleSubmit(onSubmit)} className="w-full text-cBlue-500">
         <div className="mb-6">
           <label htmlFor="firstName" className="mb-1 inline-block text-[17px]">
             Voornaam *

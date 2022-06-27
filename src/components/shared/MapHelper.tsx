@@ -31,10 +31,10 @@ function MapHelper({ mapPathes }: MapHelperProps) {
   return (
     <>
       <section id="map">
-        <div className="mt-48 w-full bg-[#0085ff] p-4 text-xl text-white">
+        <div className="mt-48 w-full bg-cLightBlue-500 p-4 text-xl text-white">
           <div className="mx-auto flex w-full flex-col-reverse lg:flex-row xl:w-10/12 2xl:w-8/12">
             <div className="mb-4 w-full basis-1 items-center self-center p-4 lg:basis-1/2">
-              <h4 className="mb-5 hidden text-center text-4xl text-[#bfe0ff] lg:inline-block">
+              <h4 className="mb-5 hidden text-center text-4xl text-cLightGreenBlue-400 lg:inline-block">
                 Bij deze{' '}
                 <span className="font-bold text-white">organisaties</span> wordt
                 Ervaringwijzer ingezet
@@ -59,7 +59,7 @@ function MapHelper({ mapPathes }: MapHelperProps) {
                     </div>
                   </div>
                   <hr className="my-8" />
-                  <div className="flex flex-col space-y-8 text-lg font-normal text-[#082446]">
+                  <div className="flex flex-col space-y-8 text-lg font-normal text-cBlue-500">
                     <div className="flex flex-row items-center space-x-4">
                       <img
                         src={`/assets/images/icons/users.svg`}
@@ -114,13 +114,13 @@ function MapHelper({ mapPathes }: MapHelperProps) {
               )}
             </div>
             <div className="basis-1 lg:basis-1/2">
-              <h4 className="mb-5 text-center text-2xl text-[#bfe0ff] lg:hidden">
+              <h4 className="mb-5 text-center text-2xl text-cLightGreenBlue-400 lg:hidden">
                 Bij deze{' '}
                 <span className="font-bold text-white">organisaties</span> wordt
                 Ervaringwijzer ingezet
               </h4>
               <svg
-                className="mx-auto h-auto max-h-[731px] w-full max-w-[605px] fill-[#46a6ff] stroke-[#0085ff] lg:mx-0 lg:ml-auto  "
+                className="mx-auto h-auto max-h-[731px] w-full max-w-[605px] fill-[#46a6ff] stroke-cLightBlue-500 lg:mx-0 lg:ml-auto  "
                 viewBox="0 0 606 733"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
