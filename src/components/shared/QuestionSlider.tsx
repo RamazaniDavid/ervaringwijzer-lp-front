@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { setTimeout } from 'timers';
 
 import renderTitle from '@/utils/common/RenderTitle';
 import { MediaType } from '@/utils/types/MediaType';
@@ -15,11 +16,20 @@ interface IProps {
     className?: string;
     style?: React.CSSProperties;
     icon?: MediaType;
-    onClick?: () => void;
+    slide: React.ReactNode;
   }[];
 }
 
-function QuestionBox(props: IProps) {
+function QuestionSlider(props: IProps) {
+  const [selectedQuestion, setSelectedQuestion] = React.useState<number>(0);
+  const [selectedSlide, setSelectedSlide] = React.useState<number>(0);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setSelectedSlide(selectedQuestion);
+    }, 300);
+  }, [selectedQuestion]);
+
   return (
     <section id={props.sectionId ?? 'question-box'}>
       <div
@@ -29,7 +39,7 @@ function QuestionBox(props: IProps) {
       >
         <div
           className="mx-auto flex min-h-[6rem] w-11/12 flex-row place-items-center 
-        lg:min-h-[6rem] lg:w-10/12  xl:w-9/12 xl:grid-cols-4 2xl:w-7/12"
+        lg:min-h-[6rem] lg:w-10/12  xl:w-9/12  2xl:w-7/12"
         >
           <div className="flex flex-1"> {renderTitle(props.title)}</div>
           <div className="flex flex-1">
@@ -38,8 +48,14 @@ function QuestionBox(props: IProps) {
                 {props.questions.map((question, index) => (
                   <React.Fragment key={index}>
                     <button
-                      className={`rounded-full p-3 ${question.className}`}
-                      onClick={question.onClick}
+                      className={`rounded-full p-3 ${
+                        selectedQuestion === index
+                          ? 'bg-cLightBlue-500'
+                          : 'bg-gray-400/80 '
+                      } ${question.className}`}
+                      onClick={() => {
+                        setSelectedQuestion(index);
+                      }}
                     >
                       {renderTitle(
                         question.title,
@@ -56,8 +72,20 @@ function QuestionBox(props: IProps) {
           </div>
         </div>
       </div>
+      <div className="items-center overflow-x-hidden text-center ">
+        {props.questions?.map((question, index) => (
+          <div
+            key={index}
+            className={` ${
+              selectedQuestion === index ? 'opacity-100' : 'opacity-0'
+            } ${selectedSlide === index ? '' : 'hidden'}`}
+          >
+            {question.slide}
+          </div>
+        ))}
+      </div>
     </section>
   );
 }
 
-export default QuestionBox;
+export default QuestionSlider;

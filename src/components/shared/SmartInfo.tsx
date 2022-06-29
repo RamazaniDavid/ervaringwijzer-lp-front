@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { MediaType } from '@/utils/types/MediaType';
-import { SvgPathType } from '@/utils/types/SvgPathType';
 
 import InfoBoxWithMedia from '../misc/InfoBoxWithMedia';
 
@@ -20,76 +19,6 @@ interface IProps {
     media?: MediaType;
   }[];
 }
-
-const renderLogo = (item?: MediaType): JSX.Element => {
-  if (!item) {
-    return <></>;
-  }
-  if (typeof item.data === 'string') {
-    return (
-      <img
-        src={item.data}
-        alt="logo"
-        className={
-          (item.overrideClassName ? '' : ' w-24 aspect-square ') +
-          item.className
-        }
-      />
-    );
-  }
-  if ((item.data as SvgPathType).paths) {
-    const logo = item.data as SvgPathType;
-    return (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width={logo.width}
-        height={logo.height}
-        viewBox={`0 0 ${logo.width} ${logo.height}`}
-      >
-        {logo.paths.map((path, index) => {
-          return <path key={index} d={path} />;
-        })}
-      </svg>
-    );
-  }
-
-  return <>{item}</>;
-};
-
-const renderMedia = (item?: MediaType): JSX.Element => {
-  if (!item) {
-    return <></>;
-  }
-  if (typeof item.data === 'string') {
-    return (
-      <img
-        src={item.data}
-        alt="logo"
-        className={
-          (item.overrideClassName ? '' : ' rounded-3xl w-full aspect-auto ') +
-          item.className
-        }
-      />
-    );
-  }
-  if ((item.data as SvgPathType).paths) {
-    const logo = item.data as SvgPathType;
-    return (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width={logo.width}
-        height={logo.height}
-        viewBox={`0 0 ${logo.width} ${logo.height}`}
-      >
-        {logo.paths.map((path, index) => {
-          return <path key={index} d={path} />;
-        })}
-      </svg>
-    );
-  }
-
-  return <>{item}</>;
-};
 
 function SmartInfo(props: IProps) {
   return (
@@ -116,10 +45,10 @@ function SmartInfo(props: IProps) {
             <InfoBoxWithMedia
               title={item.title}
               description={item.description}
-              logo={<>{renderLogo(item.logo)}</>}
-              media={<>{renderMedia(item.media)}</>}
+              logo={item.logo}
+              media={item.media}
               key={index}
-              mediaPosition={index % 2 === 0 ? 'left' : 'right'}
+              mediaPosition={index % 2 === 0 ? 'right' : 'left'}
               className={'relative z-10 mx-auto p-8  lg:p-20'}
             />
           ))}

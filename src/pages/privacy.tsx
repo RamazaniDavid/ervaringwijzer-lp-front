@@ -3,7 +3,7 @@ import React from 'react';
 import { Layout } from '@/layout/MainLayout';
 import { Meta } from '@/layout/Meta';
 
-function privacy() {
+function Privacy() {
   return (
     <Layout
       meta={
@@ -18,4 +18,4 @@ function privacy() {
   );
 }
 
-export default privacy;
+export default Privacy;

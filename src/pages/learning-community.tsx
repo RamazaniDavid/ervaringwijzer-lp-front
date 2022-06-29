@@ -3,7 +3,7 @@ import React from 'react';
 import { Layout } from '@/layout/MainLayout';
 import { Meta } from '@/layout/Meta';
 
-function learningCommunity() {
+function LearningCommunity() {
   return (
     <Layout
       meta={
@@ -18,4 +18,4 @@ function learningCommunity() {
   );
 }
 
-export default learningCommunity;
+export default LearningCommunity;

@@ -12,7 +12,7 @@ import SmartInfo from '@/components/shared/SmartInfo';
 import { Layout } from '@/layout/MainLayout';
 import { Meta } from '@/layout/Meta';
 
-function clientInterview() {
+function ClientInterview() {
   return (
     <Layout
       meta={
@@ -206,4 +206,4 @@ function clientInterview() {
   );
 }
 
-export default clientInterview;
+export default ClientInterview;
