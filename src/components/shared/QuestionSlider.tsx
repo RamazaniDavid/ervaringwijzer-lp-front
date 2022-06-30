@@ -61,7 +61,7 @@ function QuestionSlider(props: IProps) {
                         question.title,
 
                         ({ children }) => (
-                          <span>{children}</span>
+                          <span className="text-sm md:text-base">{children}</span>
                         )
                       )}
                     </button>
