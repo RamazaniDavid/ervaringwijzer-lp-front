@@ -10,7 +10,7 @@ export default function renderTitle(
             <Template>{title}</Template>
           ) : (
             <>
-              <h2 className="text-2xl">{title}</h2>
+              <h2 className="text-base md:text-2xl">{title}</h2>
             </>
           )}
         </>
