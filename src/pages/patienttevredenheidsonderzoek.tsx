@@ -2,7 +2,9 @@ import Link from 'next/link';
 import React from 'react';
 
 import BulletList from '@/components/misc/BulletList';
+import ScheduleMeeting from '@/components/misc/ctaButtons/ScheduleMeeting';
 import InfoBoxWithMedia from '@/components/misc/InfoBoxWithMedia';
+import TryButton from '@/components/misc/TryButton';
 import Hero from '@/components/shared/Hero';
 import QuestionSlider from '@/components/shared/QuestionSlider';
 import { Layout } from '@/layout/MainLayout';
@@ -59,11 +61,28 @@ function Patienttevredenheidsonderzoek() {
               <>
                 <InfoBoxWithMedia
                   title="Patiënttevreden­heidsonderzoek een verkennend gesprek"
-                  description="Voor zorgaanbieders die hun kostbare tijd besteden aan het verlenen van zorg en toch de wens hebben om een patiënttevredenheidsonderzoek te realiseren, kan Ervaringwijzer de volledige zorg omtrent het patiënttevredenheidsonderzoek uit handen nemen. Tijdens een eerste gesprek zullen alle wensen en beschikbare middelen met elkaar bespreken."
+                  description={
+                    <>
+                      <p>
+                        Voor zorgaanbieders die hun kostbare tijd besteden aan
+                        het verlenen van zorg en toch de wens hebben om een
+                        patiënttevredenheidsonderzoek te realiseren, kan
+                        Ervaringwijzer de volledige zorg omtrent het
+                        patiënttevredenheidsonderzoek uit handen nemen. Tijdens
+                        een eerste gesprek zullen alle wensen en beschikbare
+                        middelen met elkaar bespreken.
+                      </p>
+                    </>
+                  }
                   mediaPosition="left"
                   media={{
                     data: '/assets/images/patienttevredenheidsonderzoek/slide1-01.gif',
                   }}
+                  details={
+                    <>
+                      <ScheduleMeeting />
+                    </>
+                  }
                 />
                 <div
                   className="mx-auto flex w-11/12 flex-col space-y-6 text-left text-base 
@@ -104,6 +123,7 @@ function Patienttevredenheidsonderzoek() {
                       href="https://ervaringwijzer.crisp.help/nl/article/de-prem-vragenlijst-voor-fysiotherapie-139vnpg/"
                       target="_blank"
                       rel="noreferrer"
+                      className="blueLink"
                     >
                       PREM
                     </a>{' '}
@@ -126,6 +146,7 @@ function Patienttevredenheidsonderzoek() {
                       href="https://ervaringwijzer.crisp.help/nl/category/bibliotheek-2jrmzc/"
                       target="_blank"
                       rel="noreferrer"
+                      className="blueLink"
                     >
                       database
                     </a>{' '}
@@ -213,40 +234,48 @@ function Patienttevredenheidsonderzoek() {
                     <>
                       <BulletList
                         items={[
-                          <>
-                            <span>Lage tijdsinvestering</span>
-                          </>,
-                          <>
-                            <span>
-                              Sturende informatie voor je praktijk of apotheek
-                            </span>
-                          </>,
-                          <>
-                            <span>
-                              Altijd inzicht in het project en resultaten
-                            </span>
-                          </>,
-                          <>
-                            <span>Gevalideerde vragenlijsten</span>
-                          </>,
+                          'Lage tijdsinvestering',
+                          'Sturende informatie voor je praktijk of apotheek',
+                          'Altijd inzicht in het project en resultaten',
+                          'Gevalideerde vragenlijsten',
                           <>
                             <span>
                               Een brede mogelijkheid aan{' '}
                               <Link href="https://www.ervaringwijzer.nl/voordelen/">
-                                <a className="cursor-pointer">
+                                <a className="blueLink cursor-pointer">
                                   uitvraagmethoden
                                 </a>
                               </Link>
                               .
                             </span>
                           </>,
+                          <>
+                            <span>
+                              Conform de{' '}
+                              <Link href="https://www.ervaringwijzer.nl/voordelen/">
+                                <a className="blueLink cursor-pointer">
+                                  Algemene Verordening Gegevensbescherming
+                                </a>
+                              </Link>
+                              .
+                            </span>
+                          </>,
+                          'Duidelijke en heldere communicatie',
+                          'Modern en up-to-date systeem',
+                          'Laagdrempelig en gebruiksvriendelijk voor het hele team',
+                          'Real-time inzicht in de resultaten',
                         ]}
                       />
                     </>
                   }
+                  details={
+                    <>
+                      <ScheduleMeeting />
+                    </>
+                  }
                   mediaPosition="right"
                   media={{
-                    data: '/assets/images/patienttevredenheidsonderzoek/slide1-01.gif',
+                    data: '/assets/images/patienttevredenheidsonderzoek/slide1-03.jpg',
                   }}
                 />
               </>
@@ -275,11 +304,94 @@ function Patienttevredenheidsonderzoek() {
                       </p>
                     </>
                   }
+                  details={
+                    <>
+                      <TryButton />
+                    </>
+                  }
                   mediaPosition="right"
                   media={{
                     data: '/assets/images/patienttevredenheidsonderzoek/slide1-01.gif',
                   }}
                 ></InfoBoxWithMedia>
+                <div
+                  className="mx-auto flex w-11/12 flex-col space-y-6 text-left text-base 
+                text-cUclaBlue-400 md:w-10/12 lg:w-8/12 xl:w-7/12 2xl:w-6/12"
+                >
+                  <h2 className="text-4xl font-bold text-cBlue-500">
+                    Inzicht in zorgkwaliteit en ervaringen!
+                  </h2>
+                  <p>
+                    Het uitzetten van een continu patiënttevredenheidsonderzoek
+                    is meer dan een vragenlijst opstellen en uitvragen. Uit
+                    ervaring kunnen wij delen dat enthousiasme, ambitie en
+                    betrokkenheid belangrijk zijn om draagvlak te creëren binnen
+                    je praktijk. Wij dragen hier graag aan bij door een digitale
+                    omgeving te bieden die als prettig wordt ervaren door alle
+                    belanghebbende. Zo zullen patiënten vaker vragenlijsten
+                    invullen en medewerkers meer betrokken worden bij het
+                    onderzoek.
+                    <br />
+                    <br />
+                    <img
+                      src="/assets/images/patienttevredenheidsonderzoek/slide2-02.webp"
+                      alt="patienttevredenheidsonderzoek"
+                    />
+                    <br />
+                    <br />
+                    <br />
+                    Wanneer het onderzoek loopt is het goed om regelmatig te
+                    monitoren en evalueren. In de learning community kun je met
+                    gelijkgestemde sparren om betere vragen te ontwerpen, hogere
+                    respons te realiseren of verbeteringen door te voeren. Wij
+                    bieden daarnaast tips het onderzoek te verbeteren.
+                    <br />
+                    <br />
+                    Het zelf maken van een patiëntervaringsonderzoek is nog
+                    nooit zo makkelijk geweest!
+                  </p>
+                </div>
+                <InfoBoxWithMedia
+                  title="De voordelen van het zelf doen"
+                  description={
+                    <>
+                      <BulletList
+                        items={[
+                          'Regie zelf in handen',
+                          'Gebruiksvriendelijk',
+                          <>
+                            <Link href="https://www.ervaringwijzer.nl/privacy/">
+                              <a className="blueLink">Gebruiksvriendelijk</a>
+                            </Link>
+                          </>,
+                          <>
+                            <span>
+                              Toegang tot de{' '}
+                              <Link href="https://www.ervaringwijzer.nl/learning-community/">
+                                <a className="blueLink">learning community</a>
+                              </Link>
+                            </span>
+                          </>,
+                          'Real-time inzicht in resultaten',
+                          'Gedeelde bibliotheek',
+                          '24/7 beschikbaar',
+                          'Gevalideerde vragenlijsten',
+                          'Continu zelf kunnen onderzoeken',
+                          'Itereren en bijsturen gaande onderzoek',
+                        ]}
+                      />
+                    </>
+                  }
+                  details={
+                    <>
+                      <ScheduleMeeting />
+                    </>
+                  }
+                  mediaPosition="left"
+                  media={{
+                    data: '/assets/images/patienttevredenheidsonderzoek/slide2-03.webp',
+                  }}
+                />
               </>
             ),
           },
@@ -294,6 +406,88 @@ function Patienttevredenheidsonderzoek() {
                   media={{
                     data: '/assets/images/patienttevredenheidsonderzoek/slide3-01.webp',
                   }}
+                  details={
+                    <>
+                      <ScheduleMeeting />
+                    </>
+                  }
+                ></InfoBoxWithMedia>
+                <div
+                  className="mx-auto flex w-11/12 flex-col space-y-6 text-left text-base 
+                text-cUclaBlue-400 md:w-10/12 lg:w-8/12 xl:w-7/12 2xl:w-6/12"
+                >
+                  <h2 className="text-4xl font-bold text-cBlue-500">
+                    Hoe werkt een samenwerking?
+                  </h2>
+                  <p>
+                    Het uitzetten van een continu patiënttevredenheidsonderzoek
+                    is meer dan een vragenlijst opstellen en uitvragen. Uit
+                    ervaring kunnen wij delen dat enthousiasme, ambitie en
+                    betrokkenheid belangrijk zijn om draagvlak te creëren binnen
+                    je praktijk. Wij dragen hier graag aan bij door een digitale
+                    omgeving te bieden die als prettig wordt ervaren door alle
+                    belanghebbende. Zo zullen patiënten vaker vragenlijsten
+                    invullen en medewerkers meer betrokken worden bij het
+                    onderzoek.
+                    <br />
+                    <br />
+                    <img
+                      src="/assets/images/patienttevredenheidsonderzoek/slide3-02.webp"
+                      alt="patienttevredenheidsonderzoek"
+                    />
+                    <br />
+                    <br />
+                    <br />
+                    Wanneer het onderzoek loopt is het goed om regelmatig te
+                    monitoren en evalueren. In de learning community kun je met
+                    gelijkgestemde sparren om betere vragen te ontwerpen, hogere
+                    respons te realiseren of verbeteringen door te voeren. Wij
+                    bieden daarnaast tips het onderzoek te verbeteren.
+                    <br />
+                    <br />
+                    Het zelf maken van een patiëntervaringsonderzoek is nog
+                    nooit zo makkelijk geweest!
+                  </p>
+                </div>
+                <InfoBoxWithMedia
+                  title="De voordelen van samenwerken"
+                  description={
+                    <>
+                      <BulletList
+                        items={[
+                          'De patiënt staat centraal',
+                          'Je werkt met professionals samen',
+                          'Gedeelde kosten',
+                          'Passief respons verzamelen',
+                          'Gebruiksvriendelijk',
+                          'Laagdrempelig',
+                          'Conform AVG',
+                          'Onderdeel van lerend netwerk',
+                          <>
+                            <Link href="https://www.ervaringwijzer.nl/voordelen/">
+                              <a className="blueLink">Real-time inzicht</a>
+                            </Link>
+                          </>,
+                          'Gedeelde bibliotheek',
+                          'De mogelijkheid om professionals te vergelijken',
+                          <>
+                            <Link href="https://ervaringwijzer.crisp.help/nl/article/voordelen-ervaringwijzer-1vdagui/">
+                              <a className="blueLink">Continu onderzoeken</a>
+                            </Link>
+                          </>,
+                        ]}
+                      />
+                    </>
+                  }
+                  mediaPosition="right"
+                  media={{
+                    data: '/assets/images/patienttevredenheidsonderzoek/slide3-03.jpg',
+                  }}
+                  details={
+                    <>
+                      <ScheduleMeeting />
+                    </>
+                  }
                 ></InfoBoxWithMedia>
               </>
             ),

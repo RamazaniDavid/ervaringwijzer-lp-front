@@ -1,7 +1,9 @@
 import React from 'react';
 
+type ItemType = string | JSX.Element;
+
 interface IProps {
-  items: string[] | JSX.Element[];
+  items: ItemType[];
   className?: string;
   style?: React.CSSProperties;
   itemClassName?: string;
