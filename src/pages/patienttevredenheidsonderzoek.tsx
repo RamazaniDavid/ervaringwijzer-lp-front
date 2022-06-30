@@ -50,7 +50,7 @@ function Patienttevredenheidsonderzoek() {
             alt="Software"
           />
         }
-        className="mx-auto h-[600px] w-full lg:w-10/12"
+        className="mx-auto h-[800px] md:h-[600px] w-full lg:w-10/12"
       />
       <QuestionSlider
         title="Hoe wil jij het onderzoek realiseren?"
