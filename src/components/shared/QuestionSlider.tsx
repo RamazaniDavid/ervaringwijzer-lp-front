@@ -38,7 +38,7 @@ function QuestionSlider(props: IProps) {
         } `}
       >
         <div
-          className="mx-auto flex min-h-[6rem] w-11/12 flex-row place-items-center 
+          className="mx-auto flex min-h-[6rem] w-11/12 flex-col md:flex-row place-items-center 
         lg:min-h-[6rem] lg:w-10/12  xl:w-9/12  2xl:w-7/12"
         >
           <div className="flex flex-1"> {renderTitle(props.title)}</div>
