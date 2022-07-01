@@ -1,21 +1,40 @@
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React from 'react';
+
+interface ItemProps {
+  text: string | JSX.Element;
+  icon?: string;
+  className?: string;
+  link?: string;
+  action?: () => void;
+  actionIcon?: string;
+}
 
 interface GridCardProps {
   title: string;
   icon?: string;
   className?: string;
-  data: {
-    text: string | JSX.Element;
-    icon?: string;
-    className?: string;
-    action?: () => void;
-    actionIcon?: string;
-  }[];
+  data: ItemProps[];
 }
 
 function GridCard(props: GridCardProps) {
   const router = useRouter();
+
+  const renderContent = (item: ItemProps): React.ReactNode => {
+    return (
+      <div className="flex h-36 w-full flex-row items-center space-x-2 rounded-xl bg-white px-2 xl:h-24">
+        <span className="basis-1/4">
+          <img
+            src={`${router.basePath}/${item.icon}`}
+            alt={item.text.toString()}
+            className="mx-auto h-12 w-12"
+          />
+        </span>
+        <span className="basis-3/4 text-left ">{item.text}</span>
+      </div>
+    );
+  };
 
   return (
     <>
@@ -27,19 +46,17 @@ function GridCard(props: GridCardProps) {
         </h3>
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 xl:gap-6">
           {props.data.map((item, index) => (
-            <div
-              key={index}
-              className="flex h-36 w-full flex-row items-center space-x-2 rounded-xl bg-white px-2 xl:h-24"
-            >
-              <span className="basis-1/4">
-                <img
-                  src={`${router.basePath}/${item.icon}`}
-                  alt={item.text.toString()}
-                  className="mx-auto h-12 w-12"
-                />
-              </span>
-              <span className="basis-3/4 text-left ">{item.text}</span>
-            </div>
+            <React.Fragment key={index}>
+              {item.link ? (
+                <>
+                  <Link href={item.link}>
+                    <a className="">{renderContent(item)}</a>
+                  </Link>
+                </>
+              ) : (
+                <>{renderContent(item)}</>
+              )}
+            </React.Fragment>
           ))}
         </div>
       </div>

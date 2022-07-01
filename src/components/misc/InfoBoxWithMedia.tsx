@@ -82,7 +82,7 @@ function InfoBoxWithMedia(props: IProps) {
       );
     }
 
-    return <>{item}</>;
+    return <>{item.data}</>;
   };
 
   return (

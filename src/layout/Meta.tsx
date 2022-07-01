@@ -22,6 +22,43 @@ const Meta = (props: IMetaProps) => {
           content="width=device-width,initial-scale=1"
           key="viewport"
         />
+        <meta name="application-name" content={AppConfig.appName} />
+        <meta name="apple-mobile-web-app-title" content={AppConfig.appName} />
+        <meta name="application-name" content={AppConfig.appName} />
+        <meta name="apple-mobile-web-app-title" content={AppConfig.appName} />
+        <meta name="msapplication-TileColor" content="#0085ff" />
+        <meta
+          name="msapplication-TileImage"
+          content="/ervaringwijzer-icon.png"
+        />
+        <meta name="theme-color" content="#0085ff" />
+        <meta
+          name="robots"
+          content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        />
+
+        <meta property="og:locale" content="nl_NL" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content={props.title} />
+        <meta property="og:description" content={props.description} />
+        <meta
+          property="og:url"
+          content={props.canonical || `${router.basePath}/${router.pathname}`}
+        />
+        <meta property="og:site_name" content={AppConfig.siteName} />
+        <meta
+          property="og:image"
+          content="/assets/images/shared/site-image.webp"
+        />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:image"
+          content="/assets/images/shared/site-image.webp"
+        />
+
         <link
           rel="apple-touch-icon"
           href={`${router.basePath}/ervaringwijzer-icon.png`}
@@ -48,15 +85,26 @@ const Meta = (props: IMetaProps) => {
         />
       </Head>
       <NextSeo
+        robotsProps={{
+          nosnippet: true,
+          notranslate: true,
+          noimageindex: true,
+          noarchive: true,
+          maxSnippet: -1,
+          maxImagePreview: 'none',
+          maxVideoPreview: -1,
+        }}
         title={props.title}
         description={props.description}
-        canonical={props.canonical}
+        canonical={
+          props.canonical || `${AppConfig.siteAddress}/${router.asPath}`
+        }
         openGraph={{
           title: props.title,
           description: props.description,
           url: props.canonical,
           locale: AppConfig.locale,
-          site_name: AppConfig.site_name,
+          site_name: AppConfig.siteName,
         }}
       />
     </>

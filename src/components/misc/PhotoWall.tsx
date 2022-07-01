@@ -4,23 +4,22 @@ interface PhotoWallProps {
   photos: {
     mostImportant: {
       src: string;
-      alt: string;
-      className: string;
+      alt?: string;
+      className?: string;
     };
     lessImportant: {
       src: string;
-      alt: string;
-      className: string;
+      alt?: string;
+      className?: string;
     };
     leastImportant: {
       src: string;
-      alt: string;
-      className: string;
+      alt?: string;
+      className?: string;
     };
   };
   className?: string;
   style?: React.CSSProperties;
-  maxHexagons?: number;
 }
 
 function PhotoWall(props: PhotoWallProps) {

@@ -12,6 +12,7 @@ interface IProps {
   className?: string;
   style?: React.CSSProperties;
   childrenPosition?: 'before' | 'after';
+  infoBoxesPositionOrder?: ['left', 'right'] | ['right', 'left'];
   infoBoxes: {
     title: string | JSX.Element;
     description: string | JSX.Element;
@@ -48,7 +49,9 @@ function SmartInfo(props: IProps) {
               logo={item.logo}
               media={item.media}
               key={index}
-              mediaPosition={index % 2 === 0 ? 'right' : 'left'}
+              mediaPosition={
+                (props.infoBoxesPositionOrder ?? ['right', 'left'])[index % 2]
+              }
               className={'relative z-10 mx-auto p-8  lg:p-20'}
             />
           ))}
