@@ -25,7 +25,7 @@ function ClientInterview() {
       <Hero
         title={
           <>
-            <h1 className="text-3xl xl:text-5xl">
+            <h1 className="text-2xl xl:text-5xl">
               Realiseer eenvoudig het{' '}
               <span className="text-cLightBlue-500">
                 clientervaringsonderzoek

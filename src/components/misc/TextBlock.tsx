@@ -11,10 +11,12 @@ interface TextBlockProps {
 function TextBlock(props: TextBlockProps) {
   return (
     <div
-      className={`mx-auto mt-8 w-8/12 items-center pt-24 text-center leading-7 ${props.className}`}
+      className={`mx-auto mt-8 w-11/12 md:w-10/12 xl:w-8/12 items-center pt-24 text-center leading-7 ${props.className}`}
       style={{ ...props.style }}
     >
-      <h2 className="mb-8 text-4xl font-medium leading-tight">{props.title}</h2>
+      <h2 className="mb-8 text-xl font-bold leading-tight lg:text-4xl">
+        {props.title}
+      </h2>
       {props.subtitle && (
         <p className="mb-8 text-sm text-gray-500">{props.subtitle}</p>
       )}
