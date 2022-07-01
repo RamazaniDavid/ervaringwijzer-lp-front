@@ -1,6 +1,7 @@
 export default function renderTitle(
   title: string | JSX.Element,
-  Template?: React.ComponentType<any>
+  Template?: React.ComponentType<any>,
+  className?: string
 ) {
   return (
     <>
@@ -10,7 +11,9 @@ export default function renderTitle(
             <Template>{title}</Template>
           ) : (
             <>
-              <h2 className="text-base md:text-2xl">{title}</h2>
+              <h2 className={`${className ?? 'text-base md:text-2xl  '}`}>
+                {title}
+              </h2>
             </>
           )}
         </>

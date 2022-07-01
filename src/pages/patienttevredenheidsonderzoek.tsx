@@ -5,6 +5,7 @@ import BulletList from '@/components/misc/BulletList';
 import ScheduleMeeting from '@/components/misc/ctaButtons/ScheduleMeeting';
 import InfoBoxWithMedia from '@/components/misc/InfoBoxWithMedia';
 import TryButton from '@/components/misc/TryButton';
+import CtaPanel from '@/components/shared/CtaPanel';
 import Hero from '@/components/shared/Hero';
 import QuestionSlider from '@/components/shared/QuestionSlider';
 import { Layout } from '@/layout/MainLayout';
@@ -50,7 +51,7 @@ function Patienttevredenheidsonderzoek() {
             alt="Software"
           />
         }
-        className="mx-auto h-[850px] md:h-[600px] w-full lg:w-10/12"
+        className="mx-auto h-[850px] w-full md:h-[600px] lg:w-10/12"
       />
       <QuestionSlider
         title="Hoe wil jij het onderzoek realiseren?"
@@ -171,16 +172,18 @@ function Patienttevredenheidsonderzoek() {
                   <p>
                     Er zijn diverse manieren hoe wij uw patiënt kunnen
                     benaderen. Een vragenlijst kan worden gestuurd via:
-                    <BulletList
-                      items={[
-                        'Email',
-                        'SMS',
-                        'WhatsApp',
-                        'Servicezuil',
-                        'Papier',
-                        'Deelbare link online.',
-                      ]}
-                    />
+                  </p>
+                  <BulletList
+                    items={[
+                      'Email',
+                      'SMS',
+                      'WhatsApp',
+                      'Servicezuil',
+                      'Papier',
+                      'Deelbare link online.',
+                    ]}
+                  />
+                  <p>
                     <br />
                     <br />
                     We nemen graag alle opties door zodat je je goed bewust bent
@@ -491,6 +494,17 @@ function Patienttevredenheidsonderzoek() {
                 ></InfoBoxWithMedia>
               </>
             ),
+          },
+        ]}
+      />
+      <CtaPanel
+        title="Samen wijzer worden?"
+        Ctas={[
+          TryButton,
+          {
+            title: 'Contact opnemen',
+            link: '/contact',
+            className: 'bg-cUclaBlue-500 hover:bg-cUclaBlue-600',
           },
         ]}
       />

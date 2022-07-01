@@ -41,20 +41,27 @@ function Hero(props: HeroProps) {
                 props.title
               )}
             </div>
-            <p className="mt-2 text-sm text-[#5e7187] md:text-base">
-              {props.typewriter && typeof props.subtitle === 'string' ? (
-                <Typewriter
-                  options={{
-                    strings: [props.subtitle.toString()],
-                    autoStart: true,
-                    loop: true,
-                    deleteSpeed: 1,
-                  }}
-                />
-              ) : (
-                props.subtitle
-              )}
-            </p>
+
+            {props.subtitle && typeof props.subtitle === 'string' ? (
+              <>
+                <p className="mt-2 text-sm text-[#5e7187] md:text-base">
+                  {props.typewriter ? (
+                    <Typewriter
+                      options={{
+                        strings: [props.subtitle.toString()],
+                        autoStart: true,
+                        loop: true,
+                        deleteSpeed: 1,
+                      }}
+                    />
+                  ) : (
+                    props.subtitle
+                  )}
+                </p>
+              </>
+            ) : (
+              <>{props.subtitle}</>
+            )}
 
             <div className="mt-6 flex justify-center lg:justify-start">
               {props.tryButton && <TryButton />}
