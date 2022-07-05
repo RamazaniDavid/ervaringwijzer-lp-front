@@ -184,7 +184,7 @@ function voordelen() {
         ]}
       />
       <CtaPanel
-        title="Alle voordelen zelf ervaren?"
+        title={{ text: 'Alle voordelen zelf ervaren?' }}
         Ctas={[TryButton, ContactButton]}
       />
     </Layout>

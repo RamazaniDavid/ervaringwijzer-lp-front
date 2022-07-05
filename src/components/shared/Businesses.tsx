@@ -31,21 +31,21 @@ function Businesses(props: BusinessesProps) {
   return (
     <section id={props.sectionId ?? 'businesses'}>
       <div className="w-full bg-cLightBlue-500 text-xl text-white">
-        <div className="mx-auto flex min-h-[7rem] w-11/12 flex-row place-items-center justify-between text-center  lg:min-h-[6rem] lg:w-10/12  xl:w-9/12 xl:grid-cols-4 2xl:w-7/12">
+        <div className="mx-auto flex min-h-[7rem] w-11/12 flex-row place-items-center justify-between  text-center  lg:min-h-[6rem] lg:w-10/12  xl:w-9/12 xl:grid-cols-4 2xl:w-7/12">
           {props.businesses.map((business, ix) => (
             <div
-              className="lf:text-left flex basis-1/3 flex-col items-center space-x-3  text-center md:basis-1/4 lg:flex-row"
+              className="lf:text-left flex basis-1/3 flex-col items-center space-x-1 md:basis-1/4 lg:flex-row"
               key={ix}
             >
               <span className="text-2xl font-bold  text-white lg:text-3xl">
                 {business.value}
               </span>
-              <span className="text-left text-cLightGreenBlue-400">
+              <span className="text-center text-cLightGreenBlue-400">
                 {business.title}
               </span>
             </div>
           ))}
-          <div className="hidden  md:flex md:basis-1/4">
+          <div className="hidden  md:basis-1/4 lg:flex">
             {props.goToRefElement && (
               <button
                 className="rounded-full border-0 bg-white font-bold hover:animate-bounce"

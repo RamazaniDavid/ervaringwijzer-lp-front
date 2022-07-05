@@ -34,8 +34,8 @@ const Index = () => {
     <Layout
       meta={
         <Meta
-          title="Ervaringwijzer"
-          description="Met de API van Ervaringwijzer automatiseer je alle onderdelen van Ervaringwijzer. Creeër, verstuur en zie resultaten van alle onderzoeken van ieder deel van de organisatie."
+          title="Cliëntervaringen op een nieuwe manier ophalen met Ervaringwijzer"
+          description="Een platform met een lerend netwerk met als doel: continue betekenisvolle cliëntervaringen verzamelen op een manier die past bij de cliënt."
         />
       }
     >

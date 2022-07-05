@@ -10,8 +10,20 @@ interface IntroProps {
   style?: React.CSSProperties;
   typewriter?: boolean;
   textBlockClassName?: string;
-  details?: JSX.Element;
+  details?: JSX.Element | JSX.Element[];
 }
+
+const renderDetails = (details?: JSX.Element | JSX.Element[]) => {
+  if (!details) {
+    return null;
+  }
+  if (Array.isArray(details)) {
+    return details.map((detail, index) => (
+      <React.Fragment key={index}>{detail}</React.Fragment>
+    ));
+  }
+  return details;
+};
 
 function Intro(props: IntroProps) {
   return (
@@ -24,7 +36,7 @@ function Intro(props: IntroProps) {
         >
           {props.children}
         </TextBlock>
-        <div className="mx-auto w-full lg:w-8/12">{props.details}</div>
+        <div className="mx-auto w-full">{renderDetails(props.details)}</div>
       </div>
     </section>
   );

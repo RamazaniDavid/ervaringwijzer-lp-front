@@ -54,10 +54,10 @@ function Patienttevredenheidsonderzoek() {
         className="mx-auto h-[850px] w-full md:h-[600px] lg:w-10/12"
       />
       <QuestionSlider
-        title="Hoe wil jij het onderzoek realiseren?"
+        title={{ text: 'Hoe wil jij het onderzoek realiseren?' }}
         questions={[
           {
-            title: 'Uitbesteden',
+            title: { text: 'Uitbesteden' },
             slide: (
               <>
                 <InfoBoxWithMedia
@@ -285,7 +285,7 @@ function Patienttevredenheidsonderzoek() {
             ),
           },
           {
-            title: 'Zelf doen',
+            title: { text: 'Zelf doen' },
             slide: (
               <>
                 <InfoBoxWithMedia
@@ -399,7 +399,7 @@ function Patienttevredenheidsonderzoek() {
             ),
           },
           {
-            title: 'Samenwerken',
+            title: { text: 'Samenwerken' },
             slide: (
               <>
                 <InfoBoxWithMedia
@@ -498,7 +498,7 @@ function Patienttevredenheidsonderzoek() {
         ]}
       />
       <CtaPanel
-        title="Samen wijzer worden?"
+        title={{ text: 'Samen wijzer worden?', className: 'text-3xl' }}
         Ctas={[
           TryButton,
           {

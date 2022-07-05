@@ -60,11 +60,7 @@ function Advantages() {
 
   return (
     <>
-      <GridCard
-        title="Voordelen"
-        className="mb-16  text-cBlue-500"
-        data={advantages}
-      />
+      <GridCard title="Voordelen" items={advantages} />
     </>
   );
 }

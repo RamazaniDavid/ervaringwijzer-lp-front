@@ -72,8 +72,7 @@ function ClientInterview() {
           <>
             <GridCard
               title="Welke oplossingen biedt Ervaringwijzer"
-              className="mb-16  text-cBlue-500"
-              data={[
+              items={[
                 {
                   text: 'Inhuren professional voor een eenmalig onderzoek',
                   icon: 'assets/images/icons/visueel.svg',
@@ -151,8 +150,7 @@ function ClientInterview() {
       >
         <GridCard
           title="Voordelen"
-          className="mb-16  text-cBlue-500"
-          data={[
+          items={[
             {
               text: 'Eigen beheer vs. uitbesteden',
               icon: 'assets/images/icons/eigen-beheer.svg',

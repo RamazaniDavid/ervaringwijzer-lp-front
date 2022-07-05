@@ -2,15 +2,16 @@ import React from 'react';
 
 import renderTitle from '@/utils/common/RenderTitle';
 import { MediaType } from '@/utils/types/MediaType';
+import { TitleType } from '@/utils/types/TitleType';
 
 interface IProps {
   sectionId?: string;
-  title: string | JSX.Element;
+  title: TitleType | JSX.Element;
   subtitle?: string | JSX.Element;
   className?: string;
   style?: React.CSSProperties;
   questions?: {
-    title: string | JSX.Element;
+    title: TitleType | JSX.Element;
     subtitle?: string | JSX.Element;
     className?: string;
     style?: React.CSSProperties;

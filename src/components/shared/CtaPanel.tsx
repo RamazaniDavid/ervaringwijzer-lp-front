@@ -3,13 +3,14 @@ import React from 'react';
 
 import renderTitle from '@/utils/common/RenderTitle';
 import { CtaType, SimpleCtaType } from '@/utils/types/CtaType';
+import { TitleType } from '@/utils/types/TitleType';
 
 import ScheduleMeeting from '../misc/ctaButtons/ScheduleMeeting';
 import TryButton from '../misc/TryButton';
 
 interface IProps {
   sectionId?: string;
-  title: string | JSX.Element;
+  title: TitleType | JSX.Element;
   Ctas: CtaType[];
   className?: string;
   style?: React.CSSProperties;
@@ -59,9 +60,7 @@ function CtaPanel(props: IProps) {
           className="mx-auto flex min-h-[14rem] w-11/12 flex-col place-items-center md:flex-row 
         lg:min-h-[16rem] lg:w-10/12  xl:w-9/12  2xl:w-7/12"
         >
-          <div className="flex flex-1">
-            {renderTitle(props.title, undefined, 'text-3xl')}
-          </div>
+          <div className="flex flex-1">{renderTitle(props.title)}</div>
           <div className="flex flex-1  space-x-2">
             {props.Ctas.map((item, index) => {
               return (
