@@ -105,7 +105,7 @@ function ServiceChangesPage() {
                 },
                 {
                   text: 'Handpomp en desinfectiegel',
-                  icon: 'assets/images/icons/Servicezuil.svg',
+                  icon: 'assets/images/icons/Handpomp-en-desinfectiegel.svg',
                   description: (
                     <>
                       <p>
@@ -118,7 +118,7 @@ function ServiceChangesPage() {
                 },
                 {
                   text: 'Installatie en instructie',
-                  icon: 'assets/images/icons/Servicezuil.svg',
+                  icon: 'assets/images/icons/Installatie-en-instructie.svg',
                   description: (
                     <>
                       <p>
@@ -131,7 +131,7 @@ function ServiceChangesPage() {
                 },
                 {
                   text: 'Service level agreement',
-                  icon: 'assets/images/icons/Servicezuil.svg',
+                  icon: 'assets/images/icons/Service-level-agreement.svg',
                   description: (
                     <>
                       <p>
@@ -144,7 +144,7 @@ function ServiceChangesPage() {
                 },
                 {
                   text: 'Alles op één platform',
-                  icon: 'assets/images/icons/Servicezuil.svg',
+                  icon: 'assets/images/icons/nieuwsbrief.svg',
                   description: (
                     <>
                       <p>
@@ -177,7 +177,7 @@ function ServiceChangesPage() {
                 },
                 {
                   text: 'Bekijk voorbeeld',
-                  icon: 'assets/images/icons/Servicezuil.svg',
+                  icon: 'assets/images/icons/digitaal-als-fysiek.svg',
                   description: (
                     <>
                       <p>
