@@ -16,11 +16,11 @@ const NormalButton = (props: IButtonOutlineProps) => {
       disabled={props.disabled}
       className={`group h-[50px] w-full md:w-[187px] relative inline-flex  items-center justify-center
        overflow-hidden rounded-full p-4 px-5 py-3 font-medium bg-cLightBlue-500
-        shadow-xl transition duration-1000 ease-out hover:ring-1 hover:ring-blue-500  ${
+        shadow-xl transition duration-1000 ease-out hover:ring-1 hover:scale-110 hover:ring-blue-500  text-white ${
           props.className ?? ''
         }`}
     >
-      <span className="relative text-[19px] leading-5 text-white md:text-[17px]">
+      <span className="relative text-[19px] leading-5 md:text-[17px]">
         {props.children}
       </span>
     </button>

@@ -10,6 +10,8 @@ interface ItemProps {
   link?: string;
   action?: () => void;
   actionIcon?: string;
+  subTitle?: string | JSX.Element;
+  titleDetail?: string | JSX.Element;
 }
 
 interface GridCardProps {
@@ -20,28 +22,28 @@ interface GridCardProps {
   items: ItemProps[];
 }
 
-const renderDescription = (
-  description?: string | JSX.Element | JSX.Element[]
-) => {
-  if (!description) {
-    return null;
-  }
-  if (Array.isArray(description)) {
-    return description.map((detail, index) => (
-      <React.Fragment key={index}>{detail}</React.Fragment>
-    ));
-  }
-  return description;
-};
-
 function GridCard(props: GridCardProps) {
   const router = useRouter();
+
+  const renderDescription = (
+    description?: string | JSX.Element | JSX.Element[]
+  ) => {
+    if (!description) {
+      return null;
+    }
+    if (Array.isArray(description)) {
+      return description.map((detail, index) => (
+        <React.Fragment key={index}>{detail}</React.Fragment>
+      ));
+    }
+    return description;
+  };
 
   const renderContent = (item: ItemProps): React.ReactNode => {
     return (
       <div
         className={`flex flex-col space-x-2 space-y-2 rounded-xl bg-white h-full shadow ${
-          props.className ?? ''
+          item.className ?? ''
         }`}
       >
         <div className="my-4 flex w-full flex-row items-center">
@@ -52,7 +54,17 @@ function GridCard(props: GridCardProps) {
               className="mx-auto h-12 w-12"
             />
           </span>
-          <span className={'basis-3/4 text-left '}>{item.text}</span>
+          <>
+            <div className="flex basis-3/4  flex-row text-left">
+              <div className="flex flex-col">
+                {item.text && <div>{item.text}</div>}
+                {item.subTitle && <div>{item.subTitle}</div>}
+              </div>
+              {item.titleDetail && (
+                <div className="mx-auto">{item.titleDetail}</div>
+              )}
+            </div>
+          </>
         </div>
         {item.description && (
           <div className="flex px-4 pb-4">

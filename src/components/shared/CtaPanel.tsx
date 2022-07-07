@@ -5,6 +5,7 @@ import renderTitle from '@/utils/common/RenderTitle';
 import { CtaType, SimpleCtaType } from '@/utils/types/CtaType';
 import { TitleType } from '@/utils/types/TitleType';
 
+import ContactButton from '../misc/ctaButtons/ContactButton';
 import ScheduleMeeting from '../misc/ctaButtons/ScheduleMeeting';
 import TryButton from '../misc/TryButton';
 
@@ -40,6 +41,9 @@ const renderCta = (item: CtaType): JSX.Element => {
   }
   if (item === ScheduleMeeting) {
     return <ScheduleMeeting />;
+  }
+  if (item === ContactButton) {
+    return <ContactButton />;
   }
   if (item === TryButton) {
     return <TryButton />;

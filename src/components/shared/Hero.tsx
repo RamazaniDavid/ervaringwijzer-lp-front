@@ -23,7 +23,7 @@ function Hero(props: HeroProps) {
   return (
     <section
       id="hero"
-      className={`min-h-[calc(100vh-9rem)] items-center self-center `}
+      className={`min-h-[calc(100vh-9rem)] items-center self-center  bg-white`}
     >
       <div
         className={`flex  flex-wrap min-h-[inherit]  justify-between ${props.className}`}

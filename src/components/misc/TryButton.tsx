@@ -6,7 +6,12 @@ import EmailForm from '../form/EmailForm';
 import Modal from './Modal';
 import NormalButton from './NormalButton';
 
-const TryButton = () => {
+interface IProps {
+  children?: React.ReactNode;
+  className?: string;
+}
+
+const TryButton = (props: IProps) => {
   const modalComponent = React.useRef<IModalHandler>(null);
   const messageModalComponent = React.useRef<IModalHandler>(null);
 
@@ -20,8 +25,11 @@ const TryButton = () => {
 
   return (
     <>
-      <NormalButton onClick={() => modalComponent.current?.open()}>
-        Probeer gratis
+      <NormalButton
+        className={props.className}
+        onClick={() => modalComponent.current?.open()}
+      >
+        {props.children ? <>{props.children}</> : 'Probeer gratis'}
       </NormalButton>
 
       <Modal ref={modalComponent}>
