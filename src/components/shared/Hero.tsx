@@ -17,13 +17,16 @@ interface HeroProps {
   mediaClassName?: string;
   mediaStyle?: React.CSSProperties;
   mediaPosition?: 'left' | 'right' | 'center';
+  fullscreen?: boolean;
 }
 
 function Hero(props: HeroProps) {
   return (
     <section
       id="hero"
-      className={`min-h-[calc(100vh-9rem)] items-center self-center  bg-white`}
+      className={`${
+        props.fullscreen === false ? 'min-h-max' : 'min-h-[calc(100vh-9rem)] '
+      } items-center self-center  bg-white`}
     >
       <div
         className={`flex  flex-wrap min-h-[inherit]  justify-between ${props.className}`}

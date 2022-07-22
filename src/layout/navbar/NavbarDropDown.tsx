@@ -22,21 +22,23 @@ function NavbarDropDown(props: INavbarDropDownProps) {
         onMouseLeave={() => {
           setDropdownOpen(false);
         }}
-        className="flex space-x-2  px-4 py-2 font-medium text-gray-600  hover:scale-110 hover:text-gray-800"
+        className="flex space-x-2  px-4 py-2 font-medium text-cDarkOcean "
       >
         {props.text}
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className=" h-3 w-3 fill-current"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          strokeWidth="2"
+          className={`fill-current ml-1 mt-1 origin-center ${
+            dropdownOpen ? '' : ' rotate-180'
+          }`}
+          viewBox="0 0 14 14"
+          height="14"
+          width="14"
+          strokeWidth="1"
         >
           <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M19 9l-7 7-7-7"
+            xmlns="http://www.w3.org/2000/svg"
+            d="M7.75 0l7.145 11.25H.605L7.75 0z"
+            fill="#D7DBE1"
           />
         </svg>
       </button>

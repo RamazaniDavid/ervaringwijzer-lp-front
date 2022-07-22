@@ -6,7 +6,7 @@ import { useForm } from 'react-hook-form';
 
 import { IEmailFormInputs } from '@/utils/interfaces/IEmailFormInputs';
 
-import NormalButton from '../misc/NormalButton';
+import NormalButton from '../../misc/NormalButton';
 import { FormSchema } from './FormSchema';
 
 type IEmailFormProps = {

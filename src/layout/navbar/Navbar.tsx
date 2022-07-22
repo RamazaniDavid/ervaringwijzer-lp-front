@@ -7,21 +7,25 @@ import NavbarDropDown from './NavbarDropDown';
 import NavbarItem from './NavbarItem';
 
 function Navbar() {
-  const [isScrolled, setIsScrolled] = React.useState(false);
-  const [isScrolledTryBtn, setIsScrolledTryBtn] = React.useState(false);
+  // const [isScrolled, setIsScrolled] = React.useState(false);
+  // const [isScrolledTryBtn, setIsScrolledTryBtn] = React.useState(false);
   const [showMobileMenu, setShowMobileMenu] = React.useState(false);
   const [hideLogoText, setHideLogoText] = React.useState(false);
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
-      setIsScrolledTryBtn(
-        (window.innerWidth < 640 && window.scrollY > 350) ||
-          (window.innerWidth >= 640 && window.scrollY > 400)
-      );
-      setIsScrolled(window.scrollY > 30);
+      // setIsScrolledTryBtn(
+      //   (window.innerWidth < 640 && window.scrollY > 350) ||
+      //     (window.innerWidth >= 640 && window.scrollY > 400)
+      // );
+      // setIsScrolled(window.scrollY > 30);
     });
 
     setHideLogoText(window.innerWidth < 640);
+
+    return () => {
+      window.removeEventListener('scroll', () => {});
+    };
   }, []);
 
   const menu = [
@@ -69,16 +73,12 @@ function Navbar() {
   return (
     <>
       <header
-        className={`fixed top-0 rounded z-30 w-full min-h-[66px] transition-all ${
-          isScrolled ? ' pt-0 shadow-2xl' : '  pt-4 '
-        }`}
+        className={`fixed top-0 rounded z-30 w-full min-h-[66px] transition-all `}
       >
         <nav
-          className={`relative px-4  flex justify-between min-h-[66px] items-center${
-            isScrolled ? ' backdrop-blur-sm bg-white  ' : 'bg-transparent'
-          }`}
+          className={`relative px-4  flex justify-between min-h-[66px] items-center bg-white`}
         >
-          <div className="text-3xl font-bold leading-none">
+          <div className="mt-1 ml-1 text-3xl font-bold leading-none">
             <SiteLogo textInVisible={hideLogoText} />
           </div>
           <div className="lg:hidden">
@@ -97,30 +97,31 @@ function Navbar() {
             </button>
           </div>
 
-          <div
-            className={`hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6`}
-          >
-            <ul className="flex w-full flex-col space-y-2  lg:w-auto lg:flex-row lg:space-x-2 lg:space-y-0">
-              {menu.map((item, index) => (
-                <React.Fragment key={index}>
-                  <li className="relative">
-                    {item.subMenu ? (
-                      <NavbarDropDown {...item} />
-                    ) : (
-                      <NavbarItem {...item} />
-                    )}
-                  </li>
-                </React.Fragment>
-              ))}
-            </ul>
-          </div>
-          {isScrolledTryBtn && (
+          <div className="flex justify-end">
+            <div
+              className={`hidden right-0   transform   lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6`}
+            >
+              <ul className="flex w-full flex-col space-y-2  lg:w-auto lg:flex-row lg:space-x-2 lg:space-y-0">
+                {menu.map((item, index) => (
+                  <React.Fragment key={index}>
+                    <li className="relative">
+                      {item.subMenu ? (
+                        <NavbarDropDown {...item} />
+                      ) : (
+                        <NavbarItem {...item} />
+                      )}
+                    </li>
+                  </React.Fragment>
+                ))}
+              </ul>
+            </div>
+
             <div
               className={`hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 `}
             >
-              <TryButton />
+              <TryButton>Demo</TryButton>
             </div>
-          )}
+          </div>
         </nav>
       </header>
       <div

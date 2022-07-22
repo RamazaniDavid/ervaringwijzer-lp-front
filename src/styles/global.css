@@ -82,20 +82,7 @@ hr {
   }
 }
 
-::-webkit-scrollbar-track {
-  border: 0px solid rgb(249 250 251 / 0);
-  background-color: rgb(249 250 251 / 0);
-}
 
-::-webkit-scrollbar {
-  width: 15px;
-  background-color: #dfe6e9;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #74b9ff;
-  border-radius: 2px;
-}
 
 @layer utilities {
   .blueLink {

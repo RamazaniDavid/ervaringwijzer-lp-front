@@ -1,6 +1,8 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
 
+import { useRefDimensions } from '@/utils/hooks/useDimention';
+
 import TryButton from '../misc/TryButton';
 
 interface HeroWithIpadProps {
@@ -13,23 +15,31 @@ interface HeroWithIpadProps {
   typewriterClassName?: string;
   typewriterStyle?: React.CSSProperties;
   tryButton?: boolean;
-  media?: JSX.Element;
-  mediaClassName?: string;
-  mediaStyle?: React.CSSProperties;
+  // media?: JSX.Element;
+  // mediaClassName?: string;
+  // mediaStyle?: React.CSSProperties;
+  media?: {
+    element: JSX.Element;
+    className?: string;
+    style?: React.CSSProperties;
+  };
   hoverMedia?: {
-    media: JSX.Element;
+    element: JSX.Element;
     className?: string;
   };
 }
 
 function HeroWithIpad(props: HeroWithIpadProps) {
+  const mediaContainerRef = React.useRef<HTMLDivElement>(null);
+  const mediaDimention = useRefDimensions(mediaContainerRef);
+
   return (
     <section
       id="hero"
       className={`min-h-[calc(100vh-2rem)] sm:min-h-[calc(100vh-12rem)] items-center self-center  `}
     >
       <div
-        className={`flex  flex-wrap  justify-between lg:pt-6 xl:h-[600px] 2xl:mt-16 ${props.className} `}
+        className={`flex  flex-wrap  justify-between lg:pt-6 xl:h-[600px] mt-16 ${props.className} `}
       >
         <div className="flex w-full items-center px-8  text-left md:px-12 lg:w-1/2">
           <div>
@@ -47,20 +57,21 @@ function HeroWithIpad(props: HeroWithIpadProps) {
                 props.title
               )}
             </div>
-            <p className="mt-2 text-sm text-gray-500 md:text-base">
+            <div className="mt-2 text-sm text-gray-500 md:text-base">
               {props.typewriter && typeof props.subtitle === 'string' ? (
                 <Typewriter
                   options={{
                     strings: [props.subtitle.toString()],
                     autoStart: true,
                     loop: true,
+                    delay: 500,
                     deleteSpeed: 1,
                   }}
                 />
               ) : (
                 props.subtitle
               )}
-            </p>
+            </div>
 
             <div className="mt-6 flex justify-center lg:justify-start">
               {props.tryButton && <TryButton />}
@@ -68,27 +79,39 @@ function HeroWithIpad(props: HeroWithIpadProps) {
           </div>
         </div>
         <div
-          className={` w-10/12 items-center lg:w-1/2 relative mt-12 mx-auto`}
+          className={` w-10/12 items-center lg:w-1/2 relative mt-12 mx-auto `}
         >
-          <div className="absolute inset-0 z-[2] box-border inline-block ">
-            <img
-              src="/assets/images/shared/ipad-mockup.png"
-              alt=""
-              className=" -ml-[1.5vw] -mt-[1vw]  h-[46vw] w-[79vw]   lg:h-[25vw] lg:w-[44vw] "
-            />
-          </div>
-          <div
-            className={`absolute z-[1]   ${props.mediaClassName}`}
-            style={{
-              ...props.mediaStyle,
-            }}
-          >
-            {props.media}
-          </div>
-          <div
-            className={`absolute z-[3] inset-0 ${props.hoverMedia?.className}`}
-          >
-            {props.hoverMedia?.media}
+          <div className="relative w-full">
+            <div className="absolute inset-0 z-[2] box-border inline-block">
+              <img
+                src="/assets/images/shared/ipad-mockup.png"
+                alt=""
+                style={{
+                  width: `${mediaDimention.width}px`,
+                  height: `${mediaDimention.height}px`,
+                }}
+              />
+            </div>
+            <div
+              ref={mediaContainerRef}
+              className={`absolute z-[1] p-3 lg:p-8  ${props.media?.className}`}
+              style={{
+                ...props.media?.style,
+              }}
+            >
+              {props.media?.element}
+            </div>
+            {props.hoverMedia && (
+              <div
+                className={`absolute z-[3] inset-0 rounded-lg  ${props.hoverMedia?.className}`}
+                style={{
+                  height: `${mediaDimention.height - 10}px`,
+                  width: `${mediaDimention.width - 10}px`,
+                }}
+              >
+                {props.hoverMedia?.element}
+              </div>
+            )}
           </div>
         </div>
       </div>

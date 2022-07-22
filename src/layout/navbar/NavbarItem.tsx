@@ -25,7 +25,7 @@ function NavbarItem(props: INavbarItemProps) {
 
       <Link href={props.path}>
         <a
-          className={`${props.className} flex px-4 py-2 font-medium text-gray-600  hover:scale-110 hover:text-gray-800`}
+          className={`${props.className} flex px-4 py-2 font-medium  text-cDarkOcean  `}
           id={props.text.replace(/\s+/g, '-')}
           target={props.target}
         >

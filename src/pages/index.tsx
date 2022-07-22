@@ -5,7 +5,7 @@ import Modal from '@/components/misc/Modal';
 import Advantages from '@/components/shared/Advantages';
 import Businesses from '@/components/shared/Businesses';
 import CtaSpecial from '@/components/shared/CtaSpecial';
-import HeroWithMockUp from '@/components/shared/HeroWithMockUp';
+import HeroWithIpad from '@/components/shared/HeroWithIpad';
 import Intro from '@/components/shared/Intro';
 import NetherlandsMap from '@/components/shared/NetherlandsMap';
 import Quotes from '@/components/shared/Quotes';
@@ -39,7 +39,7 @@ const Index = () => {
         />
       }
     >
-      <HeroWithMockUp
+      <HeroWithIpad
         className=""
         title={
           <>
@@ -52,7 +52,8 @@ const Index = () => {
                     strings,
                     autoStart: true,
                     loop: true,
-                    deleteSpeed: 1,
+                    deleteSpeed: 2,
+                    delay: 100,
                   }}
                 />
               </span>
@@ -91,13 +92,12 @@ const Index = () => {
               </svg>
             </button>
           ),
-          className:
-            ' group w-[58vw] h-[34vw] lg:h-[20vw] lg:mt-[2vw] lg:w-[35.6vw] mx-auto',
+          className: ' group ',
         }}
         media={{
           element: (
             <>
-              <div className=" w-full">
+              <div className="">
                 <video
                   playsInline={true}
                   id="intro-video"
@@ -106,10 +106,6 @@ const Index = () => {
                   muted={true}
                   controlsList="nodownload"
                   className="w-full"
-                  style={{
-                    background:
-                      'url(http://i.stack.imgur.com/zZNgk.png) center center no-repeat',
-                  }}
                 >
                   <source
                     src="/assets/videos/ervaringwijzer-promo.mp4"
@@ -124,20 +120,9 @@ const Index = () => {
               </div>
             </>
           ),
-          className:
-            'w-[60vw] mx-[12.5vw] lg:w-[36vw] lg:mt-[2vw] lg:ml-[6.8vw] ',
+          className: 'w-full  ',
         }}
         tryButton={true}
-        mockUp={{
-          element: (
-            <img
-              src="/assets/images/shared/mb-mockup.png"
-              alt=""
-              className="aspect-[2/1] w-full px-2"
-            />
-          ),
-          className: '-mt-[3.2vw] lg:mt-[0vw]',
-        }}
       />
       <Businesses
         businesses={[

@@ -20,7 +20,8 @@ function Contact() {
       <Hero
         title="Neem contact op"
         subtitle="Heb je vragen, opmerkingen of ben je benieuwd naar Ervaringwijzer? Wij helpen je graag via een van de onderstaande contactmogelijkheden."
-        className="w-special"
+        className="w-special min-h-[30rem]"
+        fullscreen={false}
       />
       <GridCard
         title=""

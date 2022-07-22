@@ -1,6 +1,8 @@
 import React from 'react';
 
-import ModalEmailForm, { IModalEmailFormHandler } from '../form/ModalEmailForm';
+import ModalEmailForm, {
+  IModalEmailFormHandler,
+} from '../form/emailForm/ModalEmailForm';
 
 interface CtaSpecialProps {
   sectionId?: string;

@@ -2,7 +2,7 @@ import React from 'react';
 
 import { IModalHandler } from '@/utils/handlers/IModalHandler';
 
-import EmailForm from '../form/EmailForm';
+import EmailForm from '../form/emailForm/EmailForm';
 import Modal from './Modal';
 import NormalButton from './NormalButton';
 
@@ -16,8 +16,6 @@ const TryButton = (props: IProps) => {
   const messageModalComponent = React.useRef<IModalHandler>(null);
 
   const onSubmit = (data: any) => {
-    console.log(data);
-
     if (data.status !== 200) return;
     modalComponent.current?.close();
     messageModalComponent.current?.open();

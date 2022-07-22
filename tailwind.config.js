@@ -48,6 +48,7 @@ module.exports = {
           800: '#2c5282',
           900: '#2a4365',
         },
+        cDarkOcean: '#5E7186',
         cBlue: {
           50: '#ABC3BA',
           100: '#8AABA4',

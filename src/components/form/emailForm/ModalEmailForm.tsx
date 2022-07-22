@@ -2,8 +2,8 @@ import React, { forwardRef, useImperativeHandle } from 'react';
 
 import { IModalHandler } from '@/utils/handlers/IModalHandler';
 
-import Modal from '../misc/Modal';
-import NormalButton from '../misc/NormalButton';
+import Modal from '../../misc/Modal';
+import NormalButton from '../../misc/NormalButton';
 import EmailForm from './EmailForm';
 
 export interface IModalEmailFormProps {
