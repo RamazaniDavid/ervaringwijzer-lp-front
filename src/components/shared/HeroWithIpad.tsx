@@ -82,13 +82,13 @@ function HeroWithIpad(props: HeroWithIpadProps) {
           className={` w-10/12 items-center lg:w-1/2 relative mt-12 mx-auto `}
         >
           <div className="relative w-full">
-            <div className="absolute inset-0 z-[2] box-border inline-block">
+            <div className="absolute inset-0 z-[3] box-border inline-block">
               <img
                 src="/assets/images/shared/ipad-mockup.png"
                 alt=""
                 style={{
-                  width: `${mediaDimention.width}px`,
-                  height: `${mediaDimention.height}px`,
+                  width: `calc(${mediaDimention.width}px - 0rem)`,
+                  height: `calc(${mediaDimention.height}px - 0.5rem)`,
                 }}
               />
             </div>
@@ -103,10 +103,12 @@ function HeroWithIpad(props: HeroWithIpadProps) {
             </div>
             {props.hoverMedia && (
               <div
-                className={`absolute z-[3] inset-0 rounded-lg  ${props.hoverMedia?.className}`}
+                className={`absolute  z-[5]  rounded-lg  ${props.hoverMedia?.className}`}
                 style={{
-                  height: `${mediaDimention.height - 10}px`,
-                  width: `${mediaDimention.width - 10}px`,
+                  height: `calc(${mediaDimention.height}px - 3.2vw)`,
+                  width: `calc(${mediaDimention.width}px - 3.2vw)`,
+                  left: '1.6vw',
+                  top: '1.6vw',
                 }}
               >
                 {props.hoverMedia?.element}

@@ -11,30 +11,28 @@ function navigatorGen(
         onClick={() => {
           prevSlide();
         }}
+        className="rounded-full bg-white  p-1 shadow-lg hover:animate-wiggle"
       >
-        <svg
-          width="24"
-          height="24"
-          xmlns="http://www.w3.org/2000/svg"
-          fillRule="evenodd"
-          clipRule="evenodd"
-        >
-          <path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm3 5.753l-6.44 5.247 6.44 5.263-.678.737-7.322-6 7.335-6 .665.753z" />
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50">
+          <path fill="none" d="M-1-1h582v402H-1z" />
+          <path
+            fill="#082446"
+            d="M17.044 24.704a.782.782 0 0 0 .173.852l5.217 5.215a.783.783 0 1 0 1.107-1.107l-3.883-3.881h12.545a.783.783 0 1 0 0-1.565H19.658l3.883-3.882a.783.783 0 1 0-1.107-1.107l-5.219 5.218a.787.787 0 0 0-.17.257z"
+          />
         </svg>
       </button>
       <button
         onClick={() => {
           nextSlide();
         }}
+        className="rounded-full bg-white  p-1 shadow-lg  hover:animate-wiggle"
       >
-        <svg
-          width="24"
-          height="24"
-          xmlns="http://www.w3.org/2000/svg"
-          fillRule="evenodd"
-          clipRule="evenodd"
-        >
-          <path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm-3 5.753l6.44 5.247-6.44 5.263.678.737 7.322-6-7.335-6-.665.753z" />
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50">
+          <path fill="none" d="M-1-1h582v402H-1z" />
+          <path
+            fill="#082446"
+            d="M32.956 25.296a.782.782 0 0 0-.173-.852l-5.217-5.215a.782.782 0 1 0-1.107 1.107l3.883 3.88H17.797a.783.783 0 1 0 0 1.566h12.545l-3.883 3.882a.782.782 0 1 0 1.107 1.107l5.219-5.218a.787.787 0 0 0 .17-.257z"
+          />
         </svg>
       </button>
     </>
@@ -60,16 +58,18 @@ function SlickSlider(props: SlickSliderProps) {
 
   return (
     <div className="mt-12 flex w-full flex-col">
-      {props.title && (
-        <div className="mx-auto flex flex-row justify-between p-4 xl:w-full ">
-          <span className=" text-left  text-4xl text-cBlue-500">
-            {props.title}
-          </span>
-          <div className="hidden flex-row space-x-4 xl:flex">
-            {navigatorGen(nextSlide, prevSlide)}
+      <div className="mx-auto w-11/12 lg:w-8/12">
+        {props.title && (
+          <div className="mx-auto flex flex-row justify-between p-4 xl:w-full ">
+            <span className=" text-left  text-4xl text-cBlue-500">
+              {props.title}
+            </span>
+            <div className="hidden flex-row space-x-4 xl:flex">
+              {navigatorGen(nextSlide, prevSlide)}
+            </div>
           </div>
-        </div>
-      )}
+        )}
+      </div>
       <div>
         <Slider {...props.sliderSettings} ref={sliderRef}>
           {props.children}

@@ -28,7 +28,7 @@ const renderDetails = (details?: JSX.Element | JSX.Element[]) => {
 function Intro(props: IntroProps) {
   return (
     <section id="intro">
-      <div className={`mx-auto w-11/12 md:w-10/12 ${props.className}`}>
+      <div className={`mx-auto ${props.className}`}>
         <TextBlock
           title={props.title}
           subtitle={props.subtitle}

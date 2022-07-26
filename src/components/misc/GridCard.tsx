@@ -57,8 +57,10 @@ function GridCard(props: GridCardProps) {
           <>
             <div className="flex basis-3/4  flex-row text-left">
               <div className="flex flex-col">
-                {item.text && <div>{item.text}</div>}
-                {item.subTitle && <div>{item.subTitle}</div>}
+                {item.text && <div className="text-lg">{item.text}</div>}
+                {item.subTitle && (
+                  <div className="text-base">{item.subTitle}</div>
+                )}
               </div>
               {item.titleDetail && (
                 <div className="mx-auto">{item.titleDetail}</div>
@@ -85,7 +87,7 @@ function GridCard(props: GridCardProps) {
           {props.items.map((item, index) => (
             <div
               key={index}
-              className={` basis-1 lg:basis-1/3 p-4 ${props.itemContainerClassName}`}
+              className={`w-full lg:basis-1/3 p-4 ${props.itemContainerClassName}`}
             >
               {item.link ? (
                 <>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Advantages from '@/components/shared/Advantages';
+import Advantages from '@/components/misc/Advantages';
 import Businesses from '@/components/shared/Businesses';
 import CtaSpecial from '@/components/shared/CtaSpecial';
 import Hero from '@/components/shared/Hero';

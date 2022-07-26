@@ -1,8 +1,8 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
 
+import Advantages from '@/components/misc/Advantages';
 import Modal from '@/components/misc/Modal';
-import Advantages from '@/components/shared/Advantages';
 import Businesses from '@/components/shared/Businesses';
 import CtaSpecial from '@/components/shared/CtaSpecial';
 import HeroWithIpad from '@/components/shared/HeroWithIpad';
@@ -52,8 +52,8 @@ const Index = () => {
                     strings,
                     autoStart: true,
                     loop: true,
-                    deleteSpeed: 2,
-                    delay: 100,
+                    deleteSpeed: 100,
+                    delay: 300,
                   }}
                 />
               </span>
@@ -75,8 +75,8 @@ const Index = () => {
                 modalRef.current?.open();
               }}
               style={{}}
-              className="absolute inset-0 mx-auto w-full cursor-pointer items-center
-               bg-gray-50/40 "
+              className="absolute inset-0 mx-auto w-full cursor-pointer items-center rounded-lg
+               bg-gray-800/50 "
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -139,6 +139,7 @@ const Index = () => {
             value: '92%',
           },
         ]}
+        goToRefElement="#intro"
       />
       <Intro title={'Wat is Ervaringwijzer'} details={<Advantages />}>
         <>

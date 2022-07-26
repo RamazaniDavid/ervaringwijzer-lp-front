@@ -62,7 +62,7 @@ function CtaSpecial(props: CtaSpecialProps) {
             {ctas.map((cta, index) => (
               <div
                 key={index}
-                className={`group flex flex-row items-center rounded-2xl ${cta.containerClassName}
+                className={`group flex flex-row items-center rounded-2xl duration-75 ${cta.containerClassName}
                 lg:flex-col lg:px-8 lg:py-16 cursor-pointer min-h-[100px]`}
                 onClick={cta.action}
               >
@@ -71,14 +71,20 @@ function CtaSpecial(props: CtaSpecialProps) {
                     viewBox="0 0 104 104"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className={`px-2 h-full w-full ${cta.svgClassName} `}
+                    className={`px-2 h-full w-full duration-75 ${cta.svgClassName} `}
                   >
                     {cta.svgPaths.map((path, ix) => (
-                      <path key={ix} d={path} className={cta.svgClassName} />
+                      <path
+                        key={ix}
+                        d={path}
+                        className={`duration-75 ${cta.svgClassName}`}
+                      />
                     ))}
                   </svg>
                 </div>
-                <div className={`text-lg ${cta.titleClassName} lg:text-2xl`}>
+                <div
+                  className={`text-lg duration-75 ${cta.titleClassName} lg:text-2xl`}
+                >
                   <h2>{cta.title}</h2>
                 </div>
               </div>

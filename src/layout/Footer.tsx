@@ -37,7 +37,7 @@ const Footer = () => {
         label: 'Stappenplan',
       },
       {
-        href: '*soon*',
+        href: 'https://api.ervaring.app/v2/graphql',
         label: 'Rest API',
       },
       {

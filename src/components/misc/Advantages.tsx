@@ -1,6 +1,6 @@
 import React from 'react';
 
-import GridCard from '../misc/GridCard';
+import GridCard from './GridCard';
 
 function Advantages() {
   const advantages = [
