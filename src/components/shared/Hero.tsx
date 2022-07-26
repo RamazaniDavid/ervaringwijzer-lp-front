@@ -26,7 +26,7 @@ function Hero(props: HeroProps) {
       id="hero"
       className={`${
         props.fullscreen === false ? 'min-h-max' : 'min-h-[calc(100vh-9rem)] '
-      } items-center self-center  bg-white`}
+      } items-center self-center  bg-white overflow-x-hidden`}
     >
       <div
         className={`flex  flex-wrap min-h-[inherit]  justify-between ${props.className}`}
@@ -42,7 +42,7 @@ function Hero(props: HeroProps) {
             } `}
           >
             <div
-              className={`text-3xl font-semibold text-gray-800 md:text-4xl ${
+              className={`text-3xl font-semibold text-gray-800 md:text-4xl mx-4 ${
                 props.mediaPosition === 'center'
                   ? ' lg:text-5xl 2xl:text-6xl'
                   : ''

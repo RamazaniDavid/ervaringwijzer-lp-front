@@ -60,8 +60,9 @@ function InfoBoxWithMedia(props: IProps) {
           src={item.data}
           alt="logo"
           className={
-            (item.overrideClassName ? '' : ' rounded-xl w-full aspect-auto ') +
-            item.className
+            (item.overrideClassName
+              ? ''
+              : ' rounded-xl w-full shadow-md aspect-auto ') + item.className
           }
         />
       );
@@ -116,8 +117,8 @@ function InfoBoxWithMedia(props: IProps) {
       <div
         className={`relative lg:basis-5/12 w-full mt-[20%] lg:mt-0 ${
           props.mediaPosition === 'right'
-            ? 'lg:ml-12  before:left-[30%] from-[#f1f4f8] to-gray-300/70 '
-            : 'lg:mr-12 before:right-[30%] from-gray-300/70 to-[#f1f4f8] '
+            ? 'lg:ml-12  before:left-[60%] from-[#f1f4f8] to-gray-300/70 '
+            : 'lg:mr-12 before:right-[60%] from-gray-300/70 to-[#f1f4f8] '
         }
          before:absolute  before:-top-[20%] before:z-0 before:block before:w-screen
           before:-skew-y-0  before:h-[140%]

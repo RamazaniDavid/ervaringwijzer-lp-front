@@ -22,9 +22,30 @@ function Software() {
       }
     >
       <Hero
-        title="Het platform om onderzoeken mee te realiseren!"
-        media={<img src="/assets/images/software/ipad.png" alt="Software" />}
-        className="mx-auto h-[600px] w-full lg:w-10/12"
+        title={
+          <>
+            <h1 className="px-5 text-3xl xl:text-5xl">
+              Het platform om onderzoeken mee te realiseren!
+            </h1>
+          </>
+        }
+        media={
+          <>
+            <div
+              className={`relative lg:ml-12 before:left-[60%] from-[#f1f4f8] to-gray-300/70 
+         before:absolute  before:top-[5%] before:z-0 before:block before:w-screen
+          before:-skew-y-0  before:h-[90%]
+      before:rounded-xl before:bg-gradient-to-r before:shadow-lg`}
+            >
+              <img
+                src="/assets/images/software/ipad.png"
+                alt="Software"
+                className="relative"
+              />
+            </div>
+          </>
+        }
+        className="mx-auto h-[600px] w-full "
       />
       <Businesses
         businesses={[

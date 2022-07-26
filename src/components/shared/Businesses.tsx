@@ -48,7 +48,7 @@ function Businesses(props: BusinessesProps) {
           <div className="hidden  md:basis-1/4 lg:flex">
             {props.goToRefElement && (
               <button
-                className="rounded-full border-0 bg-white font-bold hover:animate-bounce"
+                className="rounded-full border-0 bg-white font-bold"
                 onClick={() => goToHandler()}
               >
                 <svg
