@@ -25,7 +25,7 @@ function ServiceChangesPage() {
         title="Servicezuilen"
         media={
           <img
-            src="/assets/images/Servicezuilen/hero.webp"
+            src="/assets/images/servicezuilen/Hero.webp"
             alt="Servicezuilen"
             className=" mx-auto aspect-auto lg:h-[calc(100vh-20rem)]"
           />
