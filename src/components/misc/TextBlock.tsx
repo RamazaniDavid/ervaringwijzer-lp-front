@@ -11,7 +11,7 @@ interface TextBlockProps {
 function TextBlock(props: TextBlockProps) {
   return (
     <div
-      className={`mx-auto mt-8 w-11/12 md:w-10/12 xl:w-6/12 items-center pt-24 text-center leading-7 ${props.className}`}
+      className={`mx-auto mt-8 w-11/12 md:w-10/12 xl:w-7/12 items-center px-12 pt-24 text-center leading-7 ${props.className}`}
       style={{ ...props.style }}
     >
       <h2 className="mb-8 text-2xl font-bold leading-tight lg:text-4xl">

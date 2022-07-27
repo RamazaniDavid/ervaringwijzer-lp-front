@@ -25,7 +25,7 @@ function SmartInfo(props: IProps) {
   return (
     <section id={props.sectionId ?? 'smart-info'}>
       <div
-        className={`flex flex-col items-center text-center my-24 lg:my-36 overflow-x-hidden ${
+        className={`flex flex-col items-center text-center mt-24 lg:mt-36 overflow-x-hidden ${
           props.className ?? ''
         } `}
         style={props.style}
